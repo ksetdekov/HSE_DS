@@ -8,3 +8,6 @@
 * regexr.com
 * https://leetcode.com/
 * https://www.hackerrank.com/
+
+## Лекция 4
+* задачи 4 семинар
