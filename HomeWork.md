@@ -25,3 +25,5 @@
 ## Лекция 5
 * https://official.contest.yandex.ru/contest/20759/enter?success=0Ta2GfDF
 к следующей среде
+    * про рекурсию - была ошибка
+    
