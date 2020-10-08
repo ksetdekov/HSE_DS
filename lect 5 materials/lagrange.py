@@ -19,3 +19,6 @@ while n_inp > 0:
     result.append(integer_sqrt(n_inp))
     n_inp = - integer_sqrt(n_inp) ** 2 + n_inp
 print(*result)
+
+# todo нужно рекурсивно идти для каждого из вариантов первой разбивки - не брать максимум, а перебирать все,
+# как ice cream
