@@ -27,3 +27,7 @@
 к следующей среде
     * про рекурсию - была ошибка
     
+# Лекция 6
+прочитать https://tproger.ru/translations/demystifying-decorators-in-python/
+
+    
