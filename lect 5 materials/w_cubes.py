@@ -17,16 +17,16 @@ def c_root(k):
 
 a_level = c_root(n_inp)
 for a in range(a_level, -1, -1):
-    b_inp = n_inp - a ** 2
+    b_inp = n_inp - a ** 3
     b_level = c_root(b_inp)
-    # print(a, 'step a')
+    # print(b_inp, 'step a')
     if b_inp == 0:
         result.append(a)
         break
     # loop 1
 
     for b in range(b_level, -1, -1):
-        c_inp = b_inp - b ** 2
+        c_inp = b_inp - b ** 3
         c_level = c_root(c_inp)
         # print(c_inp, 'step b')
         if c_inp == 0:
@@ -35,20 +35,52 @@ for a in range(a_level, -1, -1):
             # loop 2
 
         for c in range(c_level, -1, -1):
-            d_inp = c_inp - c ** 2
+            d_inp = c_inp - c ** 3
             d_level = c_root(d_inp)
-            # print(d_inp, 'step d')
+            # print(d_inp, 'step c')
             if d_inp == 0:
                 result.append(c)
                 break
                 # loop 3
-            for d in range(d_level, 0, -1):
-                e_inp = d_inp - d ** 2
-                # print(e_inp, 'step e')
-                if e_inp == 0 and len(result) == 0:
+            for d in range(d_level, -1, -1):
+                e_inp = d_inp - d ** 3
+                e_level = c_root(e_inp)
+                # print(e_inp, 'step d')
+                if e_inp == 0:
                     result.append(d)
                     break
+                    # loop 4
+                for e in range(e_level, -1, -1):
+                    f_inp = e_inp - e ** 3
+                    f_level = c_root(f_inp)
+                    # print(f_inp, 'step e')
+                    if f_inp == 0:
+                        result.append(e)
+                        break
+                    for f in range(f_level, -1, -1):
+                        g_inp = f_inp - f ** 3
+                        g_level = c_root(g_inp)
+                        # print(g_inp, 'step f')
+                        if g_inp == 0:
+                            result.append(f)
+                            break
+                        for g in range(g_level, 0, -1):
+                            h_inp = g_inp - g ** 3
+                            h_level = c_root(h_inp)
+                            # print(h_inp, 'step g')
+                            if h_inp == 0:
+                                result.append(g)
 
+                        if len(result) != 0:
+                            result.append(f)
+                            break
+                    if len(result) != 0:
+                        result.append(e)
+                        break
+                    # end loop 4
+                if len(result) != 0:
+                    result.append(d)
+                    break
                 # end loop 3
             if len(result) != 0:
                 result.append(c)
