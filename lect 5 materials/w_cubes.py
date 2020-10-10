@@ -70,6 +70,7 @@ for a in range(a_level, -1, -1):
                             # print(h_inp, 'step g')
                             if h_inp == 0:
                                 result.append(g)
+                                break
 
                         if len(result) != 0:
                             result.append(f)
