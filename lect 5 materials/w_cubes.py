@@ -9,7 +9,7 @@ def c_root(k):
     start = math.floor(len(str(k).encode('utf-8')) / 3) + 1
     x = start
     while True:
-        x = (x - (x ** 3 - k) / (3 * x ** 2))//1
+        x = (x - (x ** 3 - k) / (3 * x ** 2)) // 1
         if x ** 3 <= k < (x + 1) ** 3:
             break
     return int(x)
