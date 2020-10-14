@@ -17,10 +17,10 @@ def c_root(k):
 
 def cube_fun(n_inp):
     result = []
-    a_level = c_root(n_inp)
+    a_level = int(n_inp**(1/3))
     for a in range(a_level, -1, -1):
         b_inp = n_inp - a ** 3
-        b_level = c_root(b_inp)
+        b_level = int(b_inp**(1/3))
         # print(b_inp, 'step a')
         if b_inp == 0:
             result.append(a)
@@ -29,7 +29,7 @@ def cube_fun(n_inp):
 
         for b in range(b_level, -1, -1):
             c_inp = b_inp - b ** 3
-            c_level = c_root(c_inp)
+            c_level = int(c_inp**(1/3))
             # print(c_inp, 'step b')
             if c_inp == 0:
                 result.append(b)
@@ -38,7 +38,7 @@ def cube_fun(n_inp):
 
             for c in range(c_level, -1, -1):
                 d_inp = c_inp - c ** 3
-                d_level = c_root(d_inp)
+                d_level = int(d_inp**(1/3))
                 # print(d_inp, 'step c')
                 if d_inp == 0:
                     result.append(c)
@@ -46,7 +46,7 @@ def cube_fun(n_inp):
                     # loop 3
                 for d in range(d_level, -1, -1):
                     e_inp = d_inp - d ** 3
-                    e_level = c_root(e_inp)
+                    e_level = int(e_inp**(1/3))
                     # print(e_inp, 'step d')
                     if e_inp == 0:
                         result.append(d)
@@ -54,21 +54,20 @@ def cube_fun(n_inp):
                         # loop 4
                     for e in range(e_level, -1, -1):
                         f_inp = e_inp - e ** 3
-                        f_level = c_root(f_inp)
+                        f_level = int(f_inp**(1/3))
                         # print(f_inp, 'step e')
                         if f_inp == 0:
                             result.append(e)
                             break
                         for f in range(f_level, -1, -1):
                             g_inp = f_inp - f ** 3
-                            g_level = c_root(g_inp)
+                            g_level = int(g_inp**(1/3))
                             # print(g_inp, 'step f')
                             if g_inp == 0:
                                 result.append(f)
                                 break
                             for g in range(g_level, 0, -1):
                                 h_inp = g_inp - g ** 3
-                                h_level = c_root(h_inp)
                                 # print(h_inp, 'step g')
                                 if h_inp == 0:
                                     result.append(g)
@@ -128,21 +127,21 @@ def MinOfCubed(k):
 
 # Driver code  print(MinOfCubed(num));
 
-print(cube_fun(114))
-# all_works = dict()
-# for i in range(1000):
-#     evalueate_res = cube_fun(i)
-#     print(evalueate_res)
-#     good_result = cuber(evalueate_res) == i
-#     print(good_result, 'resuls', cuber(evalueate_res), i)
-#     all_works[i] = good_result
-#
-# print(all_works)
-#
-# for k, v in all_works.items():
-#     if v == False:
-#         print(k, 'fail')
-#         print(MinOfCubed(k))
-#         print(cube_fun(k))
-#
-# print(cube_fun(15))
+# print(cube_fun(114))
+all_works = dict()
+for i in range(1000):
+    evalueate_res = cube_fun(i)
+    print(evalueate_res)
+    good_result = cuber(evalueate_res) == i
+    print(good_result, 'resuls', cuber(evalueate_res), i)
+    all_works[i] = good_result
+
+print(all_works)
+
+for k, v in all_works.items():
+    if v == False:
+        print(k, 'fail')
+        # print(MinOfCubed(k))
+        print(cube_fun(k))
+
+print(cube_fun(15))
