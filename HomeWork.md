@@ -31,4 +31,4 @@
 прочитать https://tproger.ru/translations/demystifying-decorators-in-python/
 
 # Лекция 8
-сделать дз хотя бы 1 запро
+сделать дз хотя бы 1 запро до 24 числа
