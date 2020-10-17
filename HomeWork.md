@@ -30,4 +30,5 @@
 # Лекция 6
 прочитать https://tproger.ru/translations/demystifying-decorators-in-python/
 
-    
+# Лекция 8
+сделать дз хотя бы 1 запро
