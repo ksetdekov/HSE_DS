@@ -56,6 +56,7 @@
 driver = wb.Chrome('../chromedriver_win32/chromedriver.exe')
 * !!собрать информацию в магазине/чем-то через веб драйвер
 * почитать https://habr.com/ru/post/349860/
+
 1) selenium: прочитать список статей из этой серии https://habr.com/ru/post/250921/
 2) SQL: решить задания по презентациям 1-2 – https://docs.google.com/document/d/1LrnVs8xX3ig8R9yRdlRH6fVtYgyvVLlRlct6Hh2WS8M/edit?usp=sharing (инструкция куда грузить файлы внутри) – 10 баллов, каждое задание из бонуса по 2.5б
 
