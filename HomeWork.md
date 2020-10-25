@@ -36,13 +36,39 @@
 # Лекция 9
 * почитать по datetime - это полезно и знать
 * посмотреть, почему не работает относительная ссылка из notebook - done - все работает
-* bs links проверить вопрос??? LXML - чем лучше или хуже element tree? soup = BeautifulSoup(requests.get(link).text, 'lxml')
+* bs links проверить вопрос??? LXML - чем лучше или хуже element tree? soup = BeautifulSoup(requests.get(link).text, 'lxml') - вкусовщина
     * не работает пример про сайт вышки - сайт не отдает в запрос то, что показывает человеку, что делать?
 * установить selenium по шагам из lect selenium 1 dpo
     * нужно чтобы driver = webdriver.Chrome запускался
     * если что - писать в чат
 * openpyxl дочитать - готово
-
+*   сделать рисование графиков –– создать файл с гистограммой для star_rating - done
 ставить через conda
-проверить в chrome = дома скачать дрова для chrome
+проверить в chrome = дома скачать дрова для chrome - блочат драйверы в крыму
 
+# Лекция 10
+* почитать статьи по ссылкам
+* hackerrank
+* leetcode
+* codeforces
+* kaggle - like platform - zindi
+* яндекс - всегда надо знать алгоритмы
+driver = wb.Chrome('../chromedriver_win32/chromedriver.exe')
+* !!собрать информацию в магазине/чем-то через веб драйвер
+* почитать https://habr.com/ru/post/349860/
+1) selenium: прочитать список статей из этой серии https://habr.com/ru/post/250921/
+2) SQL: решить задания по презентациям 1-2 – https://docs.google.com/document/d/1LrnVs8xX3ig8R9yRdlRH6fVtYgyvVLlRlct6Hh2WS8M/edit?usp=sharing (инструкция куда грузить файлы внутри) – 10 баллов, каждое задание из бонуса по 2.5б
+
+Презентации (первые 2 обсудили, вторые 2 можете прочитать, но мы их обсудим в начале пары):
+1) https://docs.google.com/presentation/d/1XbR2-HH8SG49O3p-hYOhekvV_iOJ4gM6re_dfNaft6E/edit#slide=id.p
+2) https://docs.google.com/presentation/d/1qMMLMpQNYYRtkask1BbqmCwGcJF-r9FJcilMbobD-0A/edit#slide=id.p
+3) https://docs.google.com/presentation/d/13UlGEp-ga9vXyeWKgP2hDi9cwXmW4UMmTHkJxusrvbs/edit#slide=id.p
+4) https://docs.google.com/presentation/d/1f0cBqR3wRWA4V9f5gvPuMfBUiN-DDOXp1ozNhbVBLqQ/edit#slide=id.p
+
+Бонусы:
++ selenium: скачать любой набор данных с любого сайта как мы сделали на семинаре – от 10 до 20 баллов в зависимости от приложенных усилий, файл можете также грузить на диск (ссылка та же, что и для SQL) – ноутбук с кодом, файл с результатом. код должен быть воспроизводим и красив (pep8)
++ решать sql задачи (выбрать уровень на свой вкус) https://www.sql-ex.ru/ (не оценивается, но настоятельно рекомендуется)
+
+Материалы, которые сегодня показывала для тренировки задач на питон/алгоритмы:
+https://www.hackerrank.com/
+https://leetcode.com/
