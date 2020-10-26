@@ -58,7 +58,7 @@ driver = wb.Chrome('../chromedriver_win32/chromedriver.exe')
 * почитать https://habr.com/ru/post/349860/
 
 1) selenium: прочитать список статей из этой серии https://habr.com/ru/post/250921/
-2) SQL: решить задания по презентациям 1-2 – https://docs.google.com/document/d/1LrnVs8xX3ig8R9yRdlRH6fVtYgyvVLlRlct6Hh2WS8M/edit?usp=sharing (инструкция куда грузить файлы внутри) – 10 баллов, каждое задание из бонуса по 2.5б
+2) SQL: решить задания по презентациям 1-2 – https://docs.google.com/document/d/1LrnVs8xX3ig8R9yRdlRH6fVtYgyvVLlRlct6Hh2WS8M/edit?usp=sharing (инструкция куда грузить файлы внутри) – 10 баллов, каждое задание из бонуса по 2.5б -- готово
 
 Презентации (первые 2 обсудили, вторые 2 можете прочитать, но мы их обсудим в начале пары):
 1) https://docs.google.com/presentation/d/1XbR2-HH8SG49O3p-hYOhekvV_iOJ4gM6re_dfNaft6E/edit#slide=id.p
