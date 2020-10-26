@@ -8,7 +8,7 @@ SELECT id, height/100 as height, weight/2.205 as weight FROM Player;
 SELECT id as имя, birthday as "день рождения" FROM Player;
 
 -- 6 ИМТ
-SELECT id, (weight/2.205)/(height/100) as ИМТ FROM Player;
+SELECT id, (weight/2.205)/((height/100)*(height/100)) as ИМТ FROM Player;
 
 -- 7 ИМТ сортировка
-SELECT id, (weight/2.205)/(height/100) as ИМТ FROM Player ORDER BY ИМТ;
+SELECT id, (weight/2.205)/((height/100)*(height/100)) as ИМТ FROM Player ORDER BY ИМТ;
