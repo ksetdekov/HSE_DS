@@ -56,3 +56,50 @@ if not os.path.exists('movie.sqlite'):
 conn = sqlite3.connect('movie.sqlite')
 df_250.to_sql('top250', conn, if_exists='replace', index=False)
 conn.commit()
+
+pd.read_sql('select * from top250 limit 5', conn)
+
+
+def get_director_by_n_film(topn):
+    chr_driver = wb.Chrome('../chromedriver_win32/chromedriver.exe')
+    chr_driver.implicitly_wait(1)
+    chr_driver.get("https://www.imdb.com/chart/top/?ref_=nv_mv_250")
+
+    film_link = f'//*[@id="main"]/div/span/div/div/div[3]/table/tbody/tr[{topn}]/td[2]/a'
+    fld = chr_driver.find_element_by_xpath(film_link)
+    fld.click()
+    try:
+        director = chr_driver.find_element_by_xpath('//*[@id="title-overview-widget"]/div[2]/div[1]/div[2]/a').text
+    except:
+        director = chr_driver.find_element_by_xpath(
+            '//*[@id="title-overview-widget"]/div[2]/div[2]/div[1]/div[2]/a').text
+
+    chr_driver.quit()
+    return director
+
+
+conn = sqlite3.connect('movie.sqlite')  # friends db
+cur = conn.cursor()
+
+cur.execute('''CREATE TABLE IF NOT EXISTS Directors (id INTEGER PRIMARY KEY, 
+                                                    director TEXT)''')
+get_director_by_n_film(134)
+positions = range(3)
+# positions = range(250) ## - нужно запустить эту строку для обновления всех данных, работает медленно
+
+for pos in positions:
+    try:
+        cur_director = get_director_by_n_film(pos + 1)
+    except:
+        cur_director = ""
+    cur.execute('''REPLACE INTO Directors
+                            (id, director) VALUES (?, ?)''', (pos + 1, cur_director))
+    conn.commit()
+    print(pos + 1, cur_director)
+
+top_directors = cur.execute(
+    "SELECT director, count(*) from directors GROUP by director ORDER by count(*) DESC LIMIT 10")
+top10 = pd.DataFrame(top_directors, columns=['Director', 'number of films'])
+top10
+top10[top10['number of films'] == max(top10['number of films'])]
+conn.close()
