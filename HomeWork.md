@@ -54,7 +54,7 @@
 * kaggle - like platform - zindi
 * яндекс - всегда надо знать алгоритмы
 driver = wb.Chrome('../chromedriver_win32/chromedriver.exe')
-* !!собрать информацию в магазине/чем-то через веб драйвер
+* !!собрать информацию в магазине/чем-то через веб драйвер - done
 * почитать https://habr.com/ru/post/349860/
 
 1) selenium: прочитать список статей из этой серии https://habr.com/ru/post/250921/
