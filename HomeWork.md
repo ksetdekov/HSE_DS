@@ -54,10 +54,10 @@
 * kaggle - like platform - zindi
 * яндекс - всегда надо знать алгоритмы
 driver = wb.Chrome('../chromedriver_win32/chromedriver.exe')
-* !!собрать информацию в магазине/чем-то через веб драйвер - done
+* собрать информацию в магазине/чем-то через веб драйвер - done
 * почитать https://habr.com/ru/post/349860/
 
-1) selenium: прочитать список статей из этой серии https://habr.com/ru/post/250921/
+1) !! selenium: прочитать список статей из этой серии https://habr.com/ru/post/250921/
 2) SQL: решить задания по презентациям 1-2 – https://docs.google.com/document/d/1LrnVs8xX3ig8R9yRdlRH6fVtYgyvVLlRlct6Hh2WS8M/edit?usp=sharing (инструкция куда грузить файлы внутри) – 10 баллов, каждое задание из бонуса по 2.5б -- готово
 
 Презентации (первые 2 обсудили, вторые 2 можете прочитать, но мы их обсудим в начале пары):  -- готово
@@ -73,3 +73,14 @@ driver = wb.Chrome('../chromedriver_win32/chromedriver.exe')
 Материалы, которые сегодня показывала для тренировки задач на питон/алгоритмы:
 https://www.hackerrank.com/
 https://leetcode.com/
+
+# Лекция 11
+Еще одно задание по SQL
+* https://docs.google.com/document/d/1-oyltnjbjzu9-U4FE9eODOMOiVfgWgcwnC2INwkXtG0/edit
+* 11_3 scheduler почитать
+* вопрос по лекции анастасии? - про приватность данных
+* из лекции 10_6 придумать что-то сделать
+* pyspark
+* https://pythonworld.ru/osnovy/dekoratory.html
+вопросы:
+    * можно ли сделать init так, чтобы можно было как с функциями - пропускать входящие переменные и иметь дефолтные?
