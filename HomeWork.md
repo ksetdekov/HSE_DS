@@ -76,8 +76,8 @@ https://leetcode.com/
 
 # Лекция 11
 Еще одно задание по SQL
-* https://docs.google.com/document/d/1-oyltnjbjzu9-U4FE9eODOMOiVfgWgcwnC2INwkXtG0/edit
-* 11_3 scheduler почитать
+* https://docs.google.com/document/d/1-oyltnjbjzu9-U4FE9eODOMOiVfgWgcwnC2INwkXtG0/edit - done
+* 11_3 scheduler почитать -- done
 * вопрос по лекции анастасии? - про приватность данных
 * из лекции 10_6 придумать что-то сделать
 * pyspark
