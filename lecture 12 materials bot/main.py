@@ -1,18 +1,20 @@
 # This is a sample Python script.
 
+import re
+from random import randint
+
 # Press ⇧F10 to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 import pandas as pd
-import re
 import requests
-import config
-import dbworker
 import telebot
-from tabulate import tabulate
 from bs4 import BeautifulSoup
-from random import randint
+from tabulate import tabulate
 
-bot = telebot.TeleBot(config.token)
+import config_my
+import dbworker
+
+bot = telebot.TeleBot(config_my.token)
 
 pict = [
     'https://avatars.mds.yandex.net/get-pdb/2864819/2091b635-1a05-4a81-9f4f-9cdd46cb9be0/s1200',
@@ -21,7 +23,7 @@ pict = [
     'https://avatars.mds.yandex.net/get-zen_doc/1899089/pub_5d9b5f2f35c8d800ae71fb5a_5d9b60a98f011100b48eb4fb/scale_1200',
     'https://avatars.mds.yandex.net/get-zen_doc/196516/pub_5d65e93efe289100adb4c54e_5d66099378125e00ac052d00/scale_1200',
     'http://ysia.ru/wp-content/uploads/2018/01/1-19.jpg'
-    ]
+]
 
 
 def stat(tag=0):
@@ -65,16 +67,19 @@ def cmd_info(message):
                                       "Type /commands to get the list of available functions.\n"
                                       "Type /reset to start anew.")
 
+
 @bot.message_handler(commands=["listregions"])
 def cmd_listregions(message):
     x = stat()['Country']
     bot.send_message(message.chat.id, ', '.join(i for i in list(x[:8]) if i != ''))
+
 
 @bot.message_handler(commands=["listcountries"])
 def cmd_listcountries(message):
     x = stat()['Country'][8:225]
     msg = ', '.join([e + '\n' if i % 6 == 5 else e for i, e in enumerate(x)]).replace('\n,', ',\n')
     bot.send_message(message.chat.id, msg)
+
 
 @bot.message_handler(commands=["commands"])
 def cmd_commands(message):
@@ -93,6 +98,7 @@ def cmd_listfields(message):
          'TotalRecovered', 'ActiveCases', 'SeriousCritical']
     bot.send_message(message.chat.id, ", ".join(x))
 
+
 # По команде /reset будем сбрасывать состояния, возвращаясь к началу диалога
 @bot.message_handler(commands=["reset"])
 def cmd_reset(message):
@@ -100,14 +106,14 @@ def cmd_reset(message):
                                       "Which day's statistics do you want to get: /today or /yesterday.\n"
                                       "Use /info or /commands to rewind what I am and what can I do.")
     bot.send_photo(message.chat.id, pict[randint(0, 5)])
-    dbworker.set_state(message.chat.id, config.States.S_ENTER_DAY.value)
-    #TODO:
+    dbworker.set_state(message.chat.id, config_my.States.S_ENTER_DAY.value)
+    # TODO:
     # Удалить состояние пользователя
 
 
 @bot.message_handler(commands=["start"])
 def cmd_start(message):
-    dbworker.set_state(message.chat.id, config.States.S_START.value)
+    dbworker.set_state(message.chat.id, config_my.States.S_START.value)
     state = dbworker.get_current_state(message.chat.id)
     # Под "остальным" понимаем состояние "0" - начало диалога
     bot.send_message(message.chat.id, "Greetings again! I'm coronabot :) \n"
@@ -116,23 +122,24 @@ def cmd_start(message):
                                       "Tye /commands to list the available commands.\n"
                                       "Type /reset to discard previous selections and start anew.")
     bot.send_photo(message.chat.id, pict[randint(0, 5)])
-    dbworker.set_state(message.chat.id, config.States.S_ENTER_DAY.value)
+    dbworker.set_state(message.chat.id, config_my.States.S_ENTER_DAY.value)
 
 
-@bot.message_handler(func=lambda message: dbworker.get_current_state(message.chat.id) == config.States.S_ENTER_DAY.value
-                     and message.text.strip().lower() not in ('/reset', '/info', '/start', '/commands',
-                                                              '/listregions', '/listregions',
-                                                              '/listfields'))
+@bot.message_handler(func=lambda message: dbworker.get_current_state(message.chat.id) == config_my.States.S_ENTER_DAY.value
+                                          and message.text.strip().lower() not in (
+                                          '/reset', '/info', '/start', '/commands',
+                                          '/listregions', '/listregions',
+                                          '/listfields'))
 def get_day(message):
-    dbworker.del_state(str(message.chat.id)+'day') # Если в базе когда-то был день, удалим (мы же новый пишем)
+    dbworker.del_state(str(message.chat.id) + 'day')  # Если в базе когда-то был день, удалим (мы же новый пишем)
     if message.text.lower().strip() == '/yesterday':
         # day = 1
         bot.send_message(message.chat.id, "Ok, we've specified the date of statistics. It's time to go further. \n"
                                           "Do you want to know things about /regions or /countries?\n"
                                           "You could also type /info to know more about me.\n"
                                           "Type /reset to start anew.")
-        dbworker.set_state(str(message.chat.id)+'day', 'yesterday') #запишем день в базу
-        dbworker.set_state(message.chat.id, config.States.S_COUNTRY_OR_REGION.value)
+        dbworker.set_state(str(message.chat.id) + 'day', 'yesterday')  # запишем день в базу
+        dbworker.set_state(message.chat.id, config_my.States.S_COUNTRY_OR_REGION.value)
     elif message.text.lower().strip() == '/today':
         # day = 0
         bot.send_message(message.chat.id, "Ok, we've specified the date for statistics. It's time to go further. \n"
@@ -141,7 +148,7 @@ def get_day(message):
                                           "Type /reset to start anew.")
 
         dbworker.set_state(str(message.chat.id) + 'day', 'today')  # запишем день в базу
-        dbworker.set_state(message.chat.id, config.States.S_COUNTRY_OR_REGION.value)
+        dbworker.set_state(message.chat.id, config_my.States.S_COUNTRY_OR_REGION.value)
     else:
         bot.send_message(message.chat.id, "Seems like you've already got acquainted with me.\n"
                                           "Now you gotta specify the date for statistics.\n"
@@ -149,12 +156,15 @@ def get_day(message):
                                           "To recollect what we are doing now type /info.\n"
                                           "Type /reset to start anew.")
 
-@bot.message_handler(func=lambda message: dbworker.get_current_state(message.chat.id) == config.States.S_COUNTRY_OR_REGION.value
-                     and message.text.strip().lower() not in ('/reset', '/info', '/start', '/commands',
-                                                              '/listregions', '/listregions',
-                                                              '/listfields'))
+
+@bot.message_handler(
+    func=lambda message: dbworker.get_current_state(message.chat.id) == config_my.States.S_COUNTRY_OR_REGION.value
+                         and message.text.strip().lower() not in ('/reset', '/info', '/start', '/commands',
+                                                                  '/listregions', '/listregions',
+                                                                  '/listfields'))
 def country_or_region(message):
-    dbworker.del_state(str(message.chat.id) + 'country') # Если в базе когда-то был выбор стран, удалим (мы же новый пишем)
+    dbworker.del_state(
+        str(message.chat.id) + 'country')  # Если в базе когда-то был выбор стран, удалим (мы же новый пишем)
     if message.text.lower().strip() == '/countries':
         # country = 0
         bot.send_message(message.chat.id, "Ok, you want to get statistics by country. \n"
@@ -162,8 +172,8 @@ def country_or_region(message):
                                           "Type /listcountries to get the list of available fields.\n"
                                           "You could also type /info to recollect what we are doing now.\n"
                                           "Type /reset to start anew.")
-        dbworker.set_state(message.chat.id, config.States.S_ENTER_COUNTRY_OR_REGION.value)
-        dbworker.set_property(str(message.chat.id)+'country', 'countries')  #запишем выбор стран в базу
+        dbworker.set_state(message.chat.id, config_my.States.S_ENTER_COUNTRY_OR_REGION.value)
+        dbworker.set_property(str(message.chat.id) + 'country', 'countries')  # запишем выбор стран в базу
     elif message.text.lower().strip() == '/regions':
         # country = 1
         bot.send_message(message.chat.id, "Ok, you want to get statistics by region. \n"
@@ -172,8 +182,8 @@ def country_or_region(message):
                                           "You could also type /info to recollect what we are doing now.\n"
                                           "Type /reset to start anew.")
 
-        dbworker.set_state(message.chat.id, config.States.S_ENTER_COUNTRY_OR_REGION.value)
-        dbworker.set_property(str(message.chat.id) + 'country', 'regions') #запишем выбор регионов в базу
+        dbworker.set_state(message.chat.id, config_my.States.S_ENTER_COUNTRY_OR_REGION.value)
+        dbworker.set_property(str(message.chat.id) + 'country', 'regions')  # запишем выбор регионов в базу
 
     else:
         bot.send_message(message.chat.id, "Something has gone wrong! Type either countries or regions.\n"
@@ -181,15 +191,17 @@ def country_or_region(message):
                                           "Type /reset to start anew.")
 
 
-@bot.message_handler(func=lambda message: dbworker.get_current_state(message.chat.id) == config.States.S_ENTER_COUNTRY_OR_REGION.value
-                     and message.text.strip().lower() not in ('/reset', '/info', '/start', '/commands',
-                                                              '/listregions', '/listregions',
-                                                              '/listfields'))
+@bot.message_handler(
+    func=lambda message: dbworker.get_current_state(message.chat.id) == config_my.States.S_ENTER_COUNTRY_OR_REGION.value
+                         and message.text.strip().lower() not in ('/reset', '/info', '/start', '/commands',
+                                                                  '/listregions', '/listregions',
+                                                                  '/listfields'))
 def enter_country_or_region(message):
     # global countries, country
-    dbworker.del_state(str(message.chat.id) + 'countries')  # Если в базе когда-то был выбор списка стран, удалим (мы же новый пишем)
+    dbworker.del_state(
+        str(message.chat.id) + 'countries')  # Если в базе когда-то был выбор списка стран, удалим (мы же новый пишем)
     countries = [x.strip() for x in re.split(',', message.text)]
-    country = dbworker.get_current_state(str(message.chat.id)+'country')
+    country = dbworker.get_current_state(str(message.chat.id) + 'country')
 
     bot.send_message(message.chat.id, 'Thank you, I\'m checkin\' your info.')
     x = stat()['Country']
@@ -207,20 +219,22 @@ def enter_country_or_region(message):
                                               "Type /listfields to get the list of available fields.\n"
                                               "You could type /info to recollect what we are doing now.\n"
                                               "Type /reset to start anew.")
-            dbworker.set_state(str(message.chat.id)+'countries', ', '.join(countries))
-            dbworker.set_state(message.chat.id, config.States.S_ENTER_FIELD_LIST.value)
+            dbworker.set_state(str(message.chat.id) + 'countries', ', '.join(countries))
+            dbworker.set_state(message.chat.id, config_my.States.S_ENTER_FIELD_LIST.value)
         else:
             bot.send_message(message.chat.id, "Something has gone wrong! Enter the list of countries/regions properly")
     else:
-        bot.send_message(message.chat.id, "There\'s a number of countries/regions with typos or something that\'s not in our list.\n"
-                                          "Here they are:" + ", ".join(errors)+"\n"
-                                          "To get lists of available regions/countries use /listcountries or /listregions")
+        bot.send_message(message.chat.id,
+                         "There\'s a number of countries/regions with typos or something that\'s not in our list.\n"
+                         "Here they are:" + ", ".join(errors) + "\n"
+                                                                "To get lists of available regions/countries use /listcountries or /listregions")
 
 
-@bot.message_handler(func=lambda message: dbworker.get_current_state(message.chat.id) == config.States.S_ENTER_FIELD_LIST.value
-                     and message.text.strip().lower() not in ('/reset', '/info', '/start', '/commands',
-                                                              '/listregions', '/listregions',
-                                                              '/listfields'))
+@bot.message_handler(
+    func=lambda message: dbworker.get_current_state(message.chat.id) == config_my.States.S_ENTER_FIELD_LIST.value
+                         and message.text.strip().lower() not in ('/reset', '/info', '/start', '/commands',
+                                                                  '/listregions', '/listregions',
+                                                                  '/listfields'))
 def enter_field_list(message):
     # global fields
     fields = re.findall(r'\w+', message.text)
@@ -230,9 +244,9 @@ def enter_field_list(message):
            'TotalRecovered', 'ActiveCases', 'SeriousCritical']
 
     # t = dbworker.get_current_state(str(message.chat.id) + 'day')
-    if dbworker.get_current_state(str(message.chat.id)+'day').strip() == 'today':
+    if dbworker.get_current_state(str(message.chat.id) + 'day').strip() == 'today':
         day = 0
-    elif dbworker.get_current_state(str(message.chat.id)+'day').strip() == 'yesterday':
+    elif dbworker.get_current_state(str(message.chat.id) + 'day').strip() == 'yesterday':
         day = 1
     else:
         pass
@@ -243,7 +257,7 @@ def enter_field_list(message):
     # print(errors)
     if errors == []:
         if fields != []:
-            dbworker.set_state(message.chat.id, config.States.S_START.value)
+            dbworker.set_state(message.chat.id, config_my.States.S_START.value)
             df = stat(day)
             for_sending = df[df.Country.isin(countries)][['Country', *fields]]
             dbworker.del_state(str(message.chat.id) + 'day')
@@ -257,12 +271,12 @@ def enter_field_list(message):
         bot.send_message(message.chat.id,
                          "There\'s a number of fields with typos or something that\'s not in our list.\n"
                          "Here they are:" + ", ".join(errors) + "\n"
-                         "To get lists of available fields use /listfields")
+                                                                "To get lists of available fields use /listfields")
 
 
 @bot.message_handler(func=lambda message: message.text not in ('/reset', '/info', '/start', '/commands',
-                                                              '/listregions', '/listregions',
-                                                              '/listfields'))
+                                                               '/listregions', '/listregions',
+                                                               '/listfields'))
 def cmd_sample_message(message):
     bot.send_message(message.chat.id, "Hey there, I'm coronabot!\n"
                                       "I'm not that smart, sorry :(\n"
