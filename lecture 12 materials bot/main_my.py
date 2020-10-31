@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 # from tabulate import tabulate
 import telebot
-
+print(config_my.token)
 bot = telebot.TeleBot(config_my.token)
 
 pict = [
