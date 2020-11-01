@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3859340a-785c-42f4-89f8-1aca59db1276" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="3859340a-785c-42f4-89f8-1aca59db1276" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lecture 12 materials bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lecture 12 materials bot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,23 +17,17 @@
   </component>
   <component name="ProjectId" id="1jeBNdYND8OrsFfdf93MrUiq2vf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main_my">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lecture 12 materials bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,8 +72,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.main_my" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -97,10 +95,38 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1898" height="335" key="GridCell.Tab.0.bottom" timestamp="1604247946739">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1898" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1604247946739" />
+    <state width="1898" height="335" key="GridCell.Tab.0.center" timestamp="1604247946739">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1898" height="335" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1604247946739" />
+    <state width="1898" height="335" key="GridCell.Tab.0.left" timestamp="1604247946738">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1898" height="335" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1604247946738" />
+    <state width="1898" height="335" key="GridCell.Tab.0.right" timestamp="1604247946739">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1898" height="335" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1604247946739" />
+    <state x="901" y="237" key="SettingsEditor" timestamp="1604242926866">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="901" y="237" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1604242926866" />
+    <state x="668" y="427" key="com.intellij.ide.util.TipDialog" timestamp="1604232859230">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="668" y="427" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1604232859230" />
   </component>
 </project>
