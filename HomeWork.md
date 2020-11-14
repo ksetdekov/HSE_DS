@@ -91,7 +91,25 @@ https://leetcode.com/
 
 # Лекция 1 алгоритмы
 
-домашка из ноутбука
+##### Домашнее Задание
+
+1) Потренироваться в рекурсии, например, здесь: https://informatics.mccme.ru/mod/statements/view.php?id=2543#1 (задачи в менюшке справа, нужно зарегаться чтобы решать)
+
+2) Задачи на метод двух указателей:
+
+##### Простые:
+
+https://leetcode.com/problems/longest-substring-without-repeating-characters/
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+https://leetcode.com/problems/merge-sorted-array/
+
+##### Посложнее: 
+
+https://leetcode.com/problems/long-pressed-name/
+https://leetcode.com/problems/trapping-rain-water/
+
+3) Придумать решение первой задачи с ассимптотикой по времени O(n) (например используя метод двух указателей)  - done
+
 
 # Лекция 13 питон
 
