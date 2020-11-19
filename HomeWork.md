@@ -150,6 +150,6 @@ https://leetcode.com/problems/trapping-rain-water/
 
 # Лекция 14 питон
 * домашнее задание - туда же загрузить
-* будет ссылка
+* https://github.com/pileyan/DPO_2020_autumn/tree/master/HW78
 
 
