@@ -123,6 +123,30 @@ https://leetcode.com/problems/trapping-rain-water/
 # Лекция 2 алгоритмы
 
 * спросить пример про то как накодить кто-то пытался AirBnB ?
+* Домашнее задание:
+    1) Дорешать https://informatics.mccme.ru/mod/statements/view.php?id=259#1
+
+    2) Попрактиковаться в 3 способах хранения графа: https://informatics.mccme.ru/mod/statements/view.php?id=359#1 (Да, там много задач и страшно, но я в вас верю, и не обязательно решить все, достаточно почувствовать себя уверенно с ними)
+
+    3) Задачи на DFS:
+
+    https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=164#1
+
+    https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=111540#1
+
+    https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=111541#1
+
+    https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=165#1
+
+    4) Задачи на BFS:
+
+    https://informatics.mccme.ru/mod/statements/view.php?id=255#1
+
+    https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=161#1
+
+    https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=162#1
+
+    https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=1472#1
 
 # Лекция 14 питон
 * домашнее задание - туда же загрузить
