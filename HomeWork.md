@@ -154,4 +154,6 @@ https://leetcode.com/problems/trapping-rain-water/
 * загрузить токен сюда https://dashboard.heroku.com/apps/osm-telegram-bot/deploy/heroku-git
 * 
 
+# Лекция 15 питон
+* hackerank про данные по pandas
 
