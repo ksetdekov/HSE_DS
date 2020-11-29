@@ -149,10 +149,9 @@ https://leetcode.com/problems/trapping-rain-water/
     https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=1472#1
 
 # Лекция 14 питон
-* домашнее задание - туда же загрузить
-* https://github.com/pileyan/DPO_2020_autumn/tree/master/HW78 - done домашку 7 - частично сделал 8
-* загрузить токен сюда https://dashboard.heroku.com/apps/osm-telegram-bot/deploy/heroku-git
-* 
+* домашнее задание - туда же загрузить - done
+* https://github.com/pileyan/DPO_2020_autumn/tree/master/HW78 - done 7 and 8
+* загрузить токен сюда https://dashboard.heroku.com/apps/osm-telegram-bot/deploy/heroku-git - done
 
 # Лекция 15 питон
 * hackerank про данные по pandas
