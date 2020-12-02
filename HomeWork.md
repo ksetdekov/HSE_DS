@@ -156,3 +156,6 @@ https://leetcode.com/problems/trapping-rain-water/
 # Лекция 15 питон
 * hackerank про данные по pandas
 
+# Лекция 16 питон
+* jupyter extension
+* https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html
