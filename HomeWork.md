@@ -159,3 +159,8 @@ https://leetcode.com/problems/trapping-rain-water/
 # Лекция 16 питон
 * jupyter extension
 * https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html
+
+# Лекция 4 алгоритмы
+* поискать dfs + stack можно сделать
+* задачи из 
+
