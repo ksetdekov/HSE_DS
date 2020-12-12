@@ -163,4 +163,18 @@ https://leetcode.com/problems/trapping-rain-water/
 # Лекция 4 алгоритмы
 * поискать dfs + stack можно сделать
 * задачи из 
+* Сорян, я не успеваю сделать ноутбук с решениями, first thing tomorrow morning, а пока дз
+1) https://informatics.mccme.ru/mod/statements/view.php?id=654&chapterid=912#1
+2) https://informatics.mccme.ru/mod/statements/view.php?id=654&chapterid=2963#1
+3) https://informatics.mccme.ru/mod/statements/view.php?id=657#1
+4) https://informatics.mccme.ru/mod/statements/view.php?id=657&chapterid=212#1
+5) https://informatics.mccme.ru/mod/statements/view.php?id=766&chapterid=205#1
+
+6) https://leetcode.com/problems/longest-palindromic-substring/
+7) https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+8) https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
+
+
+# Лекция 5 алгоритмы
+https://www.dissercat.com/content/o-skorosti-skhodimosti-statistik-kriteriev-soglasiya-so-stepennymi-merami-raskhozhdeniya-k-k
 
