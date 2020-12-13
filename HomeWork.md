@@ -178,6 +178,6 @@ https://leetcode.com/problems/trapping-rain-water/
 # Лекция 5 алгоритмы
 https://www.dissercat.com/content/o-skorosti-skhodimosti-statistik-kriteriev-soglasiya-so-stepennymi-merami-raskhozhdeniya-k-k
 
-https://informatics.mccme.ru/mod/statements/view.php?id=766&chapterid=1790#1
+https://informatics.mccme.ru/mod/statements/view.php?id=766&chapterid=1790#1 - частичное
 
 
