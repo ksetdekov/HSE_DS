@@ -170,7 +170,7 @@ https://leetcode.com/problems/trapping-rain-water/
 4) https://informatics.mccme.ru/mod/statements/view.php?id=657&chapterid=212#1
 5) https://informatics.mccme.ru/mod/statements/view.php?id=766&chapterid=205#1
 
-6) https://leetcode.com/problems/longest-palindromic-substring/
+6) https://leetcode.com/problems/longest-palindromic-substring/ - some
 7) https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 8) https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/
 
