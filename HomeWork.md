@@ -180,4 +180,10 @@ https://www.dissercat.com/content/o-skorosti-skhodimosti-statistik-kriteriev-sog
 
 https://informatics.mccme.ru/mod/statements/view.php?id=766&chapterid=1790#1 - частичное
 
+# Лекция 18 питон
+* посмотреть про катбуст 
+* посмотреть лекции Анна Вероника Дорогуш
+* попросить у Анастасии материал seminar_1_pererocessing про study_mokoron
+* попросить лекции дополнительные
+* sklearn can set custom https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html
 
