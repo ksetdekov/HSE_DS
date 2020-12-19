@@ -187,3 +187,5 @@ https://informatics.mccme.ru/mod/statements/view.php?id=766&chapterid=1790#1 - �
 * попросить лекции дополнительные
 * sklearn can set custom https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html
 
+# Лекция 6 алгоритмы
+https://leetcode.com/problems/reverse-linked-list/
