@@ -1,8 +1,8 @@
 class Node:
-    def __init__(self, val, left=None, righ=None):
-        self.val = val
+    def __init__(self, value, left=None, right=None):
+        self.val = value
         self.left = left
-        self.right = righ
+        self.right = right
 
 
 class BST:
@@ -10,8 +10,8 @@ class BST:
         self.root = None
         self.depth = 0
 
-    def add(self, val):
-        add_node = Node(val)
+    def add(self, value):
+        add_node = Node(value)
 
         if not self.root:
             self.root = add_node
@@ -19,7 +19,7 @@ class BST:
             return
 
         node = self.root
-        curr_depth = 0
+        curr_depth = 1
 
         while node:
             curr_depth += 1
@@ -38,9 +38,10 @@ class BST:
                 else:
                     node = node.left
 
-    tree = BST()
-    vals = list(map(int, input().split()))[:-1]
-    for val in vals:
-        tree.add(val)
 
-    print(tree.depth)
+tree = BST()
+values = list(map(int, input().split()))[:-1]
+for val in values:
+    tree.add(val)
+
+print(tree.depth)
