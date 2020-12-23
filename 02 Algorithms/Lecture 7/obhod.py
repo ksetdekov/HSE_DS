@@ -1,3 +1,5 @@
+# iterate over a tree increasing
+
 class Node:
     def __init__(self, value, left=None, right=None):
         self.val = value
@@ -46,4 +48,14 @@ values = list(map(int, input().split()))[:-1]
 for val in values:
     tree.add(val)
 
-print(tree.depth)
+# print(tree.depth)
+
+def rec_tree_trav(v):
+    """рекурсивная функция. взять ноду, запуститься от левого дерева, принтнуть, запуститься от правого"""
+    if v.left is not None:
+        rec_tree_trav(v.left)
+    print(v.val)
+    if v.right is not None:
+        rec_tree_trav(v.right)
+
+rec_tree_trav(tree.root)
