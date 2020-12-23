@@ -52,10 +52,11 @@ for val in values:
 
 def rec_tree_trav(v):
     """рекурсивная функция. взять ноду, запуститься от левого дерева, принтнуть, запуститься от правого"""
-    if v.left is not None:
-        rec_tree_trav(v.left)
+    if not v:
+        return
+
+    rec_tree_trav(v.left)
     print(v.val)
-    if v.right is not None:
-        rec_tree_trav(v.right)
+    rec_tree_trav(v.right)
 
 rec_tree_trav(tree.root)
