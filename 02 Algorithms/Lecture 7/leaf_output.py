@@ -1,3 +1,5 @@
+# https://informatics.mccme.ru/mod/statements/view.php?id=599&chapterid=761#1
+
 # iterate over a tree increasing
 
 class Node:
@@ -51,13 +53,14 @@ for val in values:
 
 # print(tree.depth)
 
-def rec_tree_trav(v):
-    """рекурсивная функция. взять ноду, запуститься от левого дерева, принтнуть, запуститься от правого"""
+def leaf_only(v):
+    """выводим только листья"""
     if not v:
         return
 
-    rec_tree_trav(v.left)
-    print(v.val)
-    rec_tree_trav(v.right)
+    leaf_only(v.left)
+    if (v.left is None) & (v.right is None):
+        print(v.val)
+    leaf_only(v.right)
 
-rec_tree_trav(tree.root)
+leaf_only(tree.root)
