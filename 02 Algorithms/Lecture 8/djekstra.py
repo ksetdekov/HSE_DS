@@ -3,34 +3,35 @@ from heapq import heappop, heappush
 
 def dijkstra(start):
     heap = []
-    dist = [float('inf') for _ in range(n)]
+    distances = [float('inf') for _ in range(n)]
     used = [False for _ in range(n)]
 
     heappush(heap, (0, start))
-    dist[start] = 0
+    distances[start] = 0
 
     while len(heap) > 0:
         d, v = heappop(heap)
-        if dist[v] < d or used[v]:
+        if distances[v] < d or used[v]:
             continue
 
         used[v] = True
 
-        for u, c in graph[v]:
-            if d + c < dist[u]:
-                dist[u] = d + c
-                heappush(heap, (dist[u], u))
+        for u in range(n):
+            c = graph[v][u]
+            if c > 0:
+                if d + c < distances[u]:
+                    distances[u] = d + c
+                    heappush(heap, (distances[u], u))
 
-    return dist
+    return distances
 
 
 if __name__ == "__main__":
-    n, m = map(int, input().split())
-    graph = [[] for j in range(n)]
+    n, s, f = map(int, input().split())
+    graph = [list(map(int, input().split())) for i in range(n)]
 
-    for i in range(m):
-        v, u, c = map(int, input().split())
-        graph[v].append((u, c))
-        graph[u].append((v, c))
-
-    print(dijkstra(0))
+    dist = dijkstra(s - 1)[f - 1]
+    if dist == float("inf"):
+        print(-1)
+    else:
+        print(dist)
