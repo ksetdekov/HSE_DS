@@ -5,7 +5,7 @@ def calc(n):
     if n <= 1:
         return ""
     steps = [0 for _ in range(n)]
-    action = [(-1, -1) for _ in range(n)]
+    action = [-1 for _ in range(n)]
     steps[0] = 0
     for i in range(1, n):
         value = i + 1
@@ -18,21 +18,21 @@ def calc(n):
         options = [c, b, a]
         steps[i] = min(options)
         this_action = options.index(min(options)) + 1
-        if this_action == 1:
-            prev = i - 1
-        elif this_action == 2:
-            prev = (i + 1) // 2 - 1
-        else:
-            prev = (i + 1) // 3 - 1
-        action[i] = (this_action, prev)
-    # print(action)
-    # print(steps)
+
+        action[i] = this_action
+
     path = []
     crawl = action[-1]  # destination
-    while crawl[1] != -1:
-        # print(crawl[1])
-        path.append(crawl[0])
-        crawl = action[crawl[1]]
+    i = n - 1
+    while crawl != -1:
+        path.append(crawl)
+        if crawl == 1:
+            i = i - 1
+        elif crawl == 2:
+            i = (i + 1) // 2 - 1
+        else:
+            i = (i + 1) // 3 - 1
+        crawl = action[i]
 
     result = list(reversed(path))
 
@@ -40,8 +40,3 @@ def calc(n):
 
 
 print(calc(N))
-
-for k in range(100):
-    # r = randrange(1000000)
-    r = k
-    print(r, 'result', calc(r))
