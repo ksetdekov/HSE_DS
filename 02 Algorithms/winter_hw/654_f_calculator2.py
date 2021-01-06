@@ -1,3 +1,5 @@
+from random import randrange
+
 N = int(input())
 
 
@@ -40,3 +42,7 @@ def calc(n):
 
 
 print(calc(N))
+
+for _ in range(1000000):
+    r = randrange(1000000)
+    print(r, 'result', calc(r))
