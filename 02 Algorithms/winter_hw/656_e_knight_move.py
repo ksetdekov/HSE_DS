@@ -1,19 +1,22 @@
 N, M = map(int, input().split())
 
-matrix = [list(map(int, input().split())) for _ in range(N)]
+
+def knight_moves(rows, columns):
+    row = [0 for _ in range(columns + 2)]
+    prev_row = [0 for _ in range(columns + 2)]
+    prev_prev_row = [0 for _ in range(columns + 2)]
+    #     print(row)
+    prev_prev_row[1] = 1
+
+    for k in range(rows):
+        for i in range(columns):
+            row[i + 2] = prev_row[i] + prev_prev_row[i + 1]
+        # print(row)
+        prev_prev_row = prev_row.copy()
+
+        prev_row = row.copy()
+
+    return row[-1]
 
 
-def cheapest(n, m, grid):
-    costs = [[0 for _ in range(m + 1)] for _ in range(n + 1)]
-    for r in range(n):
-        for c in range(m):
-            if c == 0:
-                costs[r + 1][c + 1] = costs[r][c + 1] + grid[r][c]
-            elif r == 0:
-                costs[r + 1][c + 1] = costs[r + 1][c] + grid[r][c]
-            else:
-                costs[r + 1][c + 1] = min(costs[r][c + 1], costs[r + 1][c]) + grid[r][c]
-    return costs[-1][-1]
-
-
-print(cheapest(N, M, matrix))
+print(knight_moves(N, M))
