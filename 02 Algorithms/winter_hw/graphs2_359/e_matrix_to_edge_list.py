@@ -1,7 +1,7 @@
 V = int(input())
 
 
-def e_count(mat):
+def m_to_edge(mat):
     for i in range(len(mat)):
         for j in range(i, len(mat)):
             if mat[i][j] == 1:
@@ -11,4 +11,4 @@ def e_count(mat):
 
 matrix = [list(map(int, input().split())) for _ in range(V)]
 
-e_count(matrix)
+m_to_edge(matrix)
