@@ -18,18 +18,18 @@ class Edge:
 # Weighted undirected Graph
 class Graph:
 
-    def __init__(self, V: int) -> None:
+    def __init__(self, vert: int) -> None:
 
-        self.V = V
-        self.adj = [[] for _ in range(V)]
+        self.V = vert
+        self.adj = [[] for _ in range(vert)]
 
         # Used to store all edge information
         self.edge = []
 
     # Function add edge to graph
-    def addEdge(self, u: int,
-                v: int,
-                w: int) -> None:
+    def add_edge(self, u: int,
+                 v: int,
+                 w: int) -> None:
 
         self.adj[u].append((v, w))
         self.adj[v].append((u, w))
@@ -39,8 +39,8 @@ class Graph:
         self.edge.append(e)
 
     # Function remove edge from undirected graph
-    def removeEdge(self, u: int,
-                   v: int, w: int) -> None:
+    def remove_edge(self, u: int,
+                    v: int, w: int) -> None:
 
         self.adj[u].remove((v, w))
         self.adj[v].remove((u, w))
@@ -49,7 +49,7 @@ class Graph:
     # to sink using Dijkstra’s shortest
     # path algorithm [ Time complexity
     # O(E logV )]
-    def ShortestPath(self, u: int, v: int) -> int:
+    def shortest_path(self, u: int, v: int) -> int:
 
         # Create a set to store vertices that
         # are being preprocessed
@@ -66,7 +66,7 @@ class Graph:
 
         # Looping till all shortest distance are
         # finalized then setds will become empty
-        while (setds):
+        while setds:
 
             # The first vertex in Set is the minimum
             # distance vertex, extract it from set.
@@ -88,7 +88,7 @@ class Graph:
                 weight = i[1]
 
                 # If there is shorter path to v through u.
-                if (dist[vv] > dist[uu] + weight):
+                if dist[vv] > dist[uu] + weight:
 
                     # If the distance of v is not INF then
                     # it must be in our set, so removing it
@@ -97,8 +97,8 @@ class Graph:
                     # vertices from Set for which distance
                     # is finalized. So for them, we would
                     # never reach here.
-                    if (dist[vv] != INF):
-                        if ((dist[vv], vv) in setds):
+                    if dist[vv] != INF:
+                        if (dist[vv], vv) in setds:
                             setds.remove((dist[vv], vv))
 
                     # Updating distance of v
@@ -110,12 +110,12 @@ class Graph:
         return dist[v]
 
     # Function return minimum weighted cycle
-    def FindMinimumCycle(self) -> int:
+    def find_minimum_cycle(self) -> int:
 
         min_cycle = maxsize
-        E = len(self.edge)
+        e = len(self.edge)
 
-        for i in range(E):
+        for i in range(e):
             # Current Edge information
             e = self.edge[i]
 
@@ -123,10 +123,10 @@ class Graph:
             # remove from graph and then find shortest path
             # between these two vertex using Dijkstra’s
             # shortest path algorithm .
-            self.removeEdge(e.u, e.v, e.weight)
+            self.remove_edge(e.u, e.v, e.weight)
 
             # Minimum distance between these two vertices
-            distance = self.ShortestPath(e.u, e.v)
+            distance = self.shortest_path(e.u, e.v)
 
             # To make a cycle we have to add weight of
             # currently removed edge if this is the
@@ -135,7 +135,7 @@ class Graph:
                             distance + e.weight)
 
             # Add current edge back to the graph
-            self.addEdge(e.u, e.v, e.weight)
+            self.add_edge(e.u, e.v, e.weight)
 
         # Return shortest cycle
         return min_cycle
@@ -148,21 +148,21 @@ if __name__ == "__main__":
     g = Graph(V)
 
     # Making above shown graph
-    g.addEdge(0, 1, 4)
-    g.addEdge(0, 7, 8)
-    g.addEdge(1, 2, 8)
-    g.addEdge(1, 7, 11)
-    g.addEdge(2, 3, 7)
-    g.addEdge(2, 8, 2)
-    g.addEdge(2, 5, 4)
-    g.addEdge(3, 4, 9)
-    g.addEdge(3, 5, 14)
-    g.addEdge(4, 5, 10)
-    g.addEdge(5, 6, 2)
-    g.addEdge(6, 7, 1)
-    g.addEdge(6, 8, 6)
-    g.addEdge(7, 8, 7)
+    g.add_edge(0, 1, 4)
+    g.add_edge(0, 7, 8)
+    g.add_edge(1, 2, 8)
+    g.add_edge(1, 7, 11)
+    g.add_edge(2, 3, 7)
+    g.add_edge(2, 8, 2)
+    g.add_edge(2, 5, 4)
+    g.add_edge(3, 4, 9)
+    g.add_edge(3, 5, 14)
+    g.add_edge(4, 5, 10)
+    g.add_edge(5, 6, 2)
+    g.add_edge(6, 7, 1)
+    g.add_edge(6, 8, 6)
+    g.add_edge(7, 8, 7)
 
-    print(g.FindMinimumCycle())
+    print(g.find_minimum_cycle())
 
 # This code is contributed by sanjeev2552
