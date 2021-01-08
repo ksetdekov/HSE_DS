@@ -11,6 +11,7 @@ def fib_last(n):
 
     else:
         prev, prev_prev = (1, 1)
+        current = 1
         for _ in range(2, n):
             current = (prev + prev_prev) % 10
             prev_prev = prev
