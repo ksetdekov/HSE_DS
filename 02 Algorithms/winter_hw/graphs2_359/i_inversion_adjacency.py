@@ -4,18 +4,14 @@ adjacency_list = []
 for _ in range(V):
     adjacency_list.append(list(map(int, input().split())))
 # print(adjacency_list)
-for vertexes in range(V):
-    j = vertexes
-    for elem in adjacency_list[vertexes]:
-        i = elem - 1
-        matrix[i][j] = 1
+inverted_adj_list = [[] for _ in range(V)]
+for current in range(V):
+    j = current
+    for elem in adjacency_list[current]:
+        inverted_adj_list[elem - 1].append(j + 1)
 
 # for r in matrix:
 #     print(*r)
 print(V)
-for r in matrix:
-    neighbours = []
-    for c in range(V):
-        if r[c] == 1:
-            neighbours.append(c + 1)
-    print(*neighbours)
+for row in inverted_adj_list:
+    print(*row)
