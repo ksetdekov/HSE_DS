@@ -9,7 +9,7 @@ def is_answer(size, width, height, count):
 
 
 def left_binsearch_ans(w, h, n):
-    l, r = 0, topans - 1
+    l, r = 0, topans
     while r > l + 1:
         m = (r + l) // 2
         if is_answer(m, w, h, n):
