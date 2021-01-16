@@ -1,10 +1,12 @@
 N, X, Y = map(int, input().split())
-topans = min(X, Y) * N
+topans = max(X, Y) * N
+
 
 def is_answer(this_count, count, left, right):
-    a = this_count // left
-    b = this_count // right
-    number_of = a + b
+    tmp = this_count - min(left, right)
+    a = tmp // left
+    b = tmp // right
+    number_of = a + b + 1
     return number_of >= count
 
 
@@ -18,5 +20,6 @@ def left_binsearch_ans(n, x, y):
             l = m
 
     return r
+
 
 print(left_binsearch_ans(N, X, Y))
