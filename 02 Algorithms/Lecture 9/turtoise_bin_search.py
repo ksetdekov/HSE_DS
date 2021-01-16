@@ -9,6 +9,7 @@ for i in range(n):
     s = list(map(int, s.split(":")))
     t = s[0] * 60 + s[1]
     ans += (d - curr_pos) / v
+    curr_pos = d
     if t < ans:
         ans = t
     ans += d
