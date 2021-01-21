@@ -1,0 +1,160 @@
+\documentclass{beamer}
+\usefonttheme[onlymath]{serif}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{stmaryrd,mathrsfs}
+\usepackage{proof}
+\usepackage{wrapfig}
+
+\usepackage{nicefrac}
+
+%%%%%%%%%%%%Стиль%%%%%%%%%%%%%%%%%%%
+
+\usetheme{metropolis}
+\metroset{
+  %progressbar=none,
+  numbering=none,
+  subsectionpage=progressbar,
+  block=fill
+}
+
+\usepackage[absolute,overlay]{textpos}
+
+\setbeamercolor{title separator}{bg=, fg=dirblue}
+
+\setbeamercolor{block title}{bg=dirblue!30,fg=black}
+
+\setbeamercolor{background canvas}{bg=}
+
+% frame title setup
+\setbeamercolor{frametitle}{bg=dirblue!100}
+\setbeamertemplate{frametitle}[default][left]
+\setbeamerfont{frametitle}{series=\bfseries, size=\Large}
+
+%\addtobeamertemplate{frametitle}{\hspace*{-0.5 cm}}{\vspace*{1cm}}
+
+\newcommand{\emb}{
+\begin{textblock*}{1cm}(340 pt,2 pt)
+\includegraphics[scale=0.038]{img/HSE_white - 600x600.png}
+\end{textblock*}}
+
+\addtobeamertemplate{frametitle}{\emb}
+
+\newcommand{\titleemb}{
+\begin{textblock*}{1cm}(254 pt,153 pt)
+%\includegraphics[scale=0.25]{img/HSE_dirblue - 600x600.png}
+\includegraphics[scale=0.125]{img/HSE_dirblue - 1200x1200.png}
+\end{textblock*}}
+
+
+\usepackage{setspace}
+
+\setstretch{0.95}
+
+\renewcommand{\titlepage}{
+
+\begin{textblock*}{300 pt}(30 pt,100 pt)
+\setstretch{1.5}
+\textcolor{dirblue}{\bf \huge\inserttitle}
+\titleemb
+\setstretch{0.95}
+\end{textblock*}
+
+%\begin{textblock*}{270 pt}(0 pt,259 pt)
+%\textcolor{fknyellow}{\rule{240 pt}{16 pt}}
+\begin{textblock*}{270 pt}(0 pt,259 pt)
+\textcolor{fknyellow}{\rule{180 pt}{16 pt}}
+\end{textblock*}
+
+\begin{textblock*}{250 pt}(7 pt,262 pt)
+\textcolor{white}{\bf Факультет компьютерных наук}
+\end{textblock*}
+
+\begin{textblock*}{190 pt}(30 pt,245 pt)
+\insertdate
+\end{textblock*}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Стиль%%%%%%%%%%%%%
+
+
+
+\newcommand{\w}{\omega}
+\newcommand{\sr}{\stackrel}
+\newcommand{\ov}{\overline}
+\newcommand{\ga}{\gamma}
+\newcommand{\al}{\alpha}
+\newcommand{\be}{\beta}
+\newcommand{\de}{\delta}
+\newcommand{\si}{\sigma}
+\newcommand{\la}{\lambda}
+
+\DeclareMathOperator{\wt}{wt}
+\DeclareMathOperator{\MWT}{MWT}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+%\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+
+
+\newcounter{s}
+
+\newtheorem{thm}{Теорема}
+
+\newcounter{t}
+\newcommand{\thr}{\bf Теорема \arabic{s}.\refstepcounter{t}\arabic{t}. \rm \sffamily}
+\newcounter{ex}
+\newcommand{\exmpl}{\spc \refstepcounter{ex}{\bf Пример \arabic{s}.\arabic{ex}.} }
+
+\newcounter{z}
+
+\newcommand{\zs}{ \refstepcounter{z} \vspace{10pt}{\hfill \fbox{\textbf{\arabic{s}.\arabic{z}}} \hfill \quad}\vspace{5pt} \\ }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{\arabic{s}.\arabic{z}}} }
+
+\newcommand{\zh}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{\arabic{s}.\arabic{z}*}} }
+
+\newcommand{\dz}{\refstepcounter{z}\vskip 5pt\par\noindent
+\fbox{\textbf{D.\arabic{z}}} }
+
+\newcounter{p}[z]
+\newcommand{\p}{ \refstepcounter{p}{ \textbf{\asbuk{p}})}\ }
+
+\newcommand{\defn}{{\bf Определение. }}
+
+
+\newcommand{\spc}{\vskip 2pt}
+\newcommand{\sspc}{\vskip 2pt}
+
+\definecolor{cb}{RGB}{100, 100, 250}
+\definecolor{cw}{RGB}{254, 218, 186}
+
+\definecolor{dirblue}{RGB}{0, 90, 171}
+\definecolor{fknyellow}{RGB}{240, 192, 70}
+
+\newcommand{\acc}[1]{\textcolor{dirblue}{\bf #1}}
+
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+
