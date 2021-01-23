@@ -189,3 +189,7 @@ https://informatics.mccme.ru/mod/statements/view.php?id=766&chapterid=1790#1 - �
 
 # Лекция 6 алгоритмы
 https://leetcode.com/problems/reverse-linked-list/
+
+# Лекция 10 алгоритмы
+записать сортировку кучей
+попробовать интвервью на литкод
