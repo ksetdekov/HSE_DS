@@ -4,7 +4,7 @@
 # Домашки
 ## Лекция 2
 * https://pythontutor.ru/ - зарегистрироваться - Готово
-* https://pythontutor.ru/lessons/str/ - сделать 
+* https://pythontutor.ru/lessons/str/ - сделать
 * refresher сделать - cделал
 
 ## Лекции 3
@@ -24,9 +24,9 @@
 
 ## Лекция 5
 * https://official.contest.yandex.ru/contest/20759/enter?success=0Ta2GfDF
-к следующей среде
+  к следующей среде
     * про рекурсию - была ошибка
-    
+
 # Лекция 6
 прочитать https://tproger.ru/translations/demystifying-decorators-in-python/
 
@@ -43,8 +43,8 @@
     * если что - писать в чат
 * openpyxl дочитать - готово
 *   сделать рисование графиков –– создать файл с гистограммой для star_rating - done
-ставить через conda
-проверить в chrome = дома скачать дрова для chrome - блочат драйверы в крыму
+    ставить через conda
+    проверить в chrome = дома скачать дрова для chrome - блочат драйверы в крыму
 
 # Лекция 10
 * почитать статьи по ссылкам
@@ -53,7 +53,7 @@
 * codeforces
 * kaggle - like platform - zindi
 * яндекс - всегда надо знать алгоритмы
-driver = wb.Chrome('../chromedriver_win32/chromedriver.exe')
+  driver = wb.Chrome('../chromedriver_win32/chromedriver.exe')
 * собрать информацию в магазине/чем-то через веб драйвер - done
 * почитать https://habr.com/ru/post/349860/
 
@@ -82,7 +82,7 @@ https://leetcode.com/
 * из лекции 10_6 придумать что-то сделать
 * pyspark
 * https://pythonworld.ru/osnovy/dekoratory.html
-вопросы:
+  вопросы:
     * можно ли сделать init так, чтобы можно было как с функциями - пропускать входящие переменные и иметь дефолтные?
 
 # Лекция 12
@@ -103,7 +103,7 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 https://leetcode.com/problems/merge-sorted-array/
 
-##### Посложнее: 
+##### Посложнее:
 
 https://leetcode.com/problems/long-pressed-name/
 https://leetcode.com/problems/trapping-rain-water/
@@ -115,8 +115,8 @@ https://leetcode.com/problems/trapping-rain-water/
 
 * https://habr.com/ru/company/ods/blog/322626/
 * попросить у анастасии - для работы с категориальными переменными советов и для из кодировки - done
-* Задание 1. Реализуйте функцию, возвращающую максимальный элемент в векторе x среди элементов, перед которыми стоит нулевой. 
-Для x = np.array([6, 2, 0, 3, 0, 0, 5, 7, 0]) ответом является 5. Если нулевых элементов нет, функция должна возвращать None. - done
+* Задание 1. Реализуйте функцию, возвращающую максимальный элемент в векторе x среди элементов, перед которыми стоит нулевой.
+  Для x = np.array([6, 2, 0, 3, 0, 0, 5, 7, 0]) ответом является 5. Если нулевых элементов нет, функция должна возвращать None. - done
 1) https://github.com/pileyan/DPO_2020_autumn/blob/master/lect13/6_Homework.ipynb - done
 2) сдавать сюда (создать папку со своим именем и фамилией): https://drive.google.com/drive/folders/1e2EbyzpxnyYwpdVgEUV8VH83uxQvYs1o?usp=sharing
 
@@ -130,23 +130,23 @@ https://leetcode.com/problems/trapping-rain-water/
 
     3) Задачи на DFS:
 
-    https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=164#1
+  https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=164#1
 
-    https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=111540#1
+  https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=111540#1
 
-    https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=111541#1
+  https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=111541#1
 
-    https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=165#1
+  https://informatics.mccme.ru/mod/statements/view.php?id=256&chapterid=165#1
 
     4) Задачи на BFS:
 
-    https://informatics.mccme.ru/mod/statements/view.php?id=255#1
+  https://informatics.mccme.ru/mod/statements/view.php?id=255#1
 
-    https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=161#1
+  https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=161#1
 
-    https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=162#1
+  https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=162#1
 
-    https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=1472#1
+  https://informatics.mccme.ru/mod/statements/view.php?id=255&chapterid=1472#1
 
 # Лекция 14 питон
 * домашнее задание - туда же загрузить - done
@@ -162,7 +162,7 @@ https://leetcode.com/problems/trapping-rain-water/
 
 # Лекция 4 алгоритмы
 * поискать dfs + stack можно сделать
-* задачи из 
+* задачи из
 * Сорян, я не успеваю сделать ноутбук с решениями, first thing tomorrow morning, а пока дз
 1) https://informatics.mccme.ru/mod/statements/view.php?id=654&chapterid=912#1
 2) https://informatics.mccme.ru/mod/statements/view.php?id=654&chapterid=2963#1
@@ -181,7 +181,7 @@ https://www.dissercat.com/content/o-skorosti-skhodimosti-statistik-kriteriev-sog
 https://informatics.mccme.ru/mod/statements/view.php?id=766&chapterid=1790#1 - частичное
 
 # Лекция 18 питон
-* посмотреть про катбуст 
+* посмотреть про катбуст
 * посмотреть лекции Анна Вероника Дорогуш
 * попросить у Анастасии материал seminar_1_pererocessing про study_mokoron
 * попросить лекции дополнительные
@@ -195,5 +195,8 @@ https://leetcode.com/problems/reverse-linked-list/
 попробовать интвервью на литкод
 
 # Математика
+
+https://drive.google.com/drive/folders/1nOknKs7fyCRoXHU6Y28ZnlnGUgf437eD
+
 ## Лекция 2
 лекцию 2, стр 44 - 65 (комбинаторика), и лекцию 10 стр 264 - 275 (вероятность)
