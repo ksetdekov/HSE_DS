@@ -3,6 +3,16 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/01 python/lecture 11 materials/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/01 python/lecture 13 materials pandas/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/01 python/lecture 14 materials pandas/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/02 Algorithms/Foxford_lectures/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/02 Algorithms/Lecture 1/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/02 Algorithms/Lecture 8/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/02 Algorithms/Lecture 9/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/02 Algorithms/Lecture 10/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/02 Algorithms/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/.ipynb_checkpoints" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
