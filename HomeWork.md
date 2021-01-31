@@ -202,3 +202,6 @@ https://drive.google.com/drive/folders/1nOknKs7fyCRoXHU6Y28ZnlnGUgf437eD
 https://publications.hse.ru/mirror/pubs/share/direct/393719078.pdf
 ## Лекция 2
 лекцию 2, стр 44 - 65 (комбинаторика), и лекцию 10 стр 264 - 275 (вероятность)
+
+## Лекция 3
+Материал лекции соответствует страницам 95-124 основной книги.
