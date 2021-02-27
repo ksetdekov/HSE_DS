@@ -1,0 +1,242 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[cm,empty]{fullpage}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{proof}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
+
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+\newtheorem*{rem}{Замечание}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\newcounter{z}
+
+
+\newcommand{\zs}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{12.\arabic{z}}} }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
+\fbox{\textbf{\arabic{z}}} }
+
+\renewcommand{\date}{{\bf 27 февраля 2021}} %Дата занятия
+
+\newcommand{\dif}
+{
+------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+\newcommand{\HSEhat}{
+\vspace*{-0pt}
+\noindent
+\setcounter{z}{0}
+
+
+{\bf \phantom{\date}  \large \hfill Математический анализ: \hfill \normalsize \date}
+
+\vspace{5 pt}
+{\bf \large \hfill  лекция 2\hfill }
+
+\vspace{15 pt}
+\centerline{ \large  Домашнее задание.}
+\centerline{ \large  Кирилл Сетдеков}
+
+
+
+\vspace*{10pt}
+\setcounter{z}{0}
+
+}
+
+\begin{document}
+\HSEhat
+
+
+\subsection*{Задачи}
+
+\begin{enumerate}
+
+\item Посчитайте неопределенные интегралы
+\begin{enumerate}
+\item 
+$
+\int sin^3 (x) dx
+$
+
+\textbf{Решение:}\\
+
+$
+\int {sin^3 (x) }dx = -\frac{1}{3} sin^2(x) cos(x) + \frac{2}{3} \int sin(x) dx = - \frac{2 cos (x)}{3} - \frac{1}{3} sin^2(x) cos(x) + C
+$
+
+\textbf{Ответ: $- \frac{2 \cos (x)}{3} - \frac{1}{3} \sin^2(x) \cos(x) + C$}
+
+
+\item
+$
+\int{(\frac{1-x}{x})^2 dx}
+$
+
+\textbf{Решение:}\\
+Проведем замену $u = 1-x$ и $du=-dx$
+
+$
+\int{(\frac{1-x}{x})^2 dx}=-\int{\frac{u^2}{(u-1)^2}du} = -\int{(\frac{2}{u-1}+\frac{1}{(u-1)^2}+1)du} = -2\int{\frac{1}{u-1}du} - \int{\frac{1}{(u-1)^2}du} -u +C
+$
+
+Проводим еще одну замену $s= u-1$ и $ds=du$
+
+$ -2\int{\frac{1}{s}ds} - \int{\frac{1}{(s)^2}ds} -u +C
+= -2\log s + \frac{1}{s} - u +C
+$
+
+Вернемся обратно к u и поток к x
+$$=-2\log(u-1) + \frac{1}{u-1} -u + C = -2\log(-x) - \frac{1}{x} +x-1+ C=-2\log(-x) - \frac{1}{x} +x+ C$$
+
+\textbf{Ответ: $-2\log(-x) - \frac{1}{x} +x+ C$}
+
+\item 
+$
+\int\frac{\log^2 x}{x} dx
+$
+
+\textbf{Решение:}\\
+Проведем замену $u = \log(x); du = \frac{1}{x}dx$
+
+
+$$\int\frac{\log^2 x}{x} dx
+= \int u^2 du = \frac{1}{3} u^3 + C = \frac{1}{3} \log^3 x + C $$
+
+\textbf{Ответ: $\frac{1}{3} \log^3 x + C$}
+
+\item 
+$
+\int\frac{1}{1+\cos x} dx
+$
+
+\textbf{Решение:}\\
+Используя формулу для двойного угла, выразим: $\cos x = 2 \cos^2 (x/2) - 1$
+
+
+$$\int\frac{1}{1+\cos x} dx = \int\frac{1}{2\cos^2 (x/2)} dx=\frac{1}{2} \int\sec^2 (x/2) dx = 2*\frac{1}{2} \tg(x/2) + C =  \tg(x/2) + C$$
+
+\textbf{Ответ: $\tg(x/2) + C$}
+\end{enumerate}
+
+\item Посчитайте определенные интегралы
+\begin{enumerate}
+\item 
+$
+\int^2_1 x \ln x dx
+$
+
+\textbf{Решение:}\\
+Интегрируем по частям:
+$\int f dg = fg - \int gdf$ где, $f = \ln x, dg = xdx, df = 1/x dx, g = x^2 / 2$
+
+$$
+\int^2_1 x \ln x dx = 1/2*x^2 \ln x - 1/2 \int^2_1  x dx = \frac{1}{2} x^2 \ln x - \frac{x^2}{4}\Biggr|_{1}^{2} = 2\ln2 - 1 + 1/4 = 2\ln2 -3/4
+$$
+
+\textbf{Ответ: $2\ln2 -3/4$}
+
+\item 
+$
+\int^{2\pi}_0 x \sin x dx
+$
+
+\textbf{Решение:}\\
+Интегрируем по частям:
+$\int f dg = fg - \int gdf$ где, $f =  x, dg = \sin x dx, df = dx, g = -\cos x$
+
+$$
+\int^{2\pi}_0 x \sin x dx
+ = -x \cos x + \int^{2\pi}_0  \cos x dx = \sin{x} -x \cos{x}\Biggr|_{0}^{2\pi} =
+$$
+$$= sin(2\pi) - 2\pi cos(2\pi) - (sin(0) - 0 cos(0) ) = -2\pi$$
+
+\textbf{Ответ: $-2\pi$}
+
+
+\end{enumerate}
+
+\item Найти предел $\lim_{x \to 0 }\frac{\int_{x}^{1} \frac{e^t}{t} dt}{\ln x}$
+
+\textbf{Решение:}\\
+Моё понимание, что интеграл в числителе будет равен разности двух интегральных показательных функций
+
+$$
+\lim_{x \to 0 }\frac{Ei(1) - Ei(x)}{\ln x}=
+$$
+
+Возьмем производную от верхней и нижней части 
+$$= \lim_{x \to 0 }\frac{-e^x / x}{1/x} =\lim_{x \to 0 }-e^x = -1 $$
+
+\textbf{Ответ: $-1$}
+
+\item Найти площадь фигуры внутри кривой $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$
+
+\textbf{Решение:}\\
+Фигура симметрична относительно оси OX и OY. Поэтому оценим только верхнюю правую четверть площади. Выразим из формулы y и возьмем интеграл от 0 до a.
+
+$$\int^{a}_0 b \sqrt{1-\frac{x^2}{a^2}} dx
+$$
+делаем замену $\sin t = x/a, dx = a \cos t dt$
+
+$$\int^{\pi/2}_0 a b \sqrt{1-\sin^2t} \cos t dt =\int^{\pi/2}_0 a b \cos^2 t dt 
+$$
+
+Заменим через формулу двойного угла $\cos^2t = \frac{\cos2t +1 }{2}$
+
+$$=\int^{\pi/2}_0 a b\frac{\cos2t +1 }{2} dt = 1/2 b a (1/2 \sin 2t + t)\Biggr|_{0}^{\pi/2} = 1/4 a b \pi$$
+
+Общая площадь $a b \pi$
+
+\textbf{Ответ: $a b \pi$}
+\item Найти длину кривой $y = x^{3/2}$ от 0 до 4
+
+\textbf{Решение:}\\
+Запишем, что нужно считать
+
+$$\int^{4}_0  \sqrt{1+(y')^2} dx=
+$$
+
+
+$y'(x) = 3/2 x^{0.5}, (y')^2 = \frac{9x}{4}$
+
+$$=\int^{4}_0  \sqrt{1+\frac{9x}{4}} dx=
+$$
+
+заменим $u = \frac{9x}{4}+1, du = 9/4dx$
+
+
+$$=-\frac{4}{9}\int^{10}_1 \sqrt{u}du= \frac{8u^{3/2}}{27}\Biggr|_{1}^{10} = \frac{8}{27} (10\sqrt{10}-1)$$
+
+
+\textbf{Ответ: $ \frac{8}{27} (10\sqrt{10}-1)$}
+
+\end{enumerate}
+\end{document}
