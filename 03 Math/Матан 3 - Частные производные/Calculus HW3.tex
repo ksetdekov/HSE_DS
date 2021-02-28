@@ -1,0 +1,168 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[cm,empty]{fullpage}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{proof}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
+
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+\newtheorem*{rem}{Замечание}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\newcounter{z}
+
+
+\newcommand{\zs}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{12.\arabic{z}}} }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
+\fbox{\textbf{\arabic{z}}} }
+
+\renewcommand{\date}{{\bf 6 марта 2021}} 
+
+\newcommand{\dif}
+{
+------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+\newcommand{\HSEhat}{
+\vspace*{-0pt}
+\noindent
+\setcounter{z}{0}
+
+
+{\bf \phantom{\date}  \large \hfill Математический анализ: \hfill \normalsize \date}
+
+\vspace{5 pt}
+{\bf \large \hfill  лекция 3\hfill }
+
+\vspace{15 pt}
+\centerline{ \large  Домашнее задание.}
+\centerline{ \large  Кирилл Сетдеков}
+
+
+
+\vspace*{10pt}
+\setcounter{z}{0}
+
+}
+
+\begin{document}
+\HSEhat
+
+
+\subsection*{Задачи}
+
+\begin{enumerate}
+
+\item Найдите $\frac{\partial f}{\partial x} (a,1)$
+
+$$f(x,y) =x + (y-1)\arcsin{\sqrt{\frac{x}{y}}}$$
+
+\textbf{Решение:}\\
+Дифференцируем как сумму:
+
+$$\frac{\partial }{\partial x} (x + (y-1)\arcsin{\sqrt{\frac{x}{y}}}) = \frac{\partial }{\partial x} (x) +(y-1)(\frac{\partial }{\partial x} (\arcsin{\sqrt{\frac{x}{y}}})) = 1 + (y-1)(\frac{\partial }{\partial x} (\arcsin{\sqrt{\frac{x}{y}}})) = $$
+
+Применяем цепное правило, где :
+$\frac{\partial }{\partial x} (\arcsin{\sqrt{\frac{x}{y}}}) = \frac{\partial \arcsin{u}}{\partial u} \frac{\partial u}{\partial x}$ где $u = \sqrt{\frac{x}{y}} ;\frac{\partial \arcsin{u}}{\partial u} = \frac{1}{\sqrt{1-u^2}}$
+
+$$=1 + (y-1)\frac{\frac{\partial }{\partial x}({\sqrt{\frac{x}{y}}}))}{\sqrt{1-\frac{x}{y}}} =$$
+
+Применяем цепное правило для корня из частного:
+$\frac{\partial }{\partial x}({\sqrt{\frac{x}{y}}})) = \frac{\partial \sqrt{u}}{\partial u} \frac{\partial u}{\partial x} $ где $u = \frac{y}{y}; \frac{\partial}{\partial u} (\sqrt{u}) = \frac{1}{2\sqrt{u}}$
+
+и после этого - выносим константу и считаем производную
+
+$$=1 +\frac{\frac{\partial }{\partial x}({{\frac{x}{y}}})}{2\sqrt{\frac{x}{y}}} \frac{y-1}{\sqrt{1-\frac{x}{y}}} =1 +\frac{1}{2y\sqrt{\frac{x}{y}}} \frac{y-1}{\sqrt{1-\frac{x}{y}}} = 1 + \frac{y-1}{2y\sqrt{\frac{x(y-x)}{y^2}}}=1 + \frac{y-1}{2\sqrt{x(y-x)}}$$
+
+Подставим $x = a, y = 1$
+$$1 + \frac{1-1}{2\sqrt{a(1-a)}} =1$$
+
+
+\textbf{Ответ: $1$}
+
+
+\item Найти градиент и матрицу Гессе
+\begin{enumerate}
+\item 
+$
+u = ln(x+y^2)
+$
+
+\textbf{Решение:}\\
+Градиент по определению - ${grad}_au = (\frac{\partial u}{\partial x}(a), \frac{\partial u}{\partial y}(a))$
+
+Матрица Гессе - квадратная матрица из производных второго порядка по x и y
+
+$$H_a(u) = \begin{pmatrix}
+\frac{\partial^2 u}{\partial x^2}(a) & \frac{\partial^2 u}{\partial x \partial y}(a)  \\
+\frac{\partial^2 u}{\partial y \partial x}(a) & \frac{\partial^2 u}{\partial y^2}(a) 
+\end{pmatrix}$$
+
+Всего надо посчитать 6 производных, начнем с первой производной по х $$\frac{\partial ln(x+y^2)}{\partial x}$$
+
+Используем цепное правило:
+$\frac{\partial ln(x+y^2)}{\partial x} = \frac{\partial \ln{u}}{\partial u}\frac{\partial u}{\partial x}$ где $u = x + y^2, \frac{\partial}{\partial u} \ln{u} = \frac{1}{u}$
+
+$$
+= \frac{\frac{\partial}{\partial x}(x+y^2)}{x+y^2} = \frac{1}{x+y^2}
+$$
+
+Используя ту же замену, считаем: $$\frac{\partial ln(x+y^2)}{\partial y}=\frac{\frac{\partial}{\partial y}(x+y^2)}{x+y^2} = \frac{2y}{x+y^2}$$
+
+\textbf{Ответ: ${grad}_au = (\frac{1}{x+y^2}(a), \frac{2y}{x+y^2}(a))$}
+
+\item 
+$
+\int^{2\pi}_0 x \sin x dx
+$
+
+\textbf{Решение:}\\
+ds
+
+\textbf{Ответ: $-2\pi$}
+
+
+\end{enumerate}
+
+\item Найти предел $\lim_{x \to 0 }\frac{\int_{x}^{1} \frac{e^t}{t} dt}{\ln x}$
+
+\textbf{Решение:}\\
+Моё понимание, что интеграл в числителе будет равен разности двух интегральных показательных функций
+
+$$
+\lim_{x \to 0 }\frac{Ei(1) - Ei(x)}{\ln x}=
+$$
+
+Возьмем производную от верхней и нижней части 
+$$= \lim_{x \to 0 }\frac{-e^x / x}{1/x} =\lim_{x \to 0 }-e^x = -1 $$
+
+\textbf{Ответ: $-1$}
+
+\end{enumerate}
+\end{document}
