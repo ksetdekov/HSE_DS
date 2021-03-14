@@ -357,16 +357,37 @@ $\begin{cases}
 
 $\left(\begin{array}{cccc|c}  
  0 & -2 & 3 & 0 & 0 \\  
- -3 & -6 & 0 & -6 & 0  \\ 
+ -3 & -6 & 0 & 3 & 0  \\ 
  2 & 0 & 6 & -2 & 0  \\ 
  0 & 2 & -3 & 0 & 0  \\
-\end{array}\right) \Rightarrow$ сложим 
+\end{array}\right) \Rightarrow$ сложим \rom{2} и  \rom{3} $\left(\begin{array}{cccc|c}  
+ 0 & -2 & 3 & 0 & 0 \\  
+ -1 & -6 & 6 & 1 & 0  \\ 
+ 2 & 0 & 6 & -2 & 0  \\ 
+ 0 & 2 & -3 & 0 & 0  \\
+\end{array}\right) \Rightarrow$ умножим \rom{2} на 2 и прибавим к \rom{3}
+$\left(\begin{array}{cccc|c}  
+ 0 & -2 & 3 & 0 & 0 \\  
+ -1 & -6 & 6 & 1 & 0  \\ 
+ 0 & -12 & 18 & 0& 0  \\ 
+ 0 & 2 & -3 & 0 & 0  \\
+\end{array}\right) \Rightarrow$ умножим \rom{1} на 3 и вычтем из \rom{2} $\left(\begin{array}{cccc|c}  
+ 0 & -2 & 3 & 0 & 0 \\  
+ -1 & 0 & -3 & 1 & 0  \\ 
+ 0 & -12 & 18 & 0& 0  \\ 
+ 0 & 2 & -3 & 0 & 0  \\
+\end{array}\right) \Rightarrow$ $\begin{cases}
+3c-2b=0\\
+a+3c-d=0
+\end{cases}$
 
 
-\textbf{Ответ: $\begin{pmatrix}
--32 & 23\\
--12 & -51\\
-\end{pmatrix}$}
+$a,b$ гласные и $c,d$ зависимые. $c=\frac{2b}{3}$ и $d=a+2b$ при $a,b \in \mathbb{R}$
+
+\textbf{Ответ: все матрицы вида $\begin{pmatrix}
+a & b\\
+\frac{2b}{3} & a+2b\\
+\end{pmatrix}$ где $a,b \in \mathbb{R}$}
 
 \vspace{5pt}
 \item Студент перемножил следующие матрицы, расположив их в некотором порядке (были использованы все матрицы):
@@ -400,10 +421,145 @@ F = \begin{pmatrix}
 $$
 Вычислите матрицу, которую он получил (перечислите все возможные варианты).
 
+\textbf{Решение:}\\
+Запишем размер каждой матрицы. Из-за того что размер разный, возможны перемножения только определенных вариантов. Составим направленный граф, где матрицы будут вершинами, а ребра идут между двумя матрицами, которые можно умножить. Например, можно умножить $FA$, поэтому соединим $F\rightarrow A$.
+
+\includegraphics[width=\textwidth]{img/graph.pdf}
+Исходя из того, что мы должны закончить умножение матриц, умножив справа на $A$, получим что всего возможно только 2 последовательности умножения, которые включают все матрицы: $CBFDA$ и $DCBFA$.
+
+Запишем первое решение.
+
+$CBFDA = \begin{pmatrix}
+1 & 2 & -1 & 0\\
+-3 & 0 & 1 & 2
+\end{pmatrix} \begin{pmatrix}
+1 & 1 & 1\\
+-1 & 0 & 3\\
+-2 & 1 & 4\\
+0 & 0 & 3
+\end{pmatrix} \begin{pmatrix}
+-4 & 1\\
+12 & -7\\
+1 & 1
+\end{pmatrix} \begin{pmatrix}
+4 & -1\\
+1 & 0
+\end{pmatrix} \begin{pmatrix}
+5 & 1 & 2 & -1 & 0\\
+1 & 4 & -3 & 2 & 2
+\end{pmatrix}= \begin{pmatrix}
+1 & 0 & 3 \\
+-5 & -2 & 7 
+\end{pmatrix}  \begin{pmatrix}
+-4 & 1\\
+12 & -7\\
+1 & 1
+\end{pmatrix} \begin{pmatrix}
+4 & -1\\
+1 & 0
+\end{pmatrix} \begin{pmatrix}
+5 & 1 & 2 & -1 & 0\\
+1 & 4 & -3 & 2 & 2
+\end{pmatrix} =\\
+\begin{pmatrix}
+-1 & 4\\
+3 & -12
+\end{pmatrix} \begin{pmatrix}
+4 & -1\\
+1 & 0
+\end{pmatrix} \begin{pmatrix}
+5 & 1 & 2 & -1 & 0\\
+1 & 4 & -3 & 2 & 2
+\end{pmatrix} =\\
+\begin{pmatrix}
+0 & 1  \\
+0 & -3  
+\end{pmatrix}   \begin{pmatrix}
+5 & 1 & 2 & -1 & 0\\
+1 & 4 & -3 & 2 & 2
+\end{pmatrix} = \begin{pmatrix}
+1 & 4 & -3 & 2 & 2\\
+-3 & -12 & 9 & -6 & -6
+\end{pmatrix}$
+
+
+$DCBFA = \begin{pmatrix}
+4 & -1\\
+1 & 0
+\end{pmatrix} \begin{pmatrix}
+1 & 2 & -1 & 0\\
+-3 & 0 & 1 & 2
+\end{pmatrix} \begin{pmatrix}
+1 & 1 & 1\\
+-1 & 0 & 3\\
+-2 & 1 & 4\\
+0 & 0 & 3
+\end{pmatrix} \begin{pmatrix}
+-4 & 1\\
+12 & -7\\
+1 & 1
+\end{pmatrix}  \begin{pmatrix}
+5 & 1 & 2 & -1 & 0\\
+1 & 4 & -3 & 2 & 2
+\end{pmatrix} = \begin{pmatrix}
+7 & 8 & -5 & -2\\
+1 & 2 & -1 & 0
+\end{pmatrix} \begin{pmatrix}
+1 & 1 & 1\\
+-1 & 0 & 3\\
+-2 & 1 & 4\\
+0 & 0 & 3
+\end{pmatrix} \begin{pmatrix}
+-4 & 1\\
+12 & -7\\
+1 & 1
+\end{pmatrix}  \begin{pmatrix}
+5 & 1 & 2 & -1 & 0\\
+1 & 4 & -3 & 2 & 2
+\end{pmatrix} =\\ \begin{pmatrix}
+9 & 2 & 5 \\
+1 & 0 & 3
+\end{pmatrix}  \begin{pmatrix}
+-4 & 1\\
+12 & -7\\
+1 & 1
+\end{pmatrix}  \begin{pmatrix}
+5 & 1 & 2 & -1 & 0\\
+1 & 4 & -3 & 2 & 2
+\end{pmatrix}=\\ \begin{pmatrix}
+-7 & 28\\
+-1 & 4
+\end{pmatrix}  \begin{pmatrix}
+5 & 1 & 2 & -1 & 0\\
+1 & 4 & -3 & 2 & 2
+\end{pmatrix}= \begin{pmatrix}
+-7 & 105 & -98 & 63 & 56\\
+-1 & 15 & -14 & 9 & 8
+\end{pmatrix}$
+
+\textbf{Ответ: два варианта перемножения $CBFDA = \begin{pmatrix}
+1 & 4 & -3 & 2 & 2\\
+-3 & -12 & 9 & -6 & -6
+\end{pmatrix}$ и $DCBFA = \begin{pmatrix}
+-7 & 105 & -98 & 63 & 56\\
+-1 & 15 & -14 & 9 & 8
+\end{pmatrix}$}
 
 \vspace{5pt}
 
 \item Пусть $A\in M_n(\mathbb{R})$ такова, что $A^m = 0$ для некоторого натурального $m$. Покажите, что матрица $(E - A)$ обратима ({\it указание: найдите явный вид обратной матрицы}).
+
+\textbf{Решение:}\\
+Догадаемся, что можно соорудить конструкцию, похожую на сумму бесконечной геометрической прогрессии. По аналогии с $\frac{1}{1-x} \sim (E-A)^-1$
+$$(E-A)^-1=\sum^{\infty}_{m=0}A^m=E+A+A^2 + A^3+\ldots + A^{m-1}+A^{m}+\ldots $$
+При этом $A^m = 0$ и все слагаемые с большим $m$ будут равны 0, следовательно сумма будет выглядеть.
+$$(E-A)^-1=\sum^{m-1}_{m=0}A^m=E+A+A^2 + A^3+\ldots + A^{m-1}$$
+
+Проверим, что будет при перемножении этой матрицы на исходную.
+$$(E-A)(E-A)^-1=(E-A)\sum^{m-1}_{m=0}A^m=(E-A)(E+A+A^2 + A^3+\ldots + A^{m-1})=$$$$=E+A+A^2 + A^3+\ldots + A^{m-1}-A-A^2 + A^3-\ldots - A^{m-1}-A^{m} = E-A^m + \sum_{i=1}^{m-1}{A^i-A^i}$$
+так как $A^m = 0$, то сумма сверху = $E-0+0=E$, следовательно мы получили формулу для обратной матрицы
+
+\textbf{Ответ: обратную матрицу к можно найти таким образом: $(E-A)^-1=\sum^{m-1}_{m=0}A^m=E+A+A^2 + A^3+\ldots + A^{m-1}$}
 
 \vspace{5pt}
 
