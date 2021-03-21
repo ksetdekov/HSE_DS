@@ -1,0 +1,143 @@
+% !TEX encoding = Windows Cyrillic
+\documentclass[a4paper,draft,reqno,10pt]{amsart}
+
+%\documentclass[a4paper]{article}
+%\usepackage[utf8]{inputenc}
+
+
+%\usepackage{natbib}
+\usepackage{amsfonts, amsthm, amssymb, amsmath}	
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage[russian]{babel}
+\usepackage{ upgreek }
+\usepackage{ stmaryrd }
+\usepackage{multicol}
+\usepackage[left=0.7cm,right=0.7cm,
+    top=0.7cm,bottom=0.7cm,bindingoffset=0cm]{geometry}
+
+%\theoremstyle{plain}
+\theoremstyle{definition}
+\newtheorem{Lem}{Лемма}[section]
+\newtheorem{Th}[Lem]{Теорема}
+\newtheorem{Def}[Lem]{Определение}
+\newtheorem{Corollary}[Lem]{Следствие}
+\newtheorem{State}[Lem]{Утверждение}
+\newtheorem{Proposition}[Lem]{Предложение}
+\theoremstyle{remark}
+\newtheorem*{Note}{Замечание}
+\newtheorem*{Decl}{Обозначение}
+\newtheorem*{Agree}{Соглашение}
+\theoremstyle{definition}
+\newtheorem{Ex}[Lem]{Пример}
+\newenvironment{Proof} {\par\noindent{\bf Доказательство. }} {\hfill$\square$}
+\pagestyle{empty}
+
+
+\newcounter{zadacha}
+%\newcommand{\z}{\par\textbf{Задача. }}
+\newcommand{\z}{\par\noindent\addtocounter{zadacha}{1}%
+\textbf{\arabic{zadacha}.} }
+\newcommand{\zh}{\par\noindent\addtocounter{zadacha}{1}%
+\textbf{\arabic{zadacha}*.} }
+
+\begin{document}
+\centerline{\bf{\Large Домашнее задание 2}}
+\centerline{ {\it 17.03.2021}}
+\vspace{10pt}
+
+
+
+\z Найдите определитель матрицы
+
+$$
+\begin{pmatrix}
+1&2&3\\
+5&1&4\\
+3&2&5
+\end{pmatrix}
+$$
+
+\vspace{5pt}
+
+\z  Найдите характеристический многочлен и спектр матрицы 
+
+$$
+\begin{pmatrix}
+1 & 2 & -3\\
+-5 & 1 & -4\\
+0 & -2 & 4
+\end{pmatrix}
+$$
+
+\vspace{5pt}
+
+\z Разлагая по второму столбцу, вычислите определитель
+
+$$
+\det\begin{pmatrix}
+5&a&2&-1\\
+4&b&4&-3\\
+2&c&3&-2\\
+4&d&5&-4
+\end{pmatrix}
+$$
+
+\vspace{5pt}
+
+\z Найдите определитель. Запишите его в виде многочлена от $t$
+
+$$
+\det\begin{pmatrix}
+-t&0&0&0&a_1\\
+a_2&-t&0&0&0\\
+0&a_3&-t&0&0\\
+0&0&a_4&-t&0\\
+0&0&0&a_5&-t
+\end{pmatrix}
+$$
+
+\vspace{5pt}
+
+\z Чему равен определитель матрицы, у которой сумма всех строк с четными номерами равна сумме всех строк с
+нечетными номерами?
+
+\vspace{5pt}
+
+\z Дана матрица 
+
+$$
+A=\begin{pmatrix}
+1&1&0\\
+0&1&0\\
+0&3&3
+\end{pmatrix}
+$$
+
+
+а) Найдите матрицу $A^{-1}$ с помощью элементарных преобразований.
+
+б) Найдите матрицу $A^{-1}$ с помощью явной формулы (через присоединенную матрицу).
+
+\vspace{5pt}
+
+\z
+Найдите матрицу $X$, удовлетворяющую равенству
+
+$$
+X
+\begin{pmatrix}
+1&1&1\\
+1&2&3\\
+1&4&9
+\end{pmatrix}
+=
+\begin{pmatrix}
+1&2&3\\
+2&4&6\\
+3&6&9
+\end{pmatrix}
+$$
+
+\end{document}
