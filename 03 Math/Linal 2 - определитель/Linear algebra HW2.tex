@@ -1,0 +1,454 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[cm,empty]{fullpage}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{proof}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
+
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+\newtheorem*{rem}{Замечание}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\newcounter{z}
+
+
+\newcommand{\zs}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{12.\arabic{z}}} }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
+\fbox{\textbf{\arabic{z}}} }
+
+\renewcommand{\date}{{\bf 21 марта 2021}} 
+
+\newcommand{\dif}
+{
+------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+\newcommand{\HSEhat}{
+\vspace*{-0pt}
+\noindent
+\setcounter{z}{0}
+
+
+{\bf \phantom{\date}  \large \hfill Линейная алгебра: \hfill \normalsize \date}
+
+\vspace{5 pt}
+{\bf \large \hfill  лекция 2\hfill }
+
+\vspace{15 pt}
+\centerline{ \large  Домашнее задание.}
+\centerline{ \large  Кирилл Сетдеков}
+
+
+
+\vspace*{10pt}
+\setcounter{z}{0}
+
+}
+
+\begin{document}
+\HSEhat
+
+
+\subsection*{Задачи}
+
+\begin{enumerate}
+
+\item  Найдите определитель матрицы
+
+$$A=
+\begin{pmatrix}
+1&2&3\\
+5&1&4\\
+3&2&5
+\end{pmatrix}
+$$
+
+\vspace{5pt}
+\textbf{Решение:}\\
+Запишем как сумму алгебраических дополнений:
+$$\det A = 1*\det \begin{pmatrix}
+1&4\\
+2&5
+\end{pmatrix}-5*\det \begin{pmatrix}
+2&3\\
+2&5
+\end{pmatrix}+3*\det \begin{pmatrix}
+2&3\\
+1&4
+\end{pmatrix} = -3-5*(4)+3*5=-8$$
+
+\textbf{Ответ: $-8$}
+
+
+\item  Найдите характеристический многочлен и спектр матрицы 
+
+$$B=
+\begin{pmatrix}
+1 & 2 & -3\\
+-5 & 1 & -4\\
+0 & -2 & 4
+\end{pmatrix}
+$$
+
+\vspace{5pt}
+\textbf{Решение:}\\
+Запишем, что мы хотим найти, характеристический многочлен:
+$$\det(\lambda E - B)= \det \begin{pmatrix}
+\lambda - 1 & -2 & 3\\
+5 & \lambda -1 & 4\\
+0 & 2 & \lambda - 4
+\end{pmatrix}=$$
+Разложим по 1 столбцу:
+$$=(\lambda - 1)\det\begin{pmatrix}
+ \lambda -1 & 4\\
+ 2 & \lambda - 4
+\end{pmatrix} - 5 \det \begin{pmatrix}
+ -2 & 3\\
+ 2 & \lambda - 4
+\end{pmatrix} =$$
+
+$=(\lambda-1)((\lambda-1)(\lambda-4)-8)+5(2(\lambda-4)+6)=(\lambda-1)(\lambda^2+4-5\lambda-8)+5(2\lambda-8+6)=(\lambda-1)(\lambda^2-5\lambda-4)+10(\lambda-1)=(\lambda-1)(\lambda^2-5\lambda-4+10)=(\lambda-1)(\lambda^2-5\lambda+6)=(\lambda-1)(\lambda-2)(\lambda-3)$
+
+Спектр - решения характеристического многочлена равного 0.
+
+$$(\lambda-1)(\lambda-2)(\lambda-3)=0 \Rightarrow \begin{cases}
+    \lambda = 1\\
+    \lambda = 2\\
+    \lambda = 3
+\end{cases}$$
+
+\textbf{Ответ: Характеристический многочлен: $(\lambda-1)(\lambda-2)(\lambda-3)$ и спектр $\begin{cases}
+    \lambda = 1\\
+    \lambda = 2\\
+    \lambda = 3
+\end{cases}$}
+
+
+\item Разлагая по второму столбцу, вычислите определитель
+
+$$
+\det\begin{pmatrix}
+5&a&2&-1\\
+4&b&4&-3\\
+2&c&3&-2\\
+4&d&5&-4
+\end{pmatrix}
+$$
+
+
+\vspace{5pt}
+\textbf{Решение:}\\
+Запишем разложение по 2 столбцу:
+$\det = -a \det \begin{pmatrix}
+4&4&-3\\
+2&3&-2\\
+4&5&-4
+\end{pmatrix}+b \det \begin{pmatrix}
+5&2&-1\\
+2&3&-2\\
+4&5&-4
+\end{pmatrix} - c \det \begin{pmatrix}
+5&2&-1\\
+4&4&-3\\
+4&5&-4
+\end{pmatrix}+ d \det \begin{pmatrix}
+5&2&-1\\
+4&4&-3\\
+2&3&-2
+\end{pmatrix}=\text{<разложим каждый определитель по 1 столбцу>}=-a(4*(-12+10)-2*(-16+15)+4(-8+9))+b(5*(-12+10)-2*(-8+5)+4*(-4+3))-c(5*(-16+15)-4*(-8+5)+4*(-6+4))+d(5*(-8+9)-4*(-4+3)+2*(-6+4))=2a-8b+1c+5d$
+
+\textbf{Ответ: Определитель равен: $2a-8b+c+5d$}
+\item Найдите определитель. Запишите его в виде многочлена от $t$
+
+$$
+\det\begin{pmatrix}
+-t&0&0&0&a_1\\
+a_2&-t&0&0&0\\
+0&a_3&-t&0&0\\
+0&0&a_4&-t&0\\
+0&0&0&a_5&-t
+\end{pmatrix}
+$$
+
+\vspace{5pt}
+\textbf{Решение:}\\
+Разложим определитель по 1 колонке:
+$=-t \det \begin{pmatrix}
+-t&0&0&0\\
+a_3&-t&0&0\\
+0&a_4&-t&0\\
+0&0&a_5&-t
+\end{pmatrix} - a_2 \det \begin{pmatrix}
+0&0&0&a_1\\
+a_3&-t&0&0\\
+0&a_4&-t&0\\
+0&0&a_5&-t
+\end{pmatrix}$ 
+В первом определители - диагональная матрица, поэтому он равен произведению элементов на диагонали. Матрицу под правым определителем мы за 3 перестановки пар столбцов приведем к почти диагональному виду. От этого знак определителя изменится три раза.
+
+$=-t*t^4 + a_2 \det \begin{pmatrix}
+a_1&0&0&0\\
+0&a_3&-t&0\\
+0&0&a_4&-t\\
+-t&0&0&a_5
+\end{pmatrix}=$
+
+Разложим вторую матрицу по 1 колонке:
+
+$=-t^5+a_2(a_1 \det \begin{pmatrix}
+a_3&-t&0\\
+0&a_4&-t\\
+0&0&a_5
+\end{pmatrix} +t * \det \begin{pmatrix}
+0&0&0\\
+a_3&-t&0\\
+0&a_4&-t
+\end{pmatrix})=$ 
+
+Получили нулевую строку $\Rightarrow$ правый определитель равен нулю, а слева - диагональная матрица.
+Раскроем и получим ответ.
+$=-t^5+a_2*a_1*a_3*a_4*a_5$
+
+
+\textbf{Ответ: Определитель равен: $-t^5+a_1*a_2*a_3*a_4*a_5$}
+
+
+\item Чему равен определитель матрицы, у которой сумма всех строк с четными номерами равна сумме всех строк с
+нечетными номерами?
+
+\vspace{5pt}
+
+\textbf{Решение:}\\
+Примем значение, которому равна сумма нечетных строк за $N$. Мы знаем, что $\det$ не меняется от элементарного преобразования типа "прибавим строку умноженную на коэффициент к другой строке". Соберем таким образом сумму всех нечетных строк в 1 строке и всех четных строк в строке 2.
+
+Теперь мы можем получить строку, сумма которой равна 0, вычтя из 1 строки 2. Таким образом, мы получили строку, сумма элементов которой равна 0. Определитель матрицы, которая имеет 0 строку, равен 0.
+
+\textbf{Ответ:  $0$}
+
+
+\item Дана матрица 
+
+$$
+A=\begin{pmatrix}
+1&1&0\\
+0&1&0\\
+0&3&3
+\end{pmatrix}
+$$
+
+
+а) Найдите матрицу $A^{-1}$ с помощью элементарных преобразований.
+
+\textbf{Решение:}\\
+Запишем матрицу вместе с единичной
+$
+\left(\begin{array}{ccc|ccc}  
+ 1&1&0&1&0&0\\
+0&1&0&0&1&0\\
+0&3&3&0&0&1
+\end{array}\right) \rightarrow$ вычтем \rom{1}-\rom{2} \\
+$
+\left(\begin{array}{ccc|ccc}  
+ 1&-1&0&1&-1&0\\
+0&1&0&0&1&0\\
+0&3&3&0&0&1
+\end{array}\right) \rightarrow$ вычтем \rom{3}-3\rom{2} $
+\left(\begin{array}{ccc|ccc}  
+1&-1&0&1&-1&0\\
+0&1&0&0&1&0\\
+0&0&3&0&-3&1
+\end{array}\right) \rightarrow$ \rom{3} разделить на 3 $
+\left(\begin{array}{ccc|ccc}  
+1&-1&0&1&-1&0\\
+0&1&0&0&1&0\\
+0&0&1&0&-1&\frac{1}{3}
+\end{array}\right)$
+
+\textbf{Ответ: 
+$\begin{pmatrix}
+1&-1&0\\
+0&1&0\\
+0&-1&\frac{1}{3}
+\end{pmatrix}$}
+
+б) Найдите матрицу $A^{-1}$ с помощью явной формулы (через присоединенную матрицу).
+
+\textbf{Решение:}\\
+Найдем определить А через разложение по столбцу 1.
+$\det A = 1 *(3-0)=3$
+
+Найдем матрицу алгебраических дополнений.
+$$\begin{pmatrix}
+1\begin{vmatrix}
+1 & 0  \\ 
+3 & 3 
+\end{vmatrix}&-1\begin{vmatrix}
+0 & 0  \\ 
+0 & 3 
+\end{vmatrix}&1\begin{vmatrix}
+0 & 1  \\ 
+0 & 3 
+\end{vmatrix}\\
+-1\begin{vmatrix}
+1 & 0  \\ 
+3 & 3 
+\end{vmatrix}&1\begin{vmatrix}
+1 & 0  \\ 
+0 & 3 
+\end{vmatrix}&-1\begin{vmatrix}
+1 & 1  \\ 
+0 & 3 
+\end{vmatrix}\\
+1\begin{vmatrix}
+1 & 0  \\ 
+1 & 0 
+\end{vmatrix}&-1\begin{vmatrix}
+1 & 0  \\ 
+0 & 0 
+\end{vmatrix}&1\begin{vmatrix}
+1 & 1  \\ 
+0 & 1 
+\end{vmatrix}
+\end{pmatrix}=\begin{pmatrix}
+3&0&0\\
+-3&3&-3\\
+0&0&-1
+\end{pmatrix}=B$$
+
+$$B^T=\begin{pmatrix}
+3&-3&0\\
+0&3&0\\
+0&-3&-1
+\end{pmatrix}$$
+
+Обратная матрица будет равна транспонированной матрице алгебраических дополнений, деленной на определитель исходной матрицы.
+$$\frac{B^T}{\det A}= \frac{1}{3}\begin{pmatrix}
+3&-3&0\\
+0&3&0\\
+0&-3&-1
+\end{pmatrix}= \begin{pmatrix}
+1&-1&0\\
+0&1&0\\
+0&-1&\frac{1}{3}
+\end{pmatrix}$$
+
+
+\textbf{Ответ: 
+$\begin{pmatrix}
+1&-1&0\\
+0&1&0\\
+0&-1&\frac{1}{3}
+\end{pmatrix}$}
+
+\item
+Найдите матрицу $X$, удовлетворяющую равенству
+
+$$
+X
+\begin{pmatrix}
+1&1&1\\
+1&2&3\\
+1&4&9
+\end{pmatrix}
+=
+\begin{pmatrix}
+1&2&3\\
+2&4&6\\
+3&6&9
+\end{pmatrix}
+$$
+
+\textbf{Решение:}\\
+Нам дано матричное уравнение $XA=B$. Домножим справа обе части на обратную матрицу к А.
+$$XAA^{-1} = BA^{-1}$$
+$$X = BA^{-1}$$
+
+Если обратная матрица к A существует.
+
+Запишем матрицу вместе с единичной
+$
+\left(\begin{array}{ccc|ccc}  
+1&1&1&1&0&0\\
+1&2&3&0&1&0\\
+1&4&9&0&0&1
+\end{array}\right) \rightarrow$ вычтем \rom{2}-\rom{1} и  \rom{3}-\rom{1} $
+\left(\begin{array}{ccc|ccc}  
+1&1&1&1&0&0\\
+0&1&2&-1&1&0\\
+0&3&8&-1&0&1
+\end{array}\right) \rightarrow$ вычтем \rom{1}-\rom{2} и  \rom{3}-2\rom{2} $
+\left(\begin{array}{ccc|ccc}  
+1&0&-1&2&-1&0\\
+0&1&2&-1&1&0\\
+0&0&2&2&-3&1
+\end{array}\right) \rightarrow$ вычтем \rom{2}-\rom{3} $
+\left(\begin{array}{ccc|ccc}  
+1&0&-1&2&-1&0\\
+0&1&0&-3&4&-1\\
+0&0&2&2&-3&1
+\end{array}\right) \rightarrow$  прибавим \rom{1}+0,5\rom{3} и поделим \rom{3} на 2 \\$
+\left(\begin{array}{ccc|ccc}  
+1&0&0&3&-\frac{5}{2}&\frac{1}{2}\\
+0&1&0&-3&4&-1\\
+0&0&0&1&-\frac{3}{2}&\frac{1}{2}
+\end{array}\right)$ 
+$$A^{-1}=\begin{pmatrix}
+3&-\frac{5}{2}&\frac{1}{2}\\
+-3&4&-1\\
+1&-\frac{3}{2}&\frac{1}{2}
+\end{pmatrix}$$
+
+$$BA^{-1}=\begin{pmatrix}
+1&2&3\\
+2&4&6\\
+3&6&9
+\end{pmatrix}  \begin{pmatrix}
+3&-\frac{5}{2}&\frac{1}{2}\\
+-3&4&-1\\
+1&-\frac{3}{2}&\frac{1}{2}
+\end{pmatrix}=\begin{pmatrix}
+0&1&0\\
+0&2&0\\
+0&3&0
+\end{pmatrix}$$
+
+
+\textbf{Ответ: 
+$X=\begin{pmatrix}
+0&1&0\\
+0&2&0\\
+0&3&0
+\end{pmatrix}$}
+
+\end{enumerate}
+\end{document}
