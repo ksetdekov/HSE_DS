@@ -1,0 +1,242 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath}	
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage[russian]{babel}
+\usepackage{ upgreek }
+\usepackage{ stmaryrd }
+\usepackage{multicol}
+\usepackage[left=0.7cm,right=0.7cm,
+top=0.7cm,bottom=0.7cm,bindingoffset=0cm]{geometry}
+
+\theoremstyle{definition}
+\newtheorem{Lem}{Лемма}[section]
+\newtheorem{Th}[Lem]{Теорема}
+\newtheorem{Def}[Lem]{Определение}
+\newtheorem{Corollary}[Lem]{Следствие}
+\newtheorem{State}[Lem]{Утверждение}
+\newtheorem{Proposition}[Lem]{Предложение}
+\theoremstyle{remark}
+\newtheorem*{Note}{Замечание}
+\newtheorem*{Decl}{Обозначение}
+\newtheorem*{Agree}{Соглашение}
+\theoremstyle{definition}
+\newtheorem{Ex}[Lem]{Пример}
+\newenvironment{Proof} {\par\noindent{\bf Доказательство. }} {\hfill$\square$}
+\pagestyle{empty}
+
+\newcommand{\sn}{\{1, 2,\dots, n\}}
+\newcommand{\PathArrK}{\stackrel{k}\longrightarrow}
+\newcommand{\PathArrL}{\stackrel{l}\longrightarrow}
+\newcommand{\PathArr}[1]{\stackrel{#1}\longrightarrow}
+\newcommand{\defEq}{\stackrel{\rm def}=}
+\newcommand{\Ss}{\mathscr{S}}
+\newcommand{\Mnb}{M_n(\mathbf{B})}
+\newcommand{\MnS}{M_n(\mathscr{S})}
+\newcommand{\BtoB}{\colon \Mnb \rightarrow \Mnb}
+\newcommand{\StoS}{\colon \MnS \rightarrow \MnS}
+\newcommand{\gper}{\mathcal{P}_{\lambda,n}}
+\newcommand{\gperone}{\mathcal{P}_{\lambda-1,n-1}}
+\newcommand{\GPart}[2]{(#1\!\shortrightarrow\! #2)}
+\newcommand{\GPartC}{(G_1\!\shortrightarrow\!G_2)}
+\newcommand{\mc}[1]{\mathcal{#1}}
+
+\newcounter{zadacha}
+%\newcommand{\z}{\par\textbf{Задача. }}
+\newcommand{\z}{\par\noindent\addtocounter{zadacha}{1}%
+	\textbf{\arabic{zadacha}.} }
+\newcommand{\zh}{\par\noindent\addtocounter{zadacha}{1}%
+	\textbf{\arabic{zadacha}*.} }
+
+\begin{document}
+\centerline{\bf{\Large Домашнее задание 4}}
+\centerline{ {\it 31.03.2021}}
+\vspace{10pt}
+
+
+\subsection*{Общие сведения:}
+\begin{itemize}
+
+\item Квадратные матрицы $A, B\in M_{n}(\mathbb{R})$ называются сопряженными, если найдется невырожденная матрица $C\in M_{n}(\mathbb{R})$ такая, что $B = C^{-1}AC$. Сопряженные матрицы обладают похожими свойствами, в частности, имеют одинаковый определитель, след и ранг, а также одинаковые наборы собственных значений.
+
+\item В пространстве $\mathbb R^n$ стандартным называется следующий базис
+\[
+e_1 = 
+\begin{pmatrix}
+{1}\\{0}\\{\vdots}\\{0}
+\end{pmatrix},
+e_2 = 
+\begin{pmatrix}
+{0}\\{1}\\{\vdots}\\{0}
+\end{pmatrix},
+\ldots,
+e_n = 
+\begin{pmatrix}
+{0}\\{0}\\{\vdots}\\{1}
+\end{pmatrix}
+\]
+
+\end{itemize}
+
+\subsection*{Задачи:}
+
+
+
+
+\z Какие из следующих матриц сопряжены? Если они сопряжены, то укажите, с помощью какой матрицы:
+\begin{itemize}
+\item[а)] $\begin{pmatrix}{1}&{0}\\{0}&{0}\end{pmatrix}$ и $\begin{pmatrix}{0}&{0}\\{0}&{1}\end{pmatrix};$
+\item[б)] $\begin{pmatrix}{3}&{1}\\{1}&{2}\end{pmatrix}$ и $\begin{pmatrix}{3}&{-1}\\{2}&{1}\end{pmatrix};$
+\item[в)] $\begin{pmatrix}{2}&{1}\\{1}&{1}\end{pmatrix}$ и $\begin{pmatrix}{2}&{1}\\{0}&{1}\end{pmatrix}$.
+\end{itemize}
+
+\vspace{5pt}
+
+
+\z В пространстве $\mathbb R^3$ заданы следующие векторы:
+\[
+v_1 =
+\begin{pmatrix}
+{1}\\{0}\\{2}
+\end{pmatrix}
+,\;
+v_2 =
+\begin{pmatrix}
+{1}\\{1}\\{-1}
+\end{pmatrix}
+,\;
+v_3 =
+\begin{pmatrix}
+{2}\\{0}\\{3}
+\end{pmatrix}
+,\;
+u_1 =
+\begin{pmatrix}
+{1}\\{0}\\{1}
+\end{pmatrix}
+,\;
+u_2 =
+\begin{pmatrix}
+{0}\\{1}\\{1}
+\end{pmatrix}
+,\;
+u_3 =
+\begin{pmatrix}
+{0}\\{0}\\{2}
+\end{pmatrix}.
+\]
+Найдите матрицу $A$ линейного оператора $\varphi\colon \mathbb R^3\to \mathbb R^3$, заданного по правилу $x\mapsto Ax$, такого, что $A v_i = u_i$ при $i = 1, 2, 3$. 
+
+\vspace{5pt}
+
+
+
+\z Пусть $\varphi\colon \mathbb R^3\to \mathbb R^2$ -- линейное отображение, заданное в стандартном базисе матрицей $A = \left(\begin{smallmatrix}{1}&{2}&{0}\\{-1}&{0}&{2}\end{smallmatrix}\right)$.  Пусть
+\[
+f_1 = 
+\begin{pmatrix}
+{1}\\{1}\\{1}
+\end{pmatrix},\:
+f_2 = 
+\begin{pmatrix}
+{1}\\{1}\\{2}
+\end{pmatrix},\:
+f_3 = 
+\begin{pmatrix}
+{1}\\{2}\\{3}
+\end{pmatrix}\text{ -- \ векторы в } \mathbb R^3,\quad
+g_1 =
+\begin{pmatrix}
+{1}\\{2}
+\end{pmatrix},\:
+g_2 =
+\begin{pmatrix}
+{1}\\{1}
+\end{pmatrix}\text{ -- \ векторы в } \mathbb R^3.
+\]
+Найти матрицу отображения $\varphi$ в базисах $f_1,f_2,f_3$ и $g_1,g_2$.
+
+\vspace{5pt}
+
+
+
+\z В пространстве $\mathbb R^3$ заданы следующие векторы:
+\[
+v_1 = 
+\begin{pmatrix}
+{1}\\{1}\\{1}
+\end{pmatrix},\,
+v_2 = 
+\begin{pmatrix}
+{1}\\{2}\\{0}
+\end{pmatrix},\,
+v_3 = 
+\begin{pmatrix}
+{5}\\{8}\\{2}
+\end{pmatrix},\,
+v_4 = 
+\begin{pmatrix}
+{-1}\\{-2}\\{1}
+\end{pmatrix},\,
+v_5 = 
+\begin{pmatrix}
+{3}\\{5}\\{-1}
+\end{pmatrix}.
+\]
+Существует ли линейное отображение $\varphi\colon \mathbb R^3\to \mathbb R^2$ такое, что $\varphi(v_i) = u_i$ при $i = 1, 2, 3, 4, 5$, где
+
+\[
+u_1 = 
+\begin{pmatrix}
+{1}\\{0}
+\end{pmatrix},\,
+u_2 = 
+\begin{pmatrix}
+{0}\\{1}
+\end{pmatrix},\,
+u_3 = 
+\begin{pmatrix}
+{2}\\{3}
+\end{pmatrix},\,
+u_4 = 
+\begin{pmatrix}
+{0}\\{0}
+\end{pmatrix},\,
+u_5 = 
+\begin{pmatrix}
+{1}\\{0}
+\end{pmatrix}?
+\]
+
+\vspace{5pt}
+
+\z Найдите в стандартном базисе матрицу линейного оператора $\varphi\colon \mathbb R^2\to \mathbb R^2$, который сжимает плоскость в 2 раза вдоль прямой $y = -2x$ и одновременно растягивает плоскость в 3 раза вдоль прямой $y = x$.
+
+\vspace{5pt}
+
+
+\z Найти собственные значения и собственные векторы линейного оператора, заданного в стандартном базисе матрицей:
+
+
+
+$$
+\begin{pmatrix}
+{4}&{-5}&{2}\\
+{5}&{-7}&{3}\\
+{6}&{-9}&{4}\\
+\end{pmatrix}
+$$
+
+Можно ли эти матрицу диагонализовать в каком-нибудь базисе?
+
+\vspace{5pt}
+
+
+\z Пусть $a_1, a_2, \dots, a_n \in \mathbb{R}$. Найдите собственные значения $n \times n$ матрицы $x^T x$, где $x$ -- матрица-строка $(a_1, a_2,\ldots,a_n)$.
+
+
+\end{document}
