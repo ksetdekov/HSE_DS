@@ -1,0 +1,284 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[cm,empty]{fullpage}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{proof}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+\newtheorem*{rem}{Замечание}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\newcounter{z}
+
+
+\newcommand{\zs}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{12.\arabic{z}}} }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
+\fbox{\textbf{\arabic{z}}} }
+
+\renewcommand{\date}{{\bf 5 апреля 2021}} 
+
+\newcommand{\dif}
+{
+------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+\newcommand{\HSEhat}{
+\vspace*{-0pt}
+\noindent
+\setcounter{z}{0}
+
+
+{\bf \phantom{\date}  \large \hfill Линейная алгебра: \hfill \normalsize \date}
+
+\vspace{5 pt}
+{\bf \large \hfill  лекция 4\hfill }
+
+\vspace{15 pt}
+\centerline{ \large  Домашнее задание.}
+\centerline{ \large  Кирилл Сетдеков}
+
+
+
+\vspace*{10pt}
+\setcounter{z}{0}
+
+}
+
+\begin{document}
+\HSEhat
+
+
+
+
+
+Квадратные матрицы $A, B\in M_{n}(\mathbb{R})$ называются сопряженными, если найдется невырожденная матрица $C\in M_{n}(\mathbb{R})$ такая, что $B = C^{-1}AC$. Сопряженные матрицы обладают похожими свойствами, в частности, имеют одинаковый определитель, след и ранг, а также одинаковые наборы собственных значений.
+
+В пространстве $\mathbb R^n$ стандартным называется следующий базис
+\[
+e_1 = 
+\begin{pmatrix}
+{1}\\{0}\\{\vdots}\\{0}
+\end{pmatrix},
+e_2 = 
+\begin{pmatrix}
+{0}\\{1}\\{\vdots}\\{0}
+\end{pmatrix},
+\ldots,
+e_n = 
+\begin{pmatrix}
+{0}\\{0}\\{\vdots}\\{1}
+\end{pmatrix}
+\]
+
+
+\begin{enumerate}
+
+\subsection*{Задачи:}
+
+
+
+
+\item Какие из следующих матриц сопряжены? Если они сопряжены, то укажите, с помощью какой матрицы:
+\begin{itemize}
+\item[а)] $\begin{pmatrix}{1}&{0}\\{0}&{0}\end{pmatrix}$ и $\begin{pmatrix}{0}&{0}\\{0}&{1}\end{pmatrix};$
+
+\textbf{Решение:}\\
+Найдем определитель:
+$$D=b^2-4ac =  (\frac{20}{i - 3})^2+4\frac{2 - 11i}i=\frac{400}{i^2+9-6i}+\frac{8-44i}{i}=\frac{400}{8-6i}+\frac{8-44i}{i}=$$ $$=\frac{400i+64-264-48i-352i}{8i+6}=\frac{-200}{8i+6}=-100 (\frac{1}{4i+3})=-100(\frac{3}{25}-\frac{4i}{25})=-12+16i=D$$
+
+$$\sqrt{D}=\sqrt{4}\sqrt{-3+4i}=\sqrt{4}(\sqrt{\frac{\sqrt{25}-3}{2}}+i\sqrt{\frac{\sqrt{25}+3}{2}})=\sqrt{4}+4i=2+4i$$
+
+Решение будет:
+$$x_{1,2} = \frac{-b\pm (2+4i)}{2a}=\frac{\frac{20}{3-i}\pm (2+4i)}{\frac{2}{-i}}=-10\frac{i}{3-i}\pm i (1+2i)=-10\frac{i}{3-i}\pm(i-2) =$$
+$$= -10i(\frac{3}{10}+\frac{i}{10})\pm(i-2)=-3i+1 \pm(i-2)$$
+После того как возьмем два разных знака, то получим корни:
+$x_1 = 3-4i; x_2=-1-2i$
+
+
+\textbf{Ответ: $x_1 = 3-4i; x_2=-1-2i$}
+
+
+
+\item[б)] $\begin{pmatrix}{3}&{1}\\{1}&{2}\end{pmatrix}$ и $\begin{pmatrix}{3}&{-1}\\{2}&{1}\end{pmatrix};$
+\item[в)] $\begin{pmatrix}{2}&{1}\\{1}&{1}\end{pmatrix}$ и $\begin{pmatrix}{2}&{1}\\{0}&{1}\end{pmatrix}$.
+\end{itemize}
+
+\vspace{5pt}
+
+
+\item В пространстве $\mathbb R^3$ заданы следующие векторы:
+\[
+v_1 =
+\begin{pmatrix}
+{1}\\{0}\\{2}
+\end{pmatrix}
+,\;
+v_2 =
+\begin{pmatrix}
+{1}\\{1}\\{-1}
+\end{pmatrix}
+,\;
+v_3 =
+\begin{pmatrix}
+{2}\\{0}\\{3}
+\end{pmatrix}
+,\;
+u_1 =
+\begin{pmatrix}
+{1}\\{0}\\{1}
+\end{pmatrix}
+,\;
+u_2 =
+\begin{pmatrix}
+{0}\\{1}\\{1}
+\end{pmatrix}
+,\;
+u_3 =
+\begin{pmatrix}
+{0}\\{0}\\{2}
+\end{pmatrix}.
+\]
+Найдите матрицу $A$ линейного оператора $\varphi\colon \mathbb R^3\to \mathbb R^3$, заданного по правилу $x\mapsto Ax$, такого, что $A v_i = u_i$ при $i = 1, 2, 3$. 
+
+\vspace{5pt}
+
+
+
+\item Пусть $\varphi\colon \mathbb R^3\to \mathbb R^2$ -- линейное отображение, заданное в стандартном базисе матрицей $A = \left(\begin{smallmatrix}{1}&{2}&{0}\\{-1}&{0}&{2}\end{smallmatrix}\right)$.  Пусть
+\[
+f_1 = 
+\begin{pmatrix}
+{1}\\{1}\\{1}
+\end{pmatrix},\:
+f_2 = 
+\begin{pmatrix}
+{1}\\{1}\\{2}
+\end{pmatrix},\:
+f_3 = 
+\begin{pmatrix}
+{1}\\{2}\\{3}
+\end{pmatrix}\text{ -- \ векторы в } \mathbb R^3,\quad
+g_1 =
+\begin{pmatrix}
+{1}\\{2}
+\end{pmatrix},\:
+g_2 =
+\begin{pmatrix}
+{1}\\{1}
+\end{pmatrix}\text{ -- \ векторы в } \mathbb R^3.
+\]
+Найти матрицу отображения $\varphi$ в базисах $f_1,f_2,f_3$ и $g_1,g_2$.
+
+\vspace{5pt}
+
+
+
+\item В пространстве $\mathbb R^3$ заданы следующие векторы:
+\[
+v_1 = 
+\begin{pmatrix}
+{1}\\{1}\\{1}
+\end{pmatrix},\,
+v_2 = 
+\begin{pmatrix}
+{1}\\{2}\\{0}
+\end{pmatrix},\,
+v_3 = 
+\begin{pmatrix}
+{5}\\{8}\\{2}
+\end{pmatrix},\,
+v_4 = 
+\begin{pmatrix}
+{-1}\\{-2}\\{1}
+\end{pmatrix},\,
+v_5 = 
+\begin{pmatrix}
+{3}\\{5}\\{-1}
+\end{pmatrix}.
+\]
+Существует ли линейное отображение $\varphi\colon \mathbb R^3\to \mathbb R^2$ такое, что $\varphi(v_i) = u_i$ при $i = 1, 2, 3, 4, 5$, где
+
+\[
+u_1 = 
+\begin{pmatrix}
+{1}\\{0}
+\end{pmatrix},\,
+u_2 = 
+\begin{pmatrix}
+{0}\\{1}
+\end{pmatrix},\,
+u_3 = 
+\begin{pmatrix}
+{2}\\{3}
+\end{pmatrix},\,
+u_4 = 
+\begin{pmatrix}
+{0}\\{0}
+\end{pmatrix},\,
+u_5 = 
+\begin{pmatrix}
+{1}\\{0}
+\end{pmatrix}?
+\]
+
+\vspace{5pt}
+
+\item Найдите в стандартном базисе матрицу линейного оператора $\varphi\colon \mathbb R^2\to \mathbb R^2$, который сжимает плоскость в 2 раза вдоль прямой $y = -2x$ и одновременно растягивает плоскость в 3 раза вдоль прямой $y = x$.
+
+\vspace{5pt}
+
+
+\item Найти собственные значения и собственные векторы линейного оператора, заданного в стандартном базисе матрицей:
+
+
+
+$$
+\begin{pmatrix}
+{4}&{-5}&{2}\\
+{5}&{-7}&{3}\\
+{6}&{-9}&{4}\\
+\end{pmatrix}
+$$
+
+Можно ли эти матрицу диагонализовать в каком-нибудь базисе?
+
+\vspace{5pt}
+
+
+\item Пусть $a_1, a_2, \dots, a_n \in \mathbb{R}$. Найдите собственные значения $n \times n$ матрицы $x^T x$, где $x$ -- матрица-строка $(a_1, a_2,\ldots,a_n)$.
+
+
+\end{enumerate}
+\end{document}
