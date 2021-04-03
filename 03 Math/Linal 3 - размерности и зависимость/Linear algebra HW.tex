@@ -1,0 +1,477 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[cm,empty]{fullpage}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{proof}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
+
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+\newtheorem*{rem}{Замечание}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\newcounter{z}
+
+
+\newcommand{\zs}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{12.\arabic{z}}} }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
+\fbox{\textbf{\arabic{z}}} }
+
+\renewcommand{\date}{{\bf 28 марта 2021}} 
+
+\newcommand{\dif}
+{
+------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+\newcommand{\HSEhat}{
+\vspace*{-0pt}
+\noindent
+\setcounter{z}{0}
+
+
+{\bf \phantom{\date}  \large \hfill Линейная алгебра: \hfill \normalsize \date}
+
+\vspace{5 pt}
+{\bf \large \hfill  лекция 3\hfill }
+
+\vspace{15 pt}
+\centerline{ \large  Домашнее задание.}
+\centerline{ \large  Кирилл Сетдеков}
+
+
+
+\vspace*{10pt}
+\setcounter{z}{0}
+
+}
+
+\begin{document}
+\HSEhat
+
+
+\subsection*{Задачи}
+
+\begin{enumerate}
+\item Решите квадратное уравнение над $\mathbb C$:
+\[
+-\frac{z^2}i + \frac{20z}{i - 3} + (2 - 11i) = 0.
+\]
+
+\textbf{Решение:}\\
+Найдем определитель:
+$$D=b^2-4ac =  (\frac{20}{i - 3})^2+4\frac{2 - 11i}i=\frac{400}{i^2+9-6i}+\frac{8-44i}{i}=\frac{400}{8-6i}+\frac{8-44i}{i}=$$ $$=\frac{400i+64-264-48i-352i}{8i+6}=\frac{-200}{8i+6}=-100 (\frac{1}{4i+3})=-100(\frac{3}{25}-\frac{4i}{25})=-12+16i=D$$
+
+$$\sqrt{D}=\sqrt{4}\sqrt{-3+4i}=\sqrt{4}(\sqrt{\frac{\sqrt{25}-3}{2}}+i\sqrt{\frac{\sqrt{25}+3}{2}})=\sqrt{4}+4i=2+4i$$
+
+Решение будет:
+$$x_{1,2} = \frac{-b\pm (2+4i)}{2a}=\frac{\frac{20}{3-i}\pm (2+4i)}{\frac{2}{-i}}=-10\frac{i}{3-i}\pm i (1+2i)=-10\frac{i}{3-i}\pm(i-2) =$$
+$$= -10i(\frac{3}{10}+\frac{i}{10})\pm(i-2)=-3i+1 \pm(i-2)$$
+После того как возьмем два разных знака, то получим корни:
+$x_1 = 3-4i; x_2=-1-2i$
+
+
+\textbf{Ответ: $x_1 = 3-4i; x_2=-1-2i$}
+
+
+\item Найдите все значения $\lambda\in \mathbb R$, при которых вектор $v$ линейно выражается через векторы $a_1$, $a_2$, $a_3$, где
+\[
+a_1 = 
+\begin{pmatrix}
+{2}\\{3}\\{5}
+\end{pmatrix},\;
+a_2 = 
+\begin{pmatrix}
+{3}\\{7}\\{8}
+\end{pmatrix},\;
+a_3 = 
+\begin{pmatrix}
+{1}\\{-6}\\{1}
+\end{pmatrix},\;
+v = 
+\begin{pmatrix}
+{7}\\{-2}\\{\lambda}
+\end{pmatrix}.
+\]
+
+\vspace{5pt}
+\textbf{Решение:}\\
+Запишем вектора как столбцы матрицы и попробуем методом Гаусса прийти к ступенчатому виду, чтобы найти главные вектора и выразить через них зависимые.
+
+$
+\left(\begin{array}{cccc}  
+2&3&1&7\\
+3&7&-6&-2\\
+5&8&1&\lambda
+\end{array}\right) \rightarrow$ поменяем местами \rom{1} и \rom{2} \\
+$
+\left(\begin{array}{cccc}  
+3&7&-6&-2\\
+2&3&1&7\\
+5&8&1&\lambda
+\end{array}\right) \rightarrow$ вычтем  \rom{1} - \rom{2} \\
+$
+\left(\begin{array}{cccc}  
+1&4&-7&-9\\
+2&3&1&7\\
+5&8&1&\lambda
+\end{array}\right) \rightarrow$ вычтем  \rom{2} -2 \rom{1} и  \rom{3} -5 \rom{1}\\
+$
+\left(\begin{array}{cccc}  
+1&4&-7&-9\\
+0&-5&15&25\\
+0&-12&36&\lambda+45
+\end{array}\right) \rightarrow$ поделим  \rom{2} на -5\\
+$
+\left(\begin{array}{cccc}  
+1&4&-7&-9\\
+0&1&-3&-5\\
+0&-12&36&\lambda+45
+\end{array}\right) \rightarrow$ вычтем  \rom{1} -4 \rom{2}  и \rom{3} +12\rom{2}\\
+$
+\left(\begin{array}{cccc}  
+1&0&5&11\\
+0&1&-3&-5\\
+0&0&0&\lambda-15
+\end{array}\right)$
+
+Если $\lambda \neq 15$, то $a_4$ - главный вектор, если равно, то его можно выразить через 1 и 2 вектор. Запишем систему:
+
+$$\begin{cases}
+    a_1+5a_3+11a_4=0\\
+    a_2-3a_3-5a_4=0
+\end{cases} \Rightarrow \begin{cases}
+    a_3 = \frac{1}{8}(5a_1+11a_2)\\
+    a_4 = \frac{1}{8}(-3a_1-5a_2)
+\end{cases}$$
+
+\textbf{Ответ: $\lambda \neq 15$, тогда $a_4 = \frac{1}{8}(-3a_1-5a_2)$. Когда $\lambda = 15$, $a_4$ линейно независим от остальных и является одним из 3 главных векторов}
+
+\item а) Пусть $V = M_2(\mathbb{R})$, $U = \{\left(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix} \right) \mid a + d = 0\}$. Покажите, что $U$ -- подпространство $V$. Иными словами, нужно показать, что множество $2\times 2$ матриц с нулевым следом является подпространством пространства всех вещественных $2\times 2$ матриц ({\it следом} матрицы называется сумма элементов главной диагонали матрицы).
+Найдите размерность $U$ и предъявите некоторый базис $U$.
+
+\textbf{Решение:}\\
+Пространство $V = M_2(\mathbb{R})$ имеет размерность $\dim V = 4$ пример матриц, которые образуют базис: $X = \left(\begin{smallmatrix}
+1 & 0 \\
+0 & 0
+\end{smallmatrix} \right)$, $Y = \left(\begin{smallmatrix}
+0 & 1 \\
+0 & 0
+\end{smallmatrix} \right)$, $Z = \left(\begin{smallmatrix}
+0 & 0 \\
+1 & 0
+\end{smallmatrix} \right)$, $T = \left(\begin{smallmatrix}
+0 & 0 \\
+0 & 1
+\end{smallmatrix} \right)$ и любая матрица 2X2 имеет координаты $v = 
+\begin{pmatrix}
+{a}\\{b}\\{c}\\{d}
+\end{pmatrix}$ 
+
+Так как $a+d=0$, то можно любую матрицу из U представить в координатах пространства V: $u = \begin{pmatrix}
+{a}\\{b}\\{c}\\{-a}\end{pmatrix}$
+
+
+\textbf{Ответ:
+$\dim U = 3$ 
+Пример базиса:
+$X = \left(\begin{smallmatrix}
+1 & 0 \\
+0 & -1
+\end{smallmatrix} \right)$, $Y = \left(\begin{smallmatrix}
+0 & 1 \\
+0 & 0
+\end{smallmatrix} \right)$, $Z = \left(\begin{smallmatrix}
+0 & 0 \\
+1 & 0
+\end{smallmatrix} \right)$}
+
+
+
+б) В выбранном базисе найдите координаты матрицы $\left(\begin{smallmatrix}
+-1 & 2 \\
+3 & 1
+\end{smallmatrix} \right)$ (то есть укажите, как эта матрица выражается через базисные).
+
+\vspace{5pt}
+\textbf{Решение:}\\
+В базисе, указанном выше, эту матрицу можно получить как $-1 X+2Y+3Z= -1\left(\begin{smallmatrix}
+1 & 0 \\
+0 & -1
+\end{smallmatrix} \right) +2 \left(\begin{smallmatrix}
+0 & 1 \\
+0 & 0
+\end{smallmatrix} \right)+3 \left(\begin{smallmatrix}
+0 & 0 \\
+1 & 0
+\end{smallmatrix} \right)= \left(\begin{smallmatrix}
+-1 & 2 \\
+3 & 1
+\end{smallmatrix} \right)$
+
+
+\textbf{Ответ:
+$\begin{pmatrix}
+{-1}\\{2}\\{3}\end{pmatrix}$ 
+В базисе:
+$X = \left(\begin{smallmatrix}
+1 & 0 \\
+0 & -1
+\end{smallmatrix} \right)$, $Y = \left(\begin{smallmatrix}
+0 & 1 \\
+0 & 0
+\end{smallmatrix} \right)$, $Z = \left(\begin{smallmatrix}
+0 & 0 \\
+1 & 0
+\end{smallmatrix} \right)$}
+
+\item Найдите какой-нибудь базис системы векторов и выразите через него все остальные векторы системы:
+$$a_1 = (2, -1, 3, 5), \ a_2 = (4, -3, 1, 3), \ a_3 = (3, -2, 3, 4), \ a_4 = (4, -1, 15, 17), \ a_5 = (7, -6, -7, 0).$$ 
+
+\vspace{5pt}
+\textbf{Решение:}\\
+Запишем вектора как столбцы в матрицу и начнем применять метод Гаусса. Таким образом найдем какие из векторов главные и выразим через них остальные.:
+
+$
+\left(\begin{array}{ccccc}  
+2&4&3&4&7\\
+-1&-3&-2&-1&-6\\
+3&1&3&15&-7\\
+5&3&4&17&0
+\end{array}\right) \rightarrow$ прибавим \rom{2} к \rom{1} \\
+$
+\left(\begin{array}{ccccc}  
+1&1&1&3&1\\
+-1&-3&-2&-1&-6\\
+3&1&3&15&-7\\
+5&3&4&17&0
+\end{array}\right) \rightarrow$ прибавим \rom{2} к \rom{1}, \rom{3} -3 \rom{1}, \rom{3} -5 \rom{1}\\
+$
+\left(\begin{array}{ccccc}  
+1&1&1&3&1\\
+0&-2&-1&2&-5\\
+0&-2&0&6&-10\\
+0&-2&-1&2&-5
+\end{array}\right) \rightarrow$ вычтем \rom{2} - \rom{3}, \rom{4} -\rom{3}\\
+$
+\left(\begin{array}{ccccc}  
+1&1&1&3&1\\
+0&0&-1&-4&5\\
+0&-2&0&6&-10\\
+0&0&-1&-4&5
+\end{array}\right) \rightarrow$ поделим \rom{3} на -2 и поменяем с \rom{2}\\
+$
+\left(\begin{array}{ccccc}  
+1&1&1&3&1\\
+0&1&0&-3&5\\
+0&0&-1&-4&5\\
+0&0&-1&-4&5
+\end{array}\right) \rightarrow$  \rom{4} - \rom{3}\\
+$
+\left(\begin{array}{ccccc}  
+1&1&1&3&1\\
+0&1&0&-3&5\\
+0&0&-1&-4&5\\
+0&0&0&0&0
+\end{array}\right) \rightarrow$  \rom{1} - \rom{2} + \rom{3} \\
+$
+\left(\begin{array}{ccccc}  
+1&0&0&2&1\\
+0&1&0&-3&5\\
+0&0&-1&-4&5\\
+0&0&0&0&0
+\end{array}\right) \rightarrow$  \rom{3} *-1 \\
+$
+\left(\begin{array}{ccccc}  
+1&0&0&2&1\\
+0&1&0&-3&5\\
+0&0&1&4&-5\\
+0&0&0&0&0
+\end{array}\right) $
+
+Мы получили, что вектора $(a_1,a_2,a_3)$ главные, скажем что они базис. В этом базисе координаты $a_4:\begin{pmatrix}2\\-3\\4
+\end{pmatrix}$, координаты $a_5:\begin{pmatrix}1\\5\\-5
+\end{pmatrix}$
+
+\textbf{Ответ: базис - вектора $(a_1,a_2,a_3)$.  В этом базисе координаты $a_4:\begin{pmatrix}2\\-3\\4
+\end{pmatrix}$, координаты $a_5:\begin{pmatrix}1\\5\\-5
+\end{pmatrix}$}
+
+\item Найдите размерность и предъявите базис следующего подпространства в $\mathbb{R}^5$, заданного множеством решений следующей однородной системы линейных уравнений:
+
+\[
+\left\{
+\begin{aligned}
+& 2x_1 - x_2 + x_3 - 2x_4 + 4x_5 = 0\\
+& 4x_1 - 2x_2 + 5x_3 + x_4 + 7x_5 = 0\\
+& 2x_1 - x_2 + x_3 + 8x_4 + 2x_5 = 0
+\end{aligned}
+\right.
+\]
+
+\vspace{5pt}
+\textbf{Решение:}\\
+У нас матричное уравнение $Ax=0$. Запишем матрицу $A$ и приведем ее к каноническому ступенчатому виду:
+$
+\left(\begin{array}{ccccc}  
+2&-1&1&-2&4\\
+4&-2&5&1&7\\
+2&-1&1&8&2
+\end{array}\right) \rightarrow$ вычтем \rom{2} -2 \rom{1} и \rom{3} - \rom{1}\\
+$
+\left(\begin{array}{ccccc}  
+2&-1&1&-2&4\\
+0&0&3&5&-1\\
+0&0&0&10&-2
+\end{array}\right) \rightarrow$ поделим \rom{1}/2; \rom{2}/3 и \rom{3}/10\\
+$
+\left(\begin{array}{ccccc}  
+1&-1/2&1/2&-1&2\\
+0&0&1&5/3&-1/3\\
+0&0&0&1&-1/5
+\end{array}\right)$
+
+Размерность - 3 так как мы получили 3 главных вектора.
+Выразим систему уравнений для $x_2$ и $x_5$
+$$\begin{cases}
+    x_4-x_5/5=0\\
+    x_1+x_2/2+x_3/2-x_4+2x_5=0
+\end{cases} \Rightarrow \begin{cases}
+    x_5=5x_4\\
+    x_2 = 2x_1+x_3+18x_4
+\end{cases}$$
+
+Запишем ФСР для этой системы:
+
+$v_1=\begin{pmatrix}1\\2\\0\\0\\0
+\end{pmatrix}$,$v_3=\begin{pmatrix}0\\1\\1\\0\\0\end{pmatrix}$,$v_4=\begin{pmatrix}0\\18\\0\\1\\5\end{pmatrix}$
+
+
+\textbf{Ответ: $\dim = 3$ базис - вектора: $v_1=\begin{pmatrix}1\\2\\0\\0\\0
+\end{pmatrix}$,$v_3=\begin{pmatrix}0\\1\\1\\0\\0\end{pmatrix}$,$v_4=\begin{pmatrix}0\\18\\0\\1\\5\end{pmatrix}$}
+
+\item Для каждого значения $\lambda\in \mathbb R$ найдите ранг матрицы
+\[
+\begin{pmatrix}
+{-\lambda}&{1}&{2}&{3}&{1}\\
+{1}&{-\lambda}&{3}&{2}&{1}\\
+{2}&{3}&{-\lambda}&{1}&{1}\\
+{3}&{2}&{1}&{-\lambda}&{1}\\
+\end{pmatrix}.
+\]
+
+\textbf{Решение:}\\
+Назовем матрицу $A$. Мы сразу можем сказать что 
+$2 \leq rank A \leq 4$ так как в матрице $A$ - 4 строки и определитель углового минора из верхнего правого угла не равен 0 $\begin{vmatrix}
+3 & 1  \\ 
+2 & 1 
+\end{vmatrix}=3-2=1 \neq 0$
+
+Мы знаем, что ранг матрицы равен наивысшему из порядков всевозможных ненулевых миноров этой матрицы.
+
+Предположим, что мы хотим найти условия, при которых ранг матрицы равен меньше 4. Тогда мы должны записать все миноры 4 порядка, найти их определители и найти такие $\lambda$, при которых эти определители равны 0.
+
+Для нашей матрицы будет 5 миноров, полученных удаление одного из столбцов.
+
+1) без 1 столбца:
+
+$M_1 = \begin{pmatrix}
+{1}&{2}&{3}&{1}\\
+{-\lambda}&{3}&{2}&{1}\\
+{3}&{-\lambda}&{1}&{1}\\
+{2}&{1}&{-\lambda}&{1}\\
+\end{pmatrix}$, $\det M_1 = \lambda(\lambda+2)(\lambda+4)=0$
+
+
+2) без 2 столбца:
+
+$M_2=\begin{pmatrix}
+{-\lambda}&{2}&{3}&{1}\\
+{1}&{3}&{2}&{1}\\
+{2}&{-\lambda}&{1}&{1}\\
+{3}&{1}&{-\lambda}&{1}\\
+\end{pmatrix}$, $\det M_2 = -\lambda(\lambda+2)(\lambda+4)=0$
+
+3) без 3 столбца:
+
+$M_3 = \begin{pmatrix}
+{-\lambda}&{1}&{3}&{1}\\
+{1}&{-\lambda}&{2}&{1}\\
+{2}&{3}&{1}&{1}\\
+{3}&{2}&{-\lambda}&{1}\\
+\end{pmatrix}$, $\det M_3 = \lambda(\lambda+2)(\lambda+4)=0$
+
+4) без 4 столбца:
+
+$M_4=\begin{pmatrix}
+{-\lambda}&{1}&{2}&{1}\\
+{1}&{-\lambda}&{3}&{1}\\
+{2}&{3}&{-\lambda}&{1}\\
+{3}&{2}&{1}&{1}\\
+\end{pmatrix}$, $\det M_4 = -\lambda(\lambda+2)(\lambda+4)=0$
+
+
+5) без 5 столбца:
+
+$M_5= \begin{pmatrix}
+{-\lambda}&{1}&{2}&{3}\\
+{1}&{-\lambda}&{3}&{2}\\
+{2}&{3}&{-\lambda}&{1}\\
+{3}&{2}&{1}&{-\lambda}\\
+\end{pmatrix}$, $\det M_5 = \lambda(\lambda+2)(\lambda+4)(\lambda-6)=0$
+
+Все 5 определителей одновременно превращаются в 0, если $\lambda \in \{ 0,-2,-4\} $
+
+Мы нашли 3 значения $\lambda$, когда $rank A < 4$, значит в остальных значениях, $rank A = 4$
+
+Проверим минор 3 порядка:
+$\begin{vmatrix}
+{-\lambda}&{1}&{2}\\
+{1}&{-\lambda}&{3}\\
+{2}&{3}&{-\lambda}\\
+\end{vmatrix}=-\lambda^3+14\lambda+12=0$
+
+С помощью подстановки, проверим, являются ли 0, -2, -4 решением этого уравнения.
+
+$$-0^3+14*0+12=12\neq0$$
+$$2^3+14*-2+12=-8\neq0$$
+$$4^3+14*-4+12=20\neq0$$
+
+Следовательно определитель этого минора не равен 0, когда определители миноров 4 порядка равны нулю. Следовательно ранг матрицы будет равен 3, для значений $\lambda$, когда ранг не равен 4.
+
+
+\textbf{Ответ: для $\lambda \in \{ 0,-2,-4\}$, ранг равен 3. Для всех остальных значений $\lambda \notin \{ 0,-2,-4\}$, ранг равен 4.}
+\end{enumerate}
+\end{document}
