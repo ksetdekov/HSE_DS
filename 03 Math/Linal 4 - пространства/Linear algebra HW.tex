@@ -115,24 +115,48 @@ e_n =
 \item[а)] $\begin{pmatrix}{1}&{0}\\{0}&{0}\end{pmatrix}$ и $\begin{pmatrix}{0}&{0}\\{0}&{1}\end{pmatrix};$
 
 \textbf{Решение:}\\
-Найдем определитель:
-$$D=b^2-4ac =  (\frac{20}{i - 3})^2+4\frac{2 - 11i}i=\frac{400}{i^2+9-6i}+\frac{8-44i}{i}=\frac{400}{8-6i}+\frac{8-44i}{i}=$$ $$=\frac{400i+64-264-48i-352i}{8i+6}=\frac{-200}{8i+6}=-100 (\frac{1}{4i+3})=-100(\frac{3}{25}-\frac{4i}{25})=-12+16i=D$$
+Из условия выше следует, что можно проверить сначала определитель, след и ранг матриц на равенство, а потом только считать более сложное решение для $C$.
+$$tr A = tr B = 1$$ 
+$$\det A = \det B = 0$$
+$$ rank A = rank B = 1$$
+Посчитаем решение.
 
-$$\sqrt{D}=\sqrt{4}\sqrt{-3+4i}=\sqrt{4}(\sqrt{\frac{\sqrt{25}-3}{2}}+i\sqrt{\frac{\sqrt{25}+3}{2}})=\sqrt{4}+4i=2+4i$$
+Нас интересует матрица $C=\begin{pmatrix}{a}&{b}\\{c}&{d}\end{pmatrix}$
+$$C^{-1}=\frac{1}{ad-bc}\begin{pmatrix}{d}&{-b}\\{-c}&{a}\end{pmatrix}$$
 
-Решение будет:
-$$x_{1,2} = \frac{-b\pm (2+4i)}{2a}=\frac{\frac{20}{3-i}\pm (2+4i)}{\frac{2}{-i}}=-10\frac{i}{3-i}\pm i (1+2i)=-10\frac{i}{3-i}\pm(i-2) =$$
-$$= -10i(\frac{3}{10}+\frac{i}{10})\pm(i-2)=-3i+1 \pm(i-2)$$
-После того как возьмем два разных знака, то получим корни:
-$x_1 = 3-4i; x_2=-1-2i$
+Само уравнение будет иметь вид:
+$$\begin{pmatrix}{1}&{0}\\{0}&{0}\end{pmatrix}=\frac{1}{ad-bc}\begin{pmatrix}{d}&{-b}\\{-c}&{a}\end{pmatrix} \begin{pmatrix}{0}&{0}\\{0}&{1}\end{pmatrix} \begin{pmatrix}{a}&{b}\\{c}&{d}\end{pmatrix}$$
+Перемножим справа 1 и 2 матрицы:
+$$\begin{pmatrix}{1}&{0}\\{0}&{0}\end{pmatrix}=\frac{1}{ad-bc}\begin{pmatrix}{0}&{-b}\\{0}&{a}\end{pmatrix} \begin{pmatrix}{a}&{b}\\{c}&{d}\end{pmatrix}$$
+Перемножим оставшиеся матрицы:
+$$\begin{pmatrix}{1}&{0}\\{0}&{0}\end{pmatrix}=\frac{1}{ad-bc} \begin{pmatrix}{-bc}&{-bd}\\{ac}&{ad}\end{pmatrix}$$
+Нам нужно решение 
+$$\begin{cases}
+\frac{-bc}{ad-bc}=1\\
+-bd=0\\
+ac = 0\\
+ad =0
+\end{cases}$$
+
+Решением будет $\begin{cases}a = 0\\
+d = 0\\
+bc \neq 0
+\end{cases}$
 
 
-\textbf{Ответ: $x_1 = 3-4i; x_2=-1-2i$}
-
+\textbf{Ответ: Эти матрицы сопряжены. Они сопряжены с помощью матрицы вида $\begin{pmatrix}{0}&{b}\\{c}&{0}\end{pmatrix}$, где $bc \neq 0$}
 
 
 \item[б)] $\begin{pmatrix}{3}&{1}\\{1}&{2}\end{pmatrix}$ и $\begin{pmatrix}{3}&{-1}\\{2}&{1}\end{pmatrix};$
+
+\textbf{Ответ: Эти матрицы не сопряжены так как их следы не равны: $tr A = 5 \neq tr B = 4 $}
+
+
 \item[в)] $\begin{pmatrix}{2}&{1}\\{1}&{1}\end{pmatrix}$ и $\begin{pmatrix}{2}&{1}\\{0}&{1}\end{pmatrix}$.
+
+\textbf{Ответ: Эти матрицы не сопряжены так как их определители не равны: $|A| = 1 \neq |B| = 2 $}
+
+
 \end{itemize}
 
 \vspace{5pt}
@@ -174,6 +198,58 @@ u_3 =
 
 \vspace{5pt}
 
+\textbf{Решение:}\\
+$AV=U$, где V - матрица из векторов $v$, а U - матрица из векторов $u$. Нам нужно найти $A=UV^{-1}$
+
+Найдем сначала $V^{-1}$ методом Гаусса.
+
+$
+\left(\begin{array}{ccc|ccc}  
+1&1&2&1&0&0\\
+0&1&0&0&1&0\\
+2&-1&3&0&0&1
+\end{array}\right) \rightarrow$ вычтем \rom{3} -2 \rom{1} \\
+$
+\left(\begin{array}{ccc|ccc}  
+1&1&2&1&0&0\\
+0&1&0&0&1&0\\
+0&-3&-1&-2&0&1
+\end{array}\right) \rightarrow$ вычтем \rom{1} - \rom{2} и   \rom{3}+ \rom{2}\\
+$
+\left(\begin{array}{ccc|ccc}  
+1&0&2&1&-1&0\\
+0&1&0&0&1&0\\
+0&0&-1&-2&3&1
+\end{array}\right) \rightarrow$ прибавим \rom{1} + 2 \rom{3} и   умножим \rom{3} на -1\\
+$
+\left(\begin{array}{ccc|ccc}  
+1&0&0&-3&5&2\\
+0&1&0&0&1&0\\
+0&0&1&2&-3&-1
+\end{array}\right) $
+Мы нашли в правой части матрицу $V^{-1}$.
+
+Рассчитаем A через произведение.
+
+$$UV^{-1}=\begin{pmatrix}
+1&0&0\\
+0&1&0\\
+1&1&2
+\end{pmatrix}\begin{pmatrix}
+-3&5&2\\
+0&1&0\\
+2&-3&-1
+\end{pmatrix}=\begin{pmatrix}
+-3&5&2\\
+0&1&0\\
+1&0&0
+\end{pmatrix}$$
+
+\textbf{Ответ: матрица $A=\begin{pmatrix}
+-3&5&2\\
+0&1&0\\
+1&0&0
+\end{pmatrix}$}
 
 
 \item Пусть $\varphi\colon \mathbb R^3\to \mathbb R^2$ -- линейное отображение, заданное в стандартном базисе матрицей $A = \left(\begin{smallmatrix}{1}&{2}&{0}\\{-1}&{0}&{2}\end{smallmatrix}\right)$.  Пусть
@@ -203,7 +279,43 @@ g_2 =
 
 \vspace{5pt}
 
+\textbf{Решение:}\\
+Согласно теореме с лекции, при смене базисов, нужно матрицу линейного отображения умножить слева на обратную матрицу перехода к новому базису в целевом пространстве и справа на матрицу перехода к новому базису в исходном пространстве: $A' = C^{-1}_{e\rightarrow g} A C_{e\rightarrow f}$
 
+$A$ уже известно, $C_{e\rightarrow f}$ - это матрица их колонок векторов $f_1,f_2,f_3$.
+$$C^{-1}_{e\rightarrow g} = inv \begin{pmatrix}
+1&1\\
+2&1
+\end{pmatrix} =\frac{1}{-1}\begin{pmatrix}
+1&-1\\
+-2&1
+\end{pmatrix}=\begin{pmatrix}
+-1&1\\
+2&-1
+\end{pmatrix}  $$
+
+Завершим расчет:
+$$A'=\begin{pmatrix}
+-1&1\\
+2&-1
+\end{pmatrix} \begin{pmatrix}{1}&{2}&{0}\\{-1}&{0}&{2}\end{pmatrix} \begin{pmatrix}
+1&1&1\\
+1&1&2\\
+1&2&3
+\end{pmatrix}=\begin{pmatrix}-2&-2&2\\
+3&4&-2\\\end{pmatrix} \begin{pmatrix}
+1&1&1\\
+1&1&2\\
+1&2&3
+\end{pmatrix}=\begin{pmatrix}
+-2&0&0\\
+5&3&5\\
+\end{pmatrix}$$
+
+\textbf{Ответ: матрица  отображения $\varphi$ в базисах $f_1,f_2,f_3$ и $g_1,g_2$ $A'=\begin{pmatrix}
+-2&0&0\\
+5&3&5\\
+\end{pmatrix}$}
 
 \item В пространстве $\mathbb R^3$ заданы следующие векторы:
 \[
@@ -260,6 +372,69 @@ u_5 =
 \vspace{5pt}
 
 
+\textbf{Решение:}\\
+Положим мы  уже находимся в базисе, где происходит эта трансформация, тогда трансформации соответствует матрице оператора  $A = \begin{pmatrix}{3}&{0}\\{0}&{0,5}\end{pmatrix}$
+Найдем матрицу перехода от базиса в векторах $\begin{pmatrix}
+{1}\\{1}
+\end{pmatrix}$ и $\begin{pmatrix}
+{1}\\{-2}
+\end{pmatrix}$ к стандартному. Сделаем это методом гаусса.
+
+$
+\left(\begin{array}{cc|cc}  
+1&1&1&0\\
+1&-2&0&1
+\end{array}\right) \rightarrow$ вычтем \rom{2}-\rom{1} \\
+$
+\left(\begin{array}{cc|cc}  
+1&1&1&0\\
+0&-3&-1&1
+\end{array}\right) \rightarrow$ поделим \rom{2} на -3 \\
+$
+\left(\begin{array}{cc|cc}  
+1&1&1&0\\
+0&1&\frac{1}{3}&-\frac{1}{3}
+\end{array}\right) \rightarrow$ вычтем \rom{1}-\rom{2} \\
+$
+\left(\begin{array}{cc|cc}  
+1&0&\frac{2}{3}&\frac{1}{3}\\
+0&1&\frac{1}{3}&-\frac{1}{3}
+\end{array}\right)$
+
+Матрица перехода к стандартному базису - $T = \begin{pmatrix}
+\frac{2}{3}&\frac{1}{3}\\
+\frac{1}{3}&-\frac{1}{3}
+\end{pmatrix}$
+
+Матрицу $T^{-1}$ мы уже знаем - это записанные по столбцам координаты векторов, относительно которых происходит растяжение и сжатие. $T^{-1} = \begin{pmatrix}
+1&1\\1&-2 
+\end{pmatrix}$
+
+Наш ответ относительно матрицы $A^*$ линейного оператора $\varphi$:
+
+$$A^* = T^{-1} A T= \begin{pmatrix}
+1&1\\1&-2
+\end{pmatrix} \begin{pmatrix}{3}&{0}\\{0}&{0,5}\end{pmatrix} \begin{pmatrix}
+\frac{2}{3}&\frac{1}{3}\\
+\frac{1}{3}&-\frac{1}{3}
+\end{pmatrix} = \begin{pmatrix}
+3&0.5\\3&-1
+\end{pmatrix}  \begin{pmatrix}
+\frac{2}{3}&\frac{1}{3}\\
+\frac{1}{3}&-\frac{1}{3}
+\end{pmatrix} = \frac{1}{6}\begin{pmatrix}
+13&5\\
+10&8
+\end{pmatrix}=\begin{pmatrix}
+2\frac{1}{6}&\frac{5}{6}\\
+1\frac{2}{3}&1\frac{1}{3}
+\end{pmatrix}$$
+
+\textbf{Ответ: в стандартном базисе матрица линейного оператора $\begin{pmatrix}
+2\frac{1}{6}&\frac{5}{6}\\
+1\frac{2}{3}&1\frac{1}{3}
+\end{pmatrix}$}
+
 \item Найти собственные значения и собственные векторы линейного оператора, заданного в стандартном базисе матрицей:
 
 
@@ -279,6 +454,55 @@ $$
 
 \item Пусть $a_1, a_2, \dots, a_n \in \mathbb{R}$. Найдите собственные значения $n \times n$ матрицы $x^T x$, где $x$ -- матрица-строка $(a_1, a_2,\ldots,a_n)$.
 
+\textbf{Решение:}\\
+Для начала найдем собственные значения для первых $n$ в этой последовательности увеличивающихся матриц.
+
+$n=1$: матрица имеет вид $
+\begin{pmatrix}
+a^2
+\end{pmatrix}
+$. Найдем собственные значения их уравнения $\begin{vmatrix}
+a^2-\lambda
+\end{vmatrix} =0$. собственные значения - только $a^2$
+
+$n=2$: матрица имеет вид $
+\begin{pmatrix}
+a^2&ab\\
+ab&b^2
+\end{pmatrix}
+$. Найдем собственные значения их уравнения $\begin{vmatrix}
+a^2-\lambda&ab\\
+ab&b^2-\lambda
+\end{vmatrix} =a^2b^2-a^2\lambda-{\lambda} b^2 + \lambda^2 -a^2b^2=-a^2\lambda-{\lambda} b^2 + \lambda^2=\lambda(\lambda-(a^2+b^2))$. Собственные значения - 0 и $a^2+b^2$
+
+$n=3$: матрица имеет вид $
+\begin{pmatrix}
+a^2&ab&ac\\
+ab&b^2&bc\\
+ac&bc&c^2
+\end{pmatrix}
+$. Найдем собственные значения их уравнения $\begin{vmatrix}
+a^2-\lambda&ab&ac\\
+ab&b^2-\lambda&bc\\
+ac&bc&c^2-\lambda
+\end{vmatrix} =(a^2-\lambda)\begin{vmatrix}
+b^2-\lambda&bc\\
+bc&c^2-\lambda
+\end{vmatrix}-ab\begin{vmatrix}
+ab&ac\\
+bc&c^2-\lambda
+\end{vmatrix}+ac\begin{vmatrix}
+ab&ac\\
+b^2-\lambda&bc
+\end{vmatrix}=(a^2 + b^2 + c^2 - \lambda) \lambda^2=0$. Собственные значения - 0,0 и $a^2 + b^2 + c^2$
+
+Мы получаем последовательность, что для любого $n$ собственные значения будут состоять из $n-1$ нулей и одного значения $a_1^2 + a_2^2 + c_3^2+...+a^2_n$.
+Эта конструкция похожа на квадрат длины вектора $x$. Покажем, что это верно, используя свойства собственного значения. Предположим, что мы нашли собственный вектор $x$ (вектор столбец), тогда выполнится определение $Ax=\lambda x$.
+
+
+$$(x^Tx)x^T = x^T(xx^T)=x^T{||x||}^2={||x||}^2x^T=\lambda x^T$$
+
+и $\lambda={||x||}^2$
 
 \end{enumerate}
 \end{document}
