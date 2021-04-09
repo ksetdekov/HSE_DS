@@ -1,0 +1,501 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[cm,empty]{fullpage}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{proof}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+\newtheorem*{rem}{Замечание}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\newcounter{z}
+
+
+\newcommand{\zs}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{12.\arabic{z}}} }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
+\fbox{\textbf{\arabic{z}}} }
+
+\renewcommand{\date}{{\bf 15 апреля 2021}} 
+
+\newcommand{\dif}
+{
+------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+\newcommand{\HSEhat}{
+\vspace*{-0pt}
+\noindent
+\setcounter{z}{0}
+
+
+{\bf \phantom{\date}  \large \hfill Линейная алгебра: \hfill \normalsize \date}
+
+\vspace{5 pt}
+{\bf \large \hfill  лекция 5\hfill }
+
+\vspace{15 pt}
+\centerline{ \large  Домашнее задание.}
+\centerline{ \large  Кирилл Сетдеков}
+
+
+
+\vspace*{10pt}
+\setcounter{z}{0}
+
+}
+
+\begin{document}
+\HSEhat
+
+
+\begin{enumerate}
+
+\subsection*{Задачи:}
+
+
+\item
+Найдите жорданову нормальную форму (ЖНФ) следующей матрицы:
+$$
+\begin{pmatrix}
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+3 & 4 & 0 & 0\\
+-1 & -1 & 0 & 0
+\end{pmatrix}.
+$$
+\vspace{5pt}
+
+\textbf{Решение:}\\
+Найдем собственные значения через $|A-\lambda E|=0$
+
+$\begin{vmatrix}
+-\lambda & 0 & 1 & 0\\
+0 & -\lambda & 0 & 1\\
+3 & 4 & -\lambda & 0\\
+-1 & -1 & 0 & -\lambda
+\end{vmatrix} =$ <разложим по 1 строке>$=-\lambda \begin{vmatrix}
+ -\lambda & 0 & 1\\
+ 4 & -\lambda & 0\\
+ -1 & 0 & -\lambda
+\end{vmatrix} + \begin{vmatrix}
+0 & -\lambda  & 1\\
+3 & 4  & 0\\
+-1 & -1  & -\lambda
+\end{vmatrix} =$<разложим по 2 столбцу 1 определитель и по 1 строке второй определитель> = $\lambda^2\begin{vmatrix}
+ -\lambda  & 1\\
+ -1  & -\lambda
+\end{vmatrix}+\lambda \begin{vmatrix}
+ 3 & 0\\
+ -1  & -\lambda
+\end{vmatrix}+ \begin{vmatrix}
+ 3 & 4\\
+ -1  & -1
+\end{vmatrix} = \lambda^4+\lambda^2-3\lambda^2+1=\lambda^4-2\lambda^2+1$
+
+Характеристических многочлен $\lambda^4-2\lambda^2+1=(\lambda^2 -1)^2$. Корнем будет являться $\lambda^2 = 1 \Rightarrow$ $\lambda_1 = -1, \lambda_2 = 1$
+
+Каждый корень кратности 2, поэтому мы не знаем точно форму клетки, в которую каждый входит. Проверим для каждого корня число клеток 1x1, это позволит нам понять, образуют ли они клетки типа $\begin{pmatrix}
+\lambda & 0\\
+0& \lambda
+\end{pmatrix}$ если число=2 или вида $\begin{pmatrix}
+\lambda & 1\\
+0& \lambda
+\end{pmatrix}$ если число=0.
+
+Проверим для $\lambda_1 = -1$:
+
+Нам нужно будет рассчитать 2 ранга:
+
+Для того чтобы вставить $rk(A+E)^2$, посчитаем его.
+
+
+$(A+E)^2=\begin{pmatrix}
+1 & 0 & 1 & 0\\
+0 & 1 & 0 & 1\\
+3 & 4 & 1 & 0\\
+-1 & -1 & 0 & 1
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 1 & 0\\
+0 & 1 & 0 & 1\\
+3 & 4 & 1 & 0\\
+-1 & -1 & 0 & 1
+\end{pmatrix}=\begin{pmatrix}
+4 & 4 & 2 & 0\\
+-1 & 0 & 0 & 2\\
+6 & 8 & 4 & 4\\
+-2 & -2 & -1 & 0
+\end{pmatrix}$\\
+Приведем эту матрицу к ступенчатому виду:\\
+$
+\left(\begin{array}{cccc}  
+4&4&2&0\\
+-1&0&0&2\\
+6&8&4&4\\
+-2&-2&-1&0\\
+\end{array}\right) \rightarrow$ поменяем \rom{1} и \rom{2} местами, поделим \rom{2} и \rom{3} на 2 \\
+$
+\left(\begin{array}{cccc}  
+-1&0&0&2\\
+2&2&1&0\\
+3&4&2&2\\
+-2&-2&-1&0\\
+\end{array}\right) \rightarrow$  \rom{2} + 2 \rom{1}, \rom{3} + 3 \rom{1}, \rom{4} - 2 \rom{1} \\
+$
+\left(\begin{array}{cccc}  
+-1&0&0&2\\
+0&2&1&4\\
+0&4&2&8\\
+0&-2&-1&-4\\
+\end{array}\right) \rightarrow$  \rom{3} - 2 \rom{3}, \rom{4} + \rom{2} \\
+$
+\left(\begin{array}{cccc}  
+-1&0&0&2\\
+0&2&1&4\\
+0&0&0&0\\
+0&0&0&0\\
+\end{array}\right) $   В этой матрице 2 главных переменных. Ее ранг = 2.
+
+Найдем ранг матрицы $A+E = \begin{pmatrix}
+1 & 0 & 1 & 0\\
+0 & 1 & 0 & 1\\
+3 & 4 & 1 & 0\\
+-1 & -1 & 0 & 1
+\end{pmatrix}$\rom{3} - 3 \rom{1}, \rom{4} + \rom{1} $\rightarrow$\\
+$
+\left(\begin{array}{cccc}  
+1&0&1&0\\
+0&1&0&1\\
+0&4&-2&0\\
+0&-1&1&1\\
+\end{array}\right) \rightarrow$  \rom{3} - 4 \rom{2}, \rom{4} + \rom{2} \\
+$
+\left(\begin{array}{cccc}  
+1&0&1&0\\
+0&1&0&1\\
+0&0&-2&-4\\
+0&0&1&2\\
+\end{array}\right) \rightarrow$  \rom{3} - 2 \rom{4} \\
+$
+\left(\begin{array}{cccc}  
+1&0&1&0\\
+0&1&0&1\\
+0&0&0&0\\
+0&0&1&2\\
+\end{array}\right) $  В этой матрице 3 главных переменных. Ее ранг = 3.
+
+$N(-1,1)=rk(A+E)^0+rk(A+E)^2-2rk(A+E) =  4+2-2*3=0$ Для этого корня число жардановых клеток размером 1 равно 0.
+
+
+
+Проверим для $\lambda_2 = 1$:
+Нам нужно будет рассчитать 2 ранга:
+
+Для того чтобы вставить $rk(A-E)^2$, посчитаем его.
+
+$(A-E)^2=\begin{pmatrix}
+-1&0&1&0\\
+0&-1&0&1\\
+3&4&-1&0\\
+-1&-1&0&-1\\
+\end{pmatrix}\begin{pmatrix}
+-1&0&1&0\\
+0&-1&0&1\\
+3&4&-1&0\\
+-1&-1&0&-1\\
+\end{pmatrix}=\begin{pmatrix}
+4&4&-2&0\\
+-1&0&0&-2\\
+-6&-8&4&4\\
+2&2&-1&0\\
+\end{pmatrix}   \rom{1} \leftrightarrow \rom{2}$ \\
+$
+\left(\begin{array}{cccc}  
+-1&0&0&-2\\
+4&4&-2&0\\
+-6&-8&4&4\\
+2&2&-1&0\\
+\end{array}\right) \rightarrow$  \rom{2} + 4 \rom{1}, \rom{3} + 6 \rom{1}, \rom{4} + 2 \rom{1}\\
+$
+\left(\begin{array}{cccc}  
+-1&0&0&-2\\
+0&4&-2&-8\\
+0&-8&4&16\\
+0&2&-1&-4\\
+\end{array}\right) \rightarrow$  \rom{3} + 2 \rom{2}, \rom{4} - 0.5 \rom{2}\\
+$
+\left(\begin{array}{cccc}  
+-1&0&0&-2\\
+0&4&-2&-8\\
+0&0&0&0\\
+0&0&0&0\\
+\end{array}\right) \Rightarrow$ 2 главных переменных, Ранг этой матрицы 2.
+
+Найдем ранг матрицы $A-E = \begin{pmatrix}
+-1&0&1&0\\
+0&-1&0&1\\
+3&4&-1&0\\
+-1&-1&0&-1\\
+\end{pmatrix}$ \rom{3} + 3 \rom{1}, \rom{4} - \rom{1}\\
+$
+\left(\begin{array}{cccc}  
+-1&0&1&0\\
+0&-1&0&1\\
+0&4&2&0\\
+0&-1&-1&-1\\
+\end{array}\right) \rightarrow$  \rom{3} + 4 \rom{2}, \rom{4} -  \rom{2}\\
+$
+\left(\begin{array}{cccc}  
+-1&0&1&0\\
+0&-1&0&1\\
+0&0&2&4\\
+0&0&-1&-2\\
+\end{array}\right) \rightarrow$  \rom{4} + 0.5 \rom{3}\\
+$
+\left(\begin{array}{cccc}  
+-1&0&1&0\\
+0&-1&0&1\\
+0&0&2&4\\
+0&0&0&0\\
+\end{array}\right) \Rightarrow$  3 главных переменных, ранг этой матрицы 3
+
+
+$N(1,1)=rk(A-E)^0+rk(A-E)^2-2rk(A-E) =4+2-2*3=0$  Для этого корня число жардановых клеток размером 1 равно 0.
+
+Следовательно для каждого корня жарданова клетка будет иметь вид $\begin{pmatrix}
+\lambda & 1\\
+0& \lambda
+\end{pmatrix}$. Расположим их по диагонали матрицы, подставив собственные значения и запишем ответ:
+
+\textbf{Ответ: ЖНФ исходной матрицы: $\begin{pmatrix}
+-1 & 1 & 0 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+0 & 0 & 0 & 1
+\end{pmatrix}$}
+
+\item Найдите длины сторон и внутренние углы треугольника $ABC$ в пространстве $\mathbb R^5$ со стандартным скалярным произведением, если координаты вершин треугольника таковы:
+\[
+A = 
+\begin{pmatrix}
+{2}\\{4}\\{2}\\{4}\\{2}
+\end{pmatrix}
+,\quad
+B = 
+\begin{pmatrix}
+{6}\\{4}\\{4}\\{4}\\{6}
+\end{pmatrix}
+,\quad
+C = 
+\begin{pmatrix}
+{5}\\{7}\\{5}\\{7}\\{2}
+\end{pmatrix}
+\]
+\vspace{5pt}
+
+\textbf{Решение:}\\
+Сначала угол $A$. Найдем вектор сторон, которые его образуют, вычтя координаты точек. $AB = \begin{pmatrix}
+4\\0\\2\\0\\4
+\end{pmatrix}$, $AC = \begin{pmatrix}
+3\\3\\3\\3\\0
+\end{pmatrix}$. Длина вектора равна $|v| = \sqrt{(v,v)}$. Длина $|AB| = \sqrt{36}=6$, длина $|AC| = \sqrt{36}=6$. Угол найдем через скалярное произведение, деленное на произведение длин векторов. $\cos{A}= \frac{(AB,AC)}{|AB| |AC|}=\frac{18}{36}=0.5$. $A=\arccos{0.5} = \pi/3=60^{\circ}$
+
+Аналогично найдем угол $B$.
+$BC = \begin{pmatrix}
+-1\\3\\1\\3\\-4
+\end{pmatrix}$, $BA=-AB = \begin{pmatrix}
+-4\\0\\-2\\0\\-4
+\end{pmatrix}$. Длина $|BC| = \sqrt{36}=6$, длина $|BA|=6$. Угол найдем через $\cos{B}= \frac{(BA,BC)}{|BA| |BC|}=\frac{18}{36}=0.5$. $B=60^{\circ}$
+
+Аналогично найдем угол $C$.
+$CA=-AC = \begin{pmatrix}
+-3\\-3\\-3\\-3\\0
+\end{pmatrix}$, $CB=-BC = \begin{pmatrix}
+1\\-3\\-1\\-3\\4
+\end{pmatrix}$. Длина $|CA|  =6$, длина $|CB|=6$. Угол найдем через $\cos{C}= \frac{(CA,CB)}{|CA| |CB|}=\frac{18}{36}=0.5$. $C=60^{\circ}$
+
+\textbf{Ответ: Это правильный  треугольник, у него равны стороны и углы: Угол $A=B=C = \pi/3=60^{\circ}$. Стороны равны и имеют длину 6: $|AB|=|BC|=|AC|=6$}
+
+\item Пусть в $\mathbb R^5$ задано стандартное скалярное произведение. И пусть 
+\[
+x =
+\begin{pmatrix}
+{1}\\{-5}\\{6}\\{4}\\{5}
+\end{pmatrix}
+,\quad
+a_1 = 
+\begin{pmatrix}
+{7}\\{5}\\{0}\\{1}\\{0}
+\end{pmatrix}
+,\quad
+a_2 = 
+\begin{pmatrix}
+{-4}\\{1}\\{5}\\{6}\\{0}
+\end{pmatrix}
+,\quad
+a_3 = 
+\begin{pmatrix}
+{-3}\\{-2}\\{4}\\{-4}\\{0}
+\end{pmatrix}, \quad
+a_4 = 
+\begin{pmatrix}
+{3}\\{1}\\{0}\\{0}\\{-3}
+\end{pmatrix}.
+\]
+
+Найдите расстояние от вектора $x$ до подпространства $U = \langle a_1,a_2,a_3, a_4 \rangle$, а также проекцию вектора $x$ на $U$.
+\vspace{5pt}
+
+\item Применяя процесс ортогонализации Грама--Шмидта, постройте ортогональный базис линейной оболочки  $\langle a_1,a_2,a_3\rangle$ евклидова пространства $\mathbb R^4$ со стандартным скалярным произведением, где
+\[
+a_1=
+\begin{pmatrix}
+{1}\\{2}\\{2}\\{-1}
+\end{pmatrix}
+,\quad
+a_2=
+\begin{pmatrix}
+{1}\\{1}\\{-5}\\{3}
+\end{pmatrix}
+,\quad
+a_3=
+\begin{pmatrix}
+{3}\\{2}\\{8}\\{-7}
+\end{pmatrix}
+\]
+\vspace{5pt}
+
+\item Пусть в пространстве $\mathbb R^3$ задано стандартное скалярное произведение, рассмотрим три точки:
+\[
+P_1 = 
+\begin{pmatrix}
+{1}\\{4}\\{0}
+\end{pmatrix},\;\;
+P_2 = 
+\begin{pmatrix}
+{-1}\\{4}\\{4}
+\end{pmatrix}\text{ и }
+P_3 = 
+\begin{pmatrix}
+{6}\\{8}\\{0}
+\end{pmatrix}
+\]
+
+а) Найдите такие векторы $v, p\in \mathbb R^3$, что гиперповерхность $L = \{y\in \mathbb R^3 \mid (v, y) = (v, p)\}$ проходит через точки $P_1, P_2, P_3$.
+
+б) Выясните, на каком расстоянии от гиперповерхности $L$ лежат векторы
+\[
+w_1 =
+\begin{pmatrix}
+{1}\\{3}\\{5}
+\end{pmatrix}
+\text{ и \ }
+w_2 = 
+\begin{pmatrix}
+{3}\\{8}\\{3}
+\end{pmatrix}.
+\]
+По одну ли сторону от гиперповерхности $L$ они лежат?
+
+\vspace{5pt}
+
+\item Методом наименьших квадратов найдите приближенное решение следующей системы линейных уравнений:
+\[
+\begin{cases}
+2x - z = 1\\
+ y + z = -1\\
+x - y + z = 0\\
+x - z = -1
+\end{cases}
+\]
+\vspace{5pt}
+
+\textbf{Решение:}\\
+Запишем эту систему уравнений в матричной форме $AX = b$, где $X=\begin{pmatrix}
+x\\y\\z
+\end{pmatrix}$, $A=\begin{pmatrix}
+2&0&-1\\
+0&1&1\\
+1&-1&1\\
+1&0&-1\\
+\end{pmatrix}$, $b=\begin{pmatrix}
+1\\-1\\0\\-1
+\end{pmatrix}$
+
+Приближенное решение будет равно 
+\[ 
+\widehat{X}= \left(A^T A\right)^{-1}A^T b
+\]
+
+
+$$A^T A= \begin{pmatrix}
+6&-1&-2\\
+-1&2&0\\
+-2&0&4
+\end{pmatrix}$$
+
+\[ 
+\left(A^T A\right)^{-1} = \begin{pmatrix}
+2/9& 1/9& 1/9\\
+1/9& 5/9& 1/18\\
+1/9& 1/18& 11/36
+\end{pmatrix}
+\]
+
+\[ 
+\left(A^T A\right)^{-1}A^T = \frac{1}{36}\begin{pmatrix}
+12&8&8&4\\
+6&22&-14&2\\
+-3&13&13&-7
+\end{pmatrix}
+\]
+
+\[ 
+\widehat{X}= \left(A^T A\right)^{-1}A^T b=\frac{1}{36}\begin{pmatrix}
+12&8&8&4\\
+6&22&-14&2\\
+-3&13&13&-7
+\end{pmatrix} \begin{pmatrix}
+1\\-1\\0\\-1
+\end{pmatrix} = \begin{pmatrix}
+0\\
+-\frac{1}{2}\\
+-\frac{1}{4}
+\end{pmatrix}
+\]
+
+\textbf{Ответ: Приближенное решение системы уравнений $\widehat{x}=0, \widehat{y}=-\frac{1}{2}, \widehat{z}=-\frac{1}{4}$}
+
+\end{enumerate}
+\end{document}
