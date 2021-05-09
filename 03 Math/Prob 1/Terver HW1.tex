@@ -1,0 +1,123 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[cm,empty]{fullpage}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{proof}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+\newtheorem*{rem}{Замечание}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\newcounter{z}
+
+
+\newcommand{\zs}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{12.\arabic{z}}} }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
+\fbox{\textbf{\arabic{z}}} }
+
+\renewcommand{\date}{{\bf 14 мая 2021}} 
+
+\newcommand{\dif}
+{
+------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+\newcommand{\HSEhat}{
+\vspace*{-0pt}
+\noindent
+\setcounter{z}{0}
+
+
+{\bf \phantom{\date}  \large \hfill Теория вероятностей: \hfill \normalsize \date}
+
+\vspace{5 pt}
+{\bf \large \hfill  лекция 1\hfill }
+
+\vspace{15 pt}
+\centerline{ \large  Домашнее задание.}
+\centerline{ \large  Кирилл Сетдеков}
+
+
+
+\vspace*{10pt}
+\setcounter{z}{0}
+
+}
+
+\begin{document}
+\HSEhat
+
+
+\begin{enumerate}
+
+\subsection*{Задачи:}
+
+
+
+\item Из колоды вынимается карта. Если это пики, то эксперимент прекращается. Если нет, то карта откалывается и вынимается новая. Опишите вероятностное пространство. Необязательно перечислять все элементы пространства, достаточно описать общую идею
+
+\item Аналогичный эксперимент, только карта возвращается обратно в колоду, и колода тасуется каждый раз. Опишите вероятностное пространство
+\item Мастер, имея 20 деталей, из которых 4 – нестандартных, проверяет детали одну за другой, пока ему не попадется стандартная. Какова вероятность, что он проверит ровно две детали? 
+\item Игральная кость бросается трижды. Какова вероятность того, что с каждым разом вы получаете все больший номер? 
+\item В электронном приборе имеются лампы двух типов. Прибор не работает тогда и только тогда, когда есть бракованные лампы обоих типов. Вероятность того, что бракованы лампы первого типа, равна 0.1, второго типа — 0.2. Известно, что две лампы бракованы. Какова вероятность того, что, несмотря на это, прибор работает?
+\item Сначала бросается идеальная игральная кость, затем — симметричные монеты в количестве, равном номеру, выпавшему на кости. Какова вероятность получить в результате 6 «орлов»? А 1 «орел»? 
+\item Вам сообщили, что из четырех карт, лежащих на столе рубашкой вверх, две принадлежат красной масти и две — черной. Если вы называете цвет наудачу, то с какой вероятностью дадите 0, 2, 4 верных ответа?
+\item В телеграфном сигнале «точки» и «тире» появляются в пропорции 3:4. В силу некоторых причин, вызывающих очень сильное искажение сообщения, «точки» заменяются на «тире» с вероятностью 1/4, в то время как «тире» превращаются в «точки» с вероятностью 1/3. Если получена «точка», то какова вероятность того, что этот символ был «точкой» при отправлении сообщения?
+
+
+\item Найти дисперсию и МО суммы очков, выпавших на n игральных костях\\
+\textbf{Решение:}\\
+Пусть $a$ - случайная величина, которая задает значение, которое выдает 1 кубик. Запишем ее значения, вероятности и $a^2$, чтобы посчитать $E(a); D(a)$
+\begin{center}
+ \begin{tabular}{|c| c| c| c|c|c|c|} 
+ \hline
+ $a$ & 1 & 2 & 3 & 4 & 5& 6\\ 
+ \hline
+  $a^2$ & 1 & 4 & 9 & 16 & 25& 36\\ 
+ \hline
+$P$ & 1/6 & 1/6 & 1/6 & 1/6 & 1/6& 1/6\\ 
+\hline
+\end{tabular}
+\end{center}
+$$E(a)=\sum_i^{6} {a_i P_i} = \frac{28}{6}=\frac{7}{2}=3.5$$
+$$D(a)=E(a^2) - (E(a))^2=\sum_i^{6} {a^2_i P_i}-\frac{7^2}{2^2} = \frac{91}{6}-\frac{49}{4}=\frac{35}{12}=2\frac{11}{12}$$
+
+По свойству МО: $E(n a) = nE(a) = \frac{7}{2}n$\\
+По свойству дисперсии, учитывая, что результаты кубиков независимы:\\ $D(n a) = n^2E(a) = 2\frac{11}{12}n^2$\\
+\textbf{Ответ: Дисперсия: $2\frac{11}{12}n^2$, МО: $3\frac{1}{2}n$}
+
+
+\end{enumerate}
+\end{document}
