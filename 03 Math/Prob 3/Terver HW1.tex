@@ -1,0 +1,218 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[cm,empty]{fullpage}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{proof}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+\newtheorem*{rem}{Замечание}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\newcounter{z}
+
+
+\newcommand{\zs}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{12.\arabic{z}}} }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
+\fbox{\textbf{\arabic{z}}} }
+
+\renewcommand{\date}{{\bf 20 мая 2021}} 
+
+\newcommand{\dif}
+{
+------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+\newcommand{\HSEhat}{
+\vspace*{-0pt}
+\noindent
+\setcounter{z}{0}
+
+
+{\bf \phantom{\date}  \large \hfill Теория вероятностей: \hfill \normalsize \date}
+
+\vspace{5 pt}
+{\bf \large \hfill  лекция 3\hfill }
+
+\vspace{15 pt}
+\centerline{ \large  Домашнее задание.}
+\centerline{ \large  Кирилл Сетдеков}
+
+
+
+\vspace*{10pt}
+\setcounter{z}{0}
+
+}
+
+\begin{document}
+\HSEhat
+
+
+\begin{enumerate}
+
+\subsection*{Задачи:}
+
+
+
+\item Пусть $f(x) = x e^{-x}, x\geq 0$  Убедитесь, что функция f является плотностью. Найдите математическое ожидание 
+
+\textbf{Решение:}\\
+Чтобы проверить, что это может быть плотность распределения, посчитаем ее интеграл от $-\infty$ до $+\infty$. интерпретируем условие, как то, что при $x<0$, функция принимает значение 0 $\Rightarrow$ можно сразу считать интеграл от 0 и проверять его равенство 1. Возьмем интеграл по частям:
+$$\int_{0}^{\infty} x e^{-x}\,dx=(-xe^{-x})\Big|_0^\infty+\int_{0}^{\infty} e^{-x}\,dx=0-e^{-x}\Big|_0^\infty=1$$
+
+
+Найдем математическое ожидание, взяв интеграл от 0 до $+\infty$ от $xf(x)$, интегрируя по частям, а потом встретив интеграл, который уже посчитали выше:
+$$E(x) = \int_{0}^{\infty} x^2 e^{-x}\,dx = (-e^{-x}x^2)\Big|_0^\infty+2\int_{0}^{\infty} x e^{-x}\,dx=0+2=2$$
+
+\textbf{Ответ: Да, эта функция может быть функцией плотности распределения, если добавить, что $f(x<0) = 0$. Математическое ожидание: $E(x) = 2$} 
+
+
+\item Предположим, что мишень имеет форму круга с радиусом 10 футов, причем вероятность попадания в любой концентрический круг пропорциональна площади этого круга. Обозначим через R расстояние от точки попадания пули до центра круга. Найдите функцию распределения, плотность и математическое ожидание случайной величины R. 
+
+\textbf{Решение:}\\
+Так как площадь круга растет как квадрат от радиуса, мы хотим, чтобы $\int f_{R}(x) dx\ \sim x^2$ , т.е. при интегрировании мы получали что-то, зависящее от $R^2$.
+Попробуем взять $ f_{R}(x) = Cx$ и определенное на интервале от 0 до 10 (вне интервала - 0). Возьмем интеграл от этой функции от $-\infty$ до $+\infty$ и приравняем результат к 1, чтобы найти константу. Потом проверим, что это подходит под отношение площадей.
+
+$$\int_{-\infty}^{\infty} Cx\,dx=C\int_{0}^{10} x\,dx=C\frac{x^2}{2}\Big|_0^{10}=50C=1 \Rightarrow C = \frac{1}{50}$$
+
+Запишем функцию плотности распределения случайной величины $R$:
+\[
+  f_{R}(x)=\begin{cases}
+               0, x \notin [0,10];\\
+               \frac{x}{50}, x \in [0,10].
+            \end{cases}
+\]
+
+Функция распределения, будет ее интегралом и задавать вероятность $P(R\leq x)$:
+\[
+  F_{R}(x)=\begin{cases}
+               0, x \leq 0;\\
+               \frac{x^2}{100}, x \in (0,10];\\
+               1, x>10.
+            \end{cases}
+\]
+
+Проверим, что это соответствует условию "вероятности пропорциональны площади круга". Возьмем круги радиусом 1 и 2 и посчитаем вероятность попадания и их площади, сравним:
+
+$$P(x<1) = \int_{0}^{1} \frac{x}{50}\,dx=\frac{1}{100}=0.01$$
+$$P(x<2) = \int_{0}^{2} \frac{x}{50}\,dx=\frac{1}{25}=0.04$$
+
+$$\frac{P(x<2)}{P(x<1)}=4=\frac{S_{circle}(R=2)}{S_{circle}(R=1)}=\frac{4\pi}{\pi}=4$$
+Мы получили то, что вероятности относятся также как площади кругов. Найдем математическое ожидание случайной величины R:
+$$E(R)=\int_{0}^{10} \frac{x^2}{50}\,dx=\frac{x^3}{150}\Big|_0^{10} = \frac{1000}{150}=\frac{20}{3}$$
+
+\textbf{Ответ: плотность распределения случайной величины $R$:\\ $ f_{R}(x)=\begin{cases}
+               0, x \notin [0,10];\\
+               \frac{x}{50}, x \in [0,10].
+            \end{cases}$. Фукнция распределения: $F_{R}(x)=\begin{cases}
+              0, x \leq 0;\\
+               \frac{x^2}{100}, x \in (0,10];\\
+               1, x>10.
+            \end{cases} $ Математическое ожидание: $E(R)=\frac{20}{3}\approx6.67$} 
+
+\item Плотность распределения непрерывной случайной величины имеет вид:
+\[
+  p_{\xi}(x)=\begin{cases}
+               0, x \notin [0,2];\\
+               Cx^2, x \in [0,2].
+            \end{cases}
+\]
+
+Определить константу C, вычислить вероятность $P\{ -1\leq \xi\leq1\}$ . Найти математическое ожидание и дисперсию
+
+\textbf{Решение:}\\
+Чтобы найти $C$, интегрируем функцию плотности от $-\infty$ до $+\infty$ и приравняем результат к 1:
+$$\int_{-\infty}^{\infty} Cx^2\,dx=C\int_{0}^{2} x^2\,dx=C \frac{x^3}{3}\Big|_0^2=C\frac{8}{3}=1 \Rightarrow C = \frac{3}{8}$$
+
+Чтобы найти вероятность $P\{ -1\leq \xi\leq1\}$, интегрируем плотность $p_{\xi}(x)$ от -1 до 1. Так как значения $p_{\xi}=0, x<0$, то достаточно взять пределы интегрирования от 0 до 1:
+
+$$P\{ -1\leq \xi\leq1\}= \int_{0}^{1} \frac{3}{8}x^2\,dx=\frac{3}{8}\frac{x^3}{3}\Big|_0^1=\frac{3}{8}\frac{1}{3}=\frac{1}{8}$$
+
+Найдем математическое ожидание:
+$$E(\xi) = \int_{0}^{2} x \frac{3}{8} x^2\,dx=\frac{3}{8} \int_{0}^{2}  x^3\,dx=\frac{3x^4}{32}\Big|_0^2=\frac{3\cdot16}{32}=\frac{3}{2}=1.5$$
+
+Для дисперсии, дополнительно найдем $E(\xi^2)$:
+$$E(\xi^2) = \int_{0}^{2} x^2 \frac{3}{8} x^2\,dx=\frac{3}{8} \int_{0}^{2}  x^4\,dx=\frac{3x^5}{40}\Big|_0^2=\frac{3\cdot32}{40}=\frac{12}{5}=2.4$$
+$$D(\xi)=E(\xi^2)-[E(\xi)]^2=2.4-1.5^2=0.15$$
+
+\textbf{Ответ: $C = \frac{3}{8}$. Вероятность $P\{ -1\leq \xi\leq1\}=\frac{1}{8}=0.125$. Математическое ожидание: $E(\xi)=\frac{3}{2}=1.5$. Дисперсия: $D(\xi)=0.15$} 
+
+\item  Найдите  $E[X^3]$ и $E[X^4]$, если $X \sim	 N(0,1)$.
+
+
+\textbf{Решение:}\\
+Сначала $E[X^3]$:
+Нам нужно найти значение определенного интеграла: 
+$$  \int_{-\infty}^{\infty}  x^3 \frac{1}{\sqrt{2 \pi}} e^{-x^2 /2  }\,dx=0$$
+
+Функция под интегралом - нечетная ($f(-x)=-f(x)$), а пределы интегрирования симметричны относительно 0 $\Rightarrow$ результат будет 0.\\
+
+Для 4-го центрального момента нужно посчитать следующий интеграл:
+$$ E[X^4]= \int_{-\infty}^{\infty}  x^4 \frac{1}{\sqrt{2 \pi}} e^{-x^2 /2  }\,dx=$$
+будем считать по частям: $f=x^3, dg  x \frac{1}{\sqrt{2 \pi}} e^{-x^2 /2  } dx$, $df = 3x^2 dx$, $g = - \frac{1}{\sqrt{2 \pi}} e^{-x^2 /2  } $
+
+$$E[x^4]=(x^3  \frac{1}{\sqrt{2 \pi}} e^{-x^2 /2  })\Big|_{-\infty}^{\infty}-\int_{-\infty}^{\infty}  3x^2 \frac{-1}{\sqrt{2 \pi}} e^{-x^2 /2  }\,dx=0+3\int_{-\infty}^{\infty}  x^2 \frac{1}{\sqrt{2 \pi}} e^{-x^2 /2  }\,dx=3$$
+
+Мы использовали то, что $\int_{-\infty}^{\infty}  x^2 \frac{1}{\sqrt{2 \pi}} e^{-x^2 /2  }\,dx=D(X)=1$, согласно условию.
+
+\textbf{Ответ: $E[X^3]=0$, $E[X^4]=3$} 
+
+\item Пусть X имеет равномерное распределение на отрезке [a, b]. Найдите математическое ожидание и дисперсию случайной величины $Y = (5 + X \cdot \ln{2})/2$.
+
+\textbf{Решение:}\\
+По свойству математического ожидания: $E(Y)=(5 + E(X) \cdot \ln{2})/2=(5 + (\frac{a+b}{2}) \cdot \ln{2})/2=\frac{5}{2}+(\frac{a+b}{4})  \ln{2}$
+
+По свойству дисперсии: $D(Y)= D(X)\frac{(\ln{2})^2}{4}=\frac{b^2-a^2}{12}\frac{(\ln{2})^2}{4}=\frac{(b^2-a^2)(\ln{2})^2}{48}$
+
+
+\textbf{Ответ: $E(Y) = \frac{5}{2}+(\frac{a+b}{4})  \ln{2}$ и $D(Y)=\frac{(b^2-a^2)(\ln{2})^2}{48}$ } 
+
+
+\item Пусть X имеет экспоненциальное распределение с параметром $\lambda > 0$. Найдите $D(X)$
+\textbf{Решение:}\\
+Мы знаем, что для экспоненциального распределения $E(x) = \frac{1}{\lambda}$ и $f(x) = \lambda e^{-\lambda x}, x> 0$
+
+Найдем $E(x^2)$:
+$$E(x^2)=\int_{0}^{\infty} x^2 \lambda e^{-\lambda x}\,dx=\lambda \int_{0}^{\infty} x^2  e^{-\lambda x}\,dx=$$
+
+интегрируем по частям
+
+$$=\lambda (-\frac{x^2 e^{-\lambda x}}{\lambda}) \Big|_0^\infty+\lambda \frac{2}{\lambda} \int_{0}^{\infty} x  e^{-\lambda x}\,dx=0+\frac{2}{\lambda}E(x) = \frac{2}{\lambda^2}$$
+
+$$D(x) = E(x^2)-[E(x)]^2 = \frac{2}{\lambda^2}-\frac{1}{\lambda^2}=\frac{1}{\lambda^2}$$
+\textbf{Ответ: Значение: $D(X)=\frac{1}{\lambda^2}$ и расчет выше.} 
+
+\end{enumerate}
+\end{document}
