@@ -1,0 +1,179 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[cm,empty]{fullpage}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb,amsmath,amsxtra,amsthm}
+\usepackage{proof}
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage{braket}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+
+\newcommand{\iiff}{\Longleftrightarrow}
+\renewcommand{\iff}{\Leftrightarrow}
+\newcommand{\nothing}{\varnothing}
+
+\newtheorem*{rem}{Замечание}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\newcounter{z}
+
+
+\newcommand{\zs}{\refstepcounter{z}\vskip 10pt\par\noindent
+\fbox{\textbf{12.\arabic{z}}} }
+
+\newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
+\fbox{\textbf{\arabic{z}}} }
+
+\renewcommand{\date}{{\bf 27 мая 2021}} 
+
+\newcommand{\dif}
+{
+------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+\newcommand{\HSEhat}{
+\vspace*{-0pt}
+\noindent
+\setcounter{z}{0}
+
+
+{\bf \phantom{\date}  \large \hfill Теория вероятностей: \hfill \normalsize \date}
+
+\vspace{5 pt}
+{\bf \large \hfill  лекция 4\hfill }
+
+\vspace{15 pt}
+\centerline{ \large  Домашнее задание.}
+\centerline{ \large  Кирилл Сетдеков}
+
+
+
+\vspace*{10pt}
+\setcounter{z}{0}
+
+}
+
+\begin{document}
+\HSEhat
+
+
+\begin{enumerate}
+
+\subsection*{Задачи:}
+
+
+\item	При $\lambda > 0$ определим плотность f так: \\
+\includegraphics[width=6cm]{img/task1.png}
+
+Такая функция f называется двусторонней экспоненциальной: пусть величина X имеет плотность f. Найдите плотность случайной величины |X|. [Указание. Вычислите сначала функцию распределения.]
+\item	С вероятностью попадания при одном выстреле 0,7 охотник стреляет по дичи до первого попадания, но успевает сделать не более 4 выстрелов. Пусть X - число промахов. Построить таблицу и функцию распределения. 
+\item	Случайная величина X равномерно распределена на отрезке [0, 1]. Докажите, что случайная величина:
+ 
+$$Y = -\frac{1}{\lambda}\ln{(1-X)}$$
+имеет экспоненциальное распределение с параметром $\lambda > 0$. Этот факт может использоваться для генерации экспоненциального распределения с помощью равномерного: чтобы сгенерировать экспоненциальную случайную величину можно сгенерировать равномерно распределенную на [0, 1] случайную величину и применить к ней выше приведенное преобразование. 
+\item	 Случайные приращения цен акций двух компаний за день X и Y имеют совместное распределение, заданное таблицей:
+\begin{center}
+ \begin{tabular}{|c| c| c |} 
+ \hline
+ $X$ \slash $Y$ & $-1$& $+1$ \\ [0.5ex] 
+ \hline
+ $-1$ & 0,3 & 0,2 \\ 
+ \hline
+ $+1$ & 0,1	 & 0,4  \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+Найти коэффициент корреляции.
+
+\textbf{Решение:}\\
+
+Для удобства расчета, дополнительно запишем в таблицу вероятности $p(XY), p(X), p(Y)$ и значения $X^2, Y^2$:
+
+\begin{center}
+ \begin{tabular}{|c|c|c| c| c |} 
+ \hline
+ Значение & $p(XY)$& $p(X)$& $p(Y)$&$X^2; Y^2$ \\ [0.5ex] 
+ \hline
+ $-1$ & 0,3 & 0,5&0,4&1 \\ 
+ \hline
+ $+1$ & 0,7	 & 0,5&0,6&1  \\ 
+ \hline
+\end{tabular}
+\end{center}
+$E(X) = -1 \cdot 0.5 + 1\cdot 0.5=0$\\
+$E(Y) = -1 \cdot 0.4 + 1\cdot 0.6=0.2$\\
+$E(XY) = -1 \cdot 0.3 + 1\cdot 0.7=0.2$. Вероятности для $XY$ найдены из суммирования вероятностей тех исходов, которые дают произведения $-1$ и $+1$\\
+$E(X^2) = 1 \cdot 0.5 + 1\cdot 0.5=1$\\
+$E(Y^2) = 1 \cdot 0.4 + 1\cdot 0.6=1$\\
+
+$D(X) = E(X^2)- [E(X)]^2=1-0 = 1$\\
+$D(Y) = E(Y^2)- [E(Y)]^2=1-0.04 = 0.96$\\
+$Cov(X,Y)=E(XY)-E(X)E(Y)=0.4-0\cdot0.2=0.4$
+
+$$Corr(X,Y) = \frac{Cov(X,Y)}{\sqrt{D(X)D(Y)}}=\frac{0.4}{\sqrt{1\cdot0.96}}\approx 0.40825$$
+
+\textbf{Ответ: Корреляция акций: $Corr(X,Y)\approx 0.40825$} 
+
+
+
+\item	Симметричная игральная кость имеет две зеленые, две красные и две белые стороны. Ее подбрасывают один раз. Пусть X = 1, если зеленая сторона сверху и 0 иначе. А Y=1, если красная сторона сверху и 0 иначе. Найдите ковариацию и корреляцию этих случайных величин
+
+\textbf{Решение:}\\
+Для удобства расчета, дополнительно запишем в таблицу вероятности $p(X), p(Y)$ и значения $X^2, Y^2, X, Y$:
+
+\begin{center}
+ \begin{tabular}{|c|c|c| c| } 
+ \hline
+ Грань & Вероятность& $X; X^2$& $Y; Y^2$ \\ [0.5ex] 
+ \hline
+ зеленый & 1/3 & 1&0 \\ 
+ \hline
+ красный & 1/3	 & 0&1  \\ 
+ \hline
+ белый& 1/3	 & 0&0  \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+Вероятности выпадения X и Y равны, как и их значения, следовательно:
+$E(X)=E(Y)=1\cdot1/3+0\cdot2/3=1/3$\\
+$XY=0 \Rightarrow E(XY)=0$\\
+$E(X^2)=E(Y^2)=1\cdot1/3+0\cdot2/3=1/3$\\
+$D(X)=D(Y)=E(X^2)-[E(X)]^2=\frac{1}{3}-\frac{1}{9}=\frac{2}{9}$\\
+$Cov(X,Y)=E(XY)-E(X)E(Y)=0-\frac{1}{3}\frac{1}{3}=-\frac{1}{9}$
+
+$$Corr(X,Y) = \frac{Cov(X,Y)}{\sqrt{D(X)D(Y)}}=\frac{-\frac{1}{9}}{\sqrt{\frac{2}{9}\frac{2}{9}}}=-\frac{\frac{1}{9}}{\frac{2}{9}}=-0.5$$
+
+\textbf{Ответ: $Cov(X,Y)=-\frac{1}{9}\approx-0.11$; $Corr(X,Y)=-0.5$} 
+
+\item	Найдите коэф. Ковариации и корреляции для двух независимых случайных величин X ~ Exp(3) и X ~ Exp(12)
+
+\textbf{Решение:}\\
+\textbf{Ответ: } 
+
+\end{enumerate}
+\end{document}
