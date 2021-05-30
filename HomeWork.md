@@ -214,3 +214,15 @@ https://publications.hse.ru/mirror/pubs/share/direct/393719078.pdf
 
 # NP
 ### Задания для самостоятельного решения
+
+# ML
+
+## про бустинг почитать
+
+https://www.gormanalysis.com/blog/gradient-boosting-explained/
+
+https://youtu.be/3CC4N4z3GJc
+
+https://en.wikipedia.org/wiki/Gradient_boosting
+
+https://dyakonov.org/2017/06/09/градиентный-бустинг/
