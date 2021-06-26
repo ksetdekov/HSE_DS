@@ -226,3 +226,8 @@ https://youtu.be/3CC4N4z3GJc
 https://en.wikipedia.org/wiki/Gradient_boosting
 
 https://dyakonov.org/2017/06/09/градиентный-бустинг/
+
+## кластеризация
+
+* попробовать linkage перебрать
+* попробовать kmeans ++ 
