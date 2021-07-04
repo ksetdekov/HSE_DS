@@ -47,7 +47,7 @@
 \newcommand{\z}{\refstepcounter{z}\vskip 20pt\noindent
 \fbox{\textbf{\arabic{z}}} }
 
-\renewcommand{\date}{{\bf 2 июля 2021}} 
+\renewcommand{\date}{{\bf 5 июля 2021}} 
 
 \newcommand{\dif}
 {
@@ -109,7 +109,18 @@ $$P(|X-\mu| < 3 \sigma) > 1 - \frac{\sigma ^2 }{9 \sigma^2} = 1-\frac{1}{9} = \f
 \includegraphics[width=\textwidth]{img/21.jpg}
 \includegraphics[width=\textwidth]{img/22.jpg}
 
-\item Про выборки
+\item Про выборки, про сравнение дисперсий.
+
+
+\textbf{Решение:}\\
+Исходное равномерное распределение $Unif[0, \theta] \sim X$, для него $EX = \theta/2, DX = \frac{{\theta}^2}{12}$. Мы оценили $\hat{\theta} = 2\overline{X}$ и сделали параметрический бутстрэп:
+$$Y\sim Unif[0, \hat{\theta}]; Y = 2\overline{X}R_1 $$, где $R_1 \sim Unif[0, 1]$.
+
+Мы знаем, что $D\overline{X} = \frac{\theta^2}{12\sqrt{n}}$, $DX = \frac{{\theta}^2}{12}$, $DR_1 = \frac{1}{12}$, $ER_1 = \frac{1}{2}$, $E\overline{X} = \frac{\theta}{2}$. Воспользуемся формулой для произведения дисперсии и запишем дисперсию $Y$:
+$$D[2\overline{X}R_1] = 4D[\overline{X}R_1] = 4\left[ D\overline{X}DR_1 + \left( E\overline{X}\right)^2 DR_1 + \left( ER_1\right)^2 D\overline{X}\right]=$$
+$$=4\left[\frac{\theta^2}{12\sqrt{n}} \frac{1}{12} + \frac{\theta^2}{4} \frac{1}{12} +\frac{1}{4}\frac{\theta^2}{12\sqrt{n}}\right] = \frac{\theta^2}{12}+\frac{\theta^2}{9\sqrt{n}}$$
+
+Мы получили, что $DY = \frac{\theta^2}{12}+\frac{\theta^2}{9\sqrt{n}}$, а $DX = \frac{{\theta}^2}{12}$. Получается, что $DY > DX, \forall n\geq 1$, при этом, при $n\rightarrow \infty, DY \rightarrow DX$, то есть в бесконечно большой выборке дисперсия из параметрического бутстрэпа будет приближаться к дисперсии из оригинального равномерного распределения.
 
 \item Про оценки для среднего в нормальном распределении, реализация на питоне.
 
