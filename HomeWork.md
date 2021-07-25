@@ -231,3 +231,42 @@ https://dyakonov.org/2017/06/09/градиентный-бустинг/
 
 * попробовать linkage перебрать
 * попробовать kmeans ++ 
+
+## практическое
+
+* для гауссовских процессов:
+    * botorch 
+    * gpytorch
+    * gpflow
+    * gaussian process summer school
+* монотонная регрессия существует
+    
+# to read
+    
+    * statistical learning theory Tibshiray (как учебник)
+    * Murphy - Справочник
+    * Bishop Pattern recognition (как учебник) - смотреть интересующие главы
+
+# периодика
+ML - conferences
+
+* NIPS (nairi PS)
+    * workshop time series
+    * workshop inverse problems
+* A/A* conference
+* ICML - академическое
+* Зрение - CVPR
+* KDD для практиков
+
+* summer school Machine learning XXX
+    * mlss
+* ICLR, AAAI, UAI, IJACI
+
+* NLP - есть конференции
+
+* MIDL - медицинское
+
+* karpov courses
+
+
+    
