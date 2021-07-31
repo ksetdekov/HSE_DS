@@ -1,0 +1,302 @@
+name,cylinders,year, cda
+amc ambassador brougham,8.0,73.0, 0.47
+amc ambassador dpl,8.0,70.0, 0.47
+amc ambassador sst,8.0,72.0, 0.47
+amc concord,5.0,79.0, 0.45
+amc concord d/l,6.0,78.0, 0.48
+amc concord dl 6,6.0,79.0, 0.45
+amc gremlin,6.0,72.25, 0.49
+amc hornet,6.0,73.25, 0.6
+amc hornet sportabout (sw),6.0,71.0, 0.53
+amc matador,6.8,73.8, 0.55
+amc matador (sw),8.0,73.0, 0.55
+amc pacer,6.0,75.0, 0.43
+amc pacer d/l,6.0,76.0, 0.43
+amc rebel sst,8.0,70.0, 0.5
+amc spirit dl,4.0,79.0, 0.5
+audi 100 ls,4.0,70.0, 0.3
+audi 100ls,4.0,74.0, 0.3
+audi 4000,4.0,80.0, 0.41
+audi 5000,5.0,78.0, 0.3
+audi 5000s (diesel),5.0,80.0, 0.3
+audi fox,4.0,74.0, 0.3
+bmw 2002,4.0,70.0, 0.47
+bmw 320i,4.0,77.0, 0.47
+buick century,6.0,78.0, 0.32
+buick century 350,8.0,73.0, 0.32
+buick century limited,6.0,82.0, 0.32
+buick century luxus (sw),8.0,74.0, 0.32
+buick century special,6.0,78.0, 0.32
+buick electra 225 custom,8.0,73.0, 0.55
+buick estate wagon (sw),8.0,74.5, 0.55
+buick lesabre custom,8.0,72.0, 0.55
+buick opel isuzu deluxe,4.0,77.0, 0.48
+buick regal sport coupe (turbo),6.0,78.0, 0.47
+buick skyhawk,6.0,75.0, 0.43
+buick skylark,5.0,79.0, 0.48
+buick skylark 320,8.0,70.0, 0.48
+buick skylark limited,4.0,79.0, 0.48
+cadillac eldorado,8.0,79.0, 0.48
+cadillac seville,8.0,76.0, 0.5
+capri ii,4.0,76.0, 0.42
+chevroelt chevelle malibu,6.0,75.0, 0.46
+chevrolet bel air,8.0,75.0, 0.55
+chevrolet camaro,4.0,82.0, 0.369
+chevrolet caprice classic,8.0,76.33333333333333, 0.46
+chevrolet cavalier,4.0,82.0, 0.36
+chevrolet cavalier 2-door,4.0,82.0, 0.36
+chevrolet cavalier wagon,4.0,82.0, 0.36
+chevrolet chevelle concours (sw),8.0,72.0, 0.55
+chevrolet chevelle malibu,7.0,70.5, 0.55
+chevrolet chevelle malibu classic,7.0,75.0, 0.55
+chevrolet chevette,4.0,77.75, 0.48
+chevrolet citation,5.333333333333333,80.0
+chevrolet concours,6.0,77.0
+chevrolet impala,8.0,71.5
+chevrolet malibu,7.0,75.5
+chevrolet malibu classic (sw),8.0,79.0
+chevrolet monte carlo,8.0,70.0
+chevrolet monte carlo landau,8.0,77.5
+chevrolet monte carlo s,8.0,73.0
+chevrolet monza 2+2,8.0,75.0
+chevrolet nova,6.0,75.0
+chevrolet nova custom,6.0,73.0
+chevrolet vega,4.0,73.0
+chevrolet vega (sw),4.0,71.0
+chevrolet vega 2300,4.0,71.0
+chevrolet woody,4.0,76.0
+chevy c10,8.0,76.0
+chevy c20,8.0,70.0
+chevy s-10,4.0,82.0
+chrysler cordoba,8.0,77.0
+chrysler lebaron medallion,4.0,82.0
+chrysler lebaron salon,6.0,81.0
+chrysler lebaron town @ country (sw),8.0,79.0
+chrysler new yorker brougham,8.0,73.0
+chrysler newport royal,8.0,72.0
+datsun 1200,4.0,71.0
+datsun 200-sx,4.0,78.0
+datsun 200sx,4.0,81.0
+datsun 210,4.0,79.5
+datsun 210 mpg,4.0,81.0
+datsun 280-zx,6.0,80.0
+datsun 310,4.0,80.0
+datsun 310 gx,4.0,82.0
+datsun 510,4.0,78.0
+datsun 510 (sw),4.0,72.0
+datsun 510 hatchback,4.0,80.0
+datsun 610,4.0,73.0
+datsun 710,4.0,74.5
+datsun 810,6.0,77.0
+datsun 810 maxima,6.0,81.0
+datsun b-210,4.0,76.0
+datsun b210,4.0,74.0
+datsun b210 gx,4.0,78.0
+datsun f-10 hatchback,4.0,77.0
+datsun pl510,4.0,70.5
+dodge aries se,4.0,82.0
+dodge aries wagon (sw),4.0,81.0
+dodge aspen,6.0,79.0
+dodge aspen 6,6.0,79.0
+dodge aspen se,6.0,76.0
+dodge challenger se,8.0,70.0
+dodge charger 2.2,4.0,82.0
+dodge colt,4.0,76.66666666666667
+dodge colt (sw),4.0,72.0
+dodge colt hardtop,4.0,72.0
+dodge colt hatchback custom,4.0,79.0
+dodge colt m/m,4.0,77.0
+dodge coronet brougham,8.0,76.0
+dodge coronet custom,8.0,73.0
+dodge coronet custom (sw),8.0,74.0
+dodge d100,8.0,76.0
+dodge d200,8.0,70.0
+dodge dart custom,8.0,73.0
+dodge diplomat,8.0,78.0
+dodge magnum xe,8.0,78.0
+dodge monaco (sw),8.0,71.0
+dodge monaco brougham,8.0,77.0
+dodge omni,4.0,78.0
+dodge rampage,4.0,82.0
+dodge st. regis,8.0,79.0
+fiat 124 sport coupe,4.0,73.0
+fiat 124 tc,4.0,74.0
+fiat 124b,4.0,71.0
+fiat 128,4.0,73.5
+fiat 131,4.0,76.0
+fiat strada custom,4.0,79.0
+fiat x1.9,4.0,74.0
+ford country,8.0,73.0
+ford country squire (sw),8.0,75.0
+ford escort 2h,4.0,81.0
+ford escort 4w,4.0,81.0
+ford f108,8.0,76.0
+ford f250,8.0,70.0
+ford fairmont,4.0,80.0
+ford fairmont (auto),6.0,78.0
+ford fairmont (man),4.0,78.0
+ford fairmont 4,4.0,79.0
+ford fairmont futura,4.0,82.0
+ford fiesta,4.0,78.0
+ford futura,8.0,78.0
+ford galaxie 500,8.0,71.0
+ford gran torino,8.0,74.33333333333333
+ford gran torino (sw),8.0,73.0
+ford granada,6.0,77.0
+ford granada ghia,6.0,76.0
+ford granada gl,6.0,81.0
+ford granada l,6.0,82.0
+ford ltd,8.0,74.0
+ford ltd landau,8.0,79.0
+ford maverick,6.0,73.5
+ford mustang,6.0,71.0, 0.46
+ford mustang gl,4.0,82.0, 0.46
+ford mustang ii,8.0,75.0, 0.46
+ford mustang ii 2+2,4.0,77.0, 0.46
+ford pinto,4.4,74.6
+ford pinto (sw),4.0,72.0
+ford pinto runabout,4.0,72.0
+ford ranger,4.0,82.0
+ford thunderbird,8.0,77.0
+ford torino,8.0,70.0
+ford torino 500,6.0,71.0
+hi 1200d,8.0,70.0
+honda accord,4.0,81.0
+honda accord cvcc,4.0,77.0
+honda accord lx,4.0,78.0
+honda civic,4.0,77.33333333333333
+honda civic (auto),4.0,82.0
+honda civic 1300,4.0,81.0
+honda civic 1500 gl,4.0,80.0
+honda civic cvcc,4.0,76.5
+honda prelude,4.0,81.0
+maxda glc deluxe,4.0,79.0, 0.45
+maxda rx3,3.0,73.0
+mazda 626,4.0,80.5
+mazda glc,4.0,80.0, 0.45
+mazda glc 4,4.0,81.0, 0.45
+mazda glc custom,4.0,82.0, 0.45
+mazda glc custom l,4.0,82.0, 0.45
+mazda glc deluxe,4.0,78.0, 0.45
+mazda rx-4,3.0,77.0
+mazda rx-7 gs,3.0,80.0
+mazda rx2 coupe,3.0,72.0
+mercedes benz 300d,5.0,79.0, 0.43
+mercedes-benz 240d,4.0,80.0, 0.43
+mercedes-benz 280s,6.0,76.0, 0.43
+mercury capri 2000,4.0,71.0
+mercury capri v6,6.0,73.0
+mercury cougar brougham,8.0,77.0
+mercury grand marquis,8.0,79.0
+mercury lynx l,4.0,82.0
+mercury marquis,8.0,72.0
+mercury marquis brougham,8.0,73.0
+mercury monarch,6.0,75.0
+mercury monarch ghia,8.0,78.0
+mercury zephyr,6.0,78.0
+mercury zephyr 6,6.0,79.0
+nissan stanza xe,4.0,82.0
+oldsmobile cutlass ciera (diesel),6.0,82.0
+oldsmobile cutlass ls,8.0,81.0
+oldsmobile cutlass salon brougham,8.0,78.5
+oldsmobile cutlass supreme,8.0,77.0
+oldsmobile delta 88 royale,8.0,72.0
+oldsmobile omega,8.0,73.0
+oldsmobile omega brougham,6.0,79.0
+oldsmobile starfire sx,4.0,78.0
+oldsmobile vista cruiser,8.0,73.0
+opel 1900,4.0,73.5
+opel manta,4.0,73.5
+peugeot 304,4.0,71.0, 0.44 
+peugeot 504,4.0,75.0, 0.44
+peugeot 504 (sw),4.0,72.0
+peugeot 505s turbo diesel,4.0,81.0
+peugeot 604sl,6.0,78.0
+plymouth 'cuda 340,8.0,70.0
+plymouth arrow gs,4.0,77.0
+plymouth champ,4.0,81.0
+plymouth cricket,4.0,71.0
+plymouth custom suburb,8.0,73.0
+plymouth duster,6.0,72.33333333333333
+plymouth fury,6.0,75.0
+plymouth fury gran sedan,8.0,73.0
+plymouth fury iii,8.0,71.0
+plymouth grand fury,8.0,75.0
+plymouth horizon,4.0,79.0
+plymouth horizon 4,4.0,81.0
+plymouth horizon miser,4.0,82.0
+plymouth horizon tc3,4.0,79.0
+plymouth reliant,4.0,81.0
+plymouth sapporo,4.0,78.0
+plymouth satellite,8.0,70.0
+plymouth satellite custom,6.0,71.0
+plymouth satellite custom (sw),8.0,72.0
+plymouth satellite sebring,6.0,74.0
+plymouth valiant,6.0,74.5
+plymouth valiant custom,6.0,75.0
+plymouth volare,6.0,78.0
+plymouth volare custom,6.0,77.0
+plymouth volare premier v8,8.0,76.0
+pontiac astro,4.0,75.0
+pontiac catalina,8.0,72.33333333333333
+pontiac catalina brougham,8.0,71.0
+pontiac firebird,6.0,71.0
+pontiac grand prix,8.0,73.0
+pontiac grand prix lj,8.0,77.0
+pontiac j2000 se hatchback,4.0,82.0
+pontiac lemans v6,6.0,79.0
+pontiac phoenix,4.0,80.5
+pontiac phoenix lj,6.0,78.0
+pontiac safari (sw),8.0,71.0
+pontiac sunbird coupe,4.0,77.0
+pontiac ventura sj,6.0,76.0
+renault 12 (sw),4.0,72.0
+renault 12tl,4.0,76.0
+renault 5 gtl,4.0,77.0
+saab 99e,4.0,70.0
+saab 99gle,4.0,78.0
+saab 99le,4.0,74.0
+subaru,4.0,77.5
+subaru dl,4.0,78.5
+toyota carina,4.0,73.0
+toyota celica gt,4.0,82.0
+toyota celica gt liftback,4.0,78.0
+toyota corolla,4.0,78.8
+toyota corolla 1200,4.0,72.5
+toyota corolla 1600 (sw),4.0,72.0
+toyota corolla liftback,4.0,77.0
+toyota corolla tercel,4.0,80.0
+toyota corona,4.0,74.5
+toyota corona hardtop,4.0,72.0
+toyota corona liftback,4.0,80.0
+toyota corona mark ii,4.0,70.0
+toyota cressida,6.0,81.0
+toyota mark ii,6.0,74.5
+toyota starlet,4.0,81.0
+toyota tercel,4.0,81.0
+toyouta corona mark ii (sw),4.0,72.0
+triumph tr7 coupe,4.0,80.0
+vokswagen rabbit,4.0,80.0, 0.42
+volkswagen 1131 deluxe sedan,4.0,70.0, 0.48
+volkswagen 411 (sw),4.0,72.0, 0.36
+volkswagen dasher,4.0,75.33333333333333, 0.42
+volkswagen jetta,4.0,81.0, 0.42
+volkswagen model 111,4.0,71.0
+volkswagen rabbit,4.0,75.5, 0.42
+volkswagen rabbit custom,4.0,77.0, 0.42
+volkswagen rabbit custom diesel,4.0,78.0, 0.42
+volkswagen rabbit l,4.0,82.0, 0.42
+volkswagen scirocco,4.0,78.0, 0.42
+volkswagen super beetle,4.0,73.0, 0.48
+volkswagen type 3,4.0,72.0, 0.48
+volvo 144ea,4.0,73.0, 0.43
+volvo 145e (sw),4.0,72.0, 0.43
+volvo 244dl,4.0,75.0, 0.39
+volvo 245,4.0,76.0, 0.39
+volvo 264gl,6.0,78.0, 0.43
+volvo diesel,6.0,81.0, 0.43
+vw dasher (diesel),4.0,80.0, 0.42
+vw pickup,4.0,82.0, 0.43
+vw rabbit,4.0,78.0, 0.42
+vw rabbit c (diesel),4.0,80.0, 0.42
+vw rabbit custom,4.0,79.0, 0.42
