@@ -278,3 +278,13 @@ ML - conferences
 * merge sort для Н массивовов (на несколько частей)
 * погонять ноутбук 1
 * домашка на каггле - посмотреть задачи m5 forecasting, нужно скачать данные из кегла и выполнить команды из ноутбука с подгрузкой данных
+
+## Лекция 2
+
+* https://sql-academy.org/ru
+* leetcode
+* spark MLlib - так себе
+* Майкрософт - обучение сетей https://github.com/microsoft/SynapseML 
+	* есть поддержка vowpal wabbit
+
+* напомнить про спросить - как boosting настроить на spark
