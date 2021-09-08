@@ -288,3 +288,15 @@ ML - conferences
 	* есть поддержка vowpal wabbit
 
 * напомнить про спросить - как boosting настроить на spark
+
+# ML
+
+## ДЗ 2 ML
+* добавить скейлинг 1 семинар + арх сети
+* 2 семинар покрутить
+* реализовать 2-3 других sceduler -> получить лучше результат PyTorch_SGD_seminar
+* HW02 - gradient реализовать
+* посмотреть https://www.jeremyjordan.me/nn-learning-rate/
+
+
+
