@@ -293,12 +293,12 @@ ML - conferences
 1. код ``` F.expr("")  ```
 
 ## Лекция 4
-1. почитать про repartition 
+1. почитать про repartition https://habr.com/ru/post/578654/ 
 2. книжку по питону и по спарку
-3. сделать фичи и групбаи для М5
-4. разобраться 
+3. сделать фичи и групбаи для М5 в Guide to M5  - сделать несколько groupby и  window признаков
 5. Разобраться с ноутбуком Seminar 3
-И в ноутбуке Guide to M5  - сделать несколько groupby и  window признаков
+6. https://habr.com/ru/company/jugru/blog/568638/
+
 
 # ML
 
@@ -308,3 +308,11 @@ ML - conferences
 * реализовать 2-3 других sceduler -> получить лучше результат PyTorch_SGD_seminar
 * HW02 - gradient реализовать
 * посмотреть https://www.jeremyjordan.me/nn-learning-rate/ - done
+
+## ДЗ 3 ML
+
+Тем временем уже стоит влпотную заниматься вторым заданием:)
+Оно есть на гитхабе по адресу: 
+HSE_DL_2021/02_week/HW02_gradient.ipynb
+
+Присылайте, пожалуйста, в формате HW_2_Surname_Name.ipynb или ссылку на колаб с аналогичным названием
