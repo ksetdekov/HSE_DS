@@ -299,6 +299,13 @@ ML - conferences
 5. Разобраться с ноутбуком Seminar 3
 6. https://habr.com/ru/company/jugru/blog/568638/
 
+## Лекция 5
+1. почитать 
+    * https://spark.apache.org/docs/latest/ml-pipeline.html
+    * https://spark.apache.org/docs/latest/ml-tuning.html
+    * https://spark.apache.org/docs/latest/ml-guide.html
+    * https://spark.apache.org/docs/latest/api/python/_modules/pyspark/sql/functions.html
+        * применить это как примеры к проекту
 
 # ML
 

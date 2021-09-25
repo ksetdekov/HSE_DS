@@ -1,0 +1,1 @@
+https://www.kaggle.com/iabhishekofficial/mobile-price-classification - задача для ноутбука mobile
