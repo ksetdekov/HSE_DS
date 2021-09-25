@@ -323,3 +323,9 @@ ML - conferences
 HSE_DL_2021/02_week/HW02_gradient.ipynb
 
 Присылайте, пожалуйста, в формате HW_2_Surname_Name.ipynb или ссылку на колаб с аналогичным названием
+
+## ДЗ 4 ML
+
+* почитать про https://arxiv.org/pdf/1804.02763.pdf
+* книги «Глубокое обучение. Погружение в мир нейронных сетей»
+* почитать https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/weight_initialization_activation_functions/
