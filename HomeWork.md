@@ -329,3 +329,7 @@ HSE_DL_2021/02_week/HW02_gradient.ipynb
 * почитать про https://arxiv.org/pdf/1804.02763.pdf
 * книги «Глубокое обучение. Погружение в мир нейронных сетей»
 * почитать https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/weight_initialization_activation_functions/
+
+## ДЗ 5 ML
+
+Batchnorm_and_dropout.ipynb - попробовать 3 слойную сеть
