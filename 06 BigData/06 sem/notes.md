@@ -73,3 +73,13 @@ spark = pyspark.sql.SparkSession.builder.getOrCreate()
 
 попробуем запустить на нашем спарке 3 ноутбук
 можно через winscp подключатьс0
+
+
+
+# настроить tmux
+```bash
+sudo apt install tmux
+tmux
+source venv/bin/activate
+jupyter notebook --no-browser --ip=0.0.0.0 --port=8098
+```
