@@ -79,6 +79,7 @@ spark = pyspark.sql.SparkSession.builder.getOrCreate()
 # настроить tmux
 ```bash
 sudo apt install tmux
+python -m ipykernel install --user --name=venv
 tmux
 source venv/bin/activate
 jupyter notebook --no-browser --ip=0.0.0.0 --port=8098
