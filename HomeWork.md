@@ -307,6 +307,8 @@ ML - conferences
     * https://spark.apache.org/docs/latest/api/python/_modules/pyspark/sql/functions.html
         * применить это как примеры к проекту
 
+## Лекция 5
+1. почитать про партиции и репартишн
 # ML
 
 ## ДЗ 2 ML
