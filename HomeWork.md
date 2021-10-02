@@ -309,6 +309,9 @@ ML - conferences
 
 ## Лекция 5
 1. почитать про партиции и репартишн
+high performance spark
+
+
 # ML
 
 ## ДЗ 2 ML
