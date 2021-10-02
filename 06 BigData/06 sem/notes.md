@@ -11,8 +11,7 @@ sudo apt apgrade
 ```
 
 ```bash
-sudo apt install
-sudo install virtualenv
+sudo apt install virtualenv
 ```
 
 ```
@@ -50,8 +49,12 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keyz
 ```
 pip install notebook
 
-jupyter notebook --no-browser --ip=0.0.0.0 --port=809
+jupyter notebook --no-browser --ip=0.0.0.0 --port=8098
+python -m ipykernel install --user --name=venv
+jupyter kernelspec list
 ```
+
+последняя команда - показывает, какие есть кернелы
 
 брать ноутбука ссылку и заменить имя на IP4 адрес, который 
 
@@ -69,3 +72,4 @@ spark = pyspark.sql.SparkSession.builder.getOrCreate()
 Есть сессия и она или создается заново изи подключается.
 
 попробуем запустить на нашем спарке 3 ноутбук
+можно через winscp подключатьс0
