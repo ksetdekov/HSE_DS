@@ -41,7 +41,31 @@ start-all.sh
 ```bash
 chmod +x ./spark_environ.sh && ./spark_environ.sh
 ```
+
+добавить файлы, который мы сгенерировал в авторизированные ключи
+```
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keyz
+```
+
 ```
 pip install notebook
+
 jupyter notebook --no-browser --ip=0.0.0.0 --port=809
 ```
+
+брать ноутбука ссылку и заменить имя на IP4 адрес, который 
+
+
+```python
+import findspark
+findspark.init()
+
+import pyspark
+
+spark = pyspark.sql.SparkSession.builder.getOrCreate()
+```
+
+спарк сессия определяется Спарк Контекстом.
+Есть сессия и она или создается заново изи подключается.
+
+попробуем запустить на нашем спарке 3 ноутбук
