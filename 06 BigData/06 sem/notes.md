@@ -7,7 +7,7 @@ vm for big data ds hse
 
 ```bash
 sudo apt update
-sudo apt apgrade
+sudo apt upgrade
 ```
 
 ```bash
