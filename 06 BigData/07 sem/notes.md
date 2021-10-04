@@ -64,3 +64,6 @@ RDD и дискретизованный поток данных
 windowed grouped aggregation - можно ставить окно, которое скользит по времени
 
 спарк сможет побороть проблемы с тем, что данные поздно доходят - он сможет их обработать и в старое окно обновить.
+
+
+https://docs.databricks.com/applications/machine-learning/index.html
