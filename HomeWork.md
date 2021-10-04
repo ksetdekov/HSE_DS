@@ -314,7 +314,8 @@ high performance spark
 ## Лекция 7 
 1. https://docs.databricks.com/applications/machine-learning/index.html
 2. попробовать полезные штуки https://docs.databricks.com/applications/machine-learning/preprocess-data/mllib.html
-3. Пройти задачки, которые были 
+3. Пройти задачки, которые были показаны в лекции
+4. Поковыряться в файле проекта, который выдан
 
 
 # ML
