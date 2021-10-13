@@ -348,3 +348,8 @@ Batchnorm_and_dropout.ipynb - попробовать 3 слойную сеть
 ## ДЗ 6 ML
 https://www.coursera.org/lecture/deep-neural-network/dropout-regularization-eM33A
 * сделать our firs cnn pytorch - прочитать статью - по ссылке "хорошая статья"
+
+## ДЗ 7 ML
+
+* сделать домашку от 6 лекции our firs cnn pytorch
+* посмотреть 
