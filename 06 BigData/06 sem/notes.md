@@ -126,3 +126,4 @@ df.write.parquet('./test_df.parquet')
 df - абстракция над rdd
 
 и партиция - которая делится на таски
+
