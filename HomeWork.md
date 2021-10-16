@@ -356,5 +356,4 @@ https://www.coursera.org/lecture/deep-neural-network/dropout-regularization-eM33
 
 ## ДЗ 1 практические вещи - NLP
 
-* Большой проект - попробовать его
-
+* Большой проект - попробовать его https://www.kaggle.com/c/toxic-comments-classification-apdl-2021
