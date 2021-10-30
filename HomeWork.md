@@ -388,6 +388,12 @@ Batchnorm_and_dropout.ipynb - попробовать 3 слойную сеть
 * сделать домашку от 6 лекции our firs cnn pytorch
 * посмотреть что он дал
 
+## ДЗ 9 ML
+
+* сверточный автокодировщик улучшить
+* улучшить manifold learning в этом ноутбуке - обучение сети оптимизировать
+
+
 ## ДЗ 1 практические вещи - NLP
 
 * Большой проект - попробовать его <https://www.kaggle.com/c/toxic-comments-classification-apdl-2021>
