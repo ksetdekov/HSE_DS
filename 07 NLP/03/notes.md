@@ -1,0 +1,14 @@
+# заметки по семинару и ДЗ
+
+## по домашнему заданию
+
+Привет! Запоздало, но обещанные материалы про CNN на текстах:
+
+на русском языке:
+
+1. из (<https://openedu.ru/course/hse/TEXT/>) курса (<https://openedu.ru/course/hse/TEXT/>) по анализу текстовых данных, лекция (<https://courses.openedu.ru/courses/course-v1:hse+TEXT+fall_2020/courseware/a947c504d30949828ef013535d677634/8c57b76fb1054f18aa3119c5f17a10cf/1?activate_block_id=block-v1%3Ahse%2BTEXT%2Bfall_2020%2Btype%40vertical%2Bblock%400fa6b8d4c55a4d5fb1f188065733449a>) и семинар (<https://courses.openedu.ru/courses/course-v1:hse+TEXT+fall_2020/courseware/a947c504d30949828ef013535d677634/7c7fb63f763840f783f5a0ec993283e9/1?activate_block_id=block-v1%3Ahse%2BTEXT%2Bfall_2020%2Btype%40vertical%2Bblock%4096dba3daf59f484cb4394356cc6a2022>) про CNN (курс и доступ к материалам там бесплатный, но там нужно будет зарегистрироваться на платформе)
+
+на английском языке:
+
+1. кусочек про CNN в курсе Лены Войта (<https://lena-voita.github.io/nlp_course/text_classification.html#nn_models_cnn>)
+2. лекция про CNN для текстов от коллег из Вышки, нашла в открытом доступе на youtube (<https://www.youtube.com/watch?v=wNBaNhvL4pg>), но лучше обратиться к первоисточнику на курсере (<https://ru.coursera.org/learn/language-processing?specialization=aml>)
