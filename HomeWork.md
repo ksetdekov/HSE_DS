@@ -79,6 +79,7 @@
 4) <https://docs.google.com/presentation/d/1f0cBqR3wRWA4V9f5gvPuMfBUiN-DDOXp1ozNhbVBLqQ/edit#slide=id.p>
 
 Бонусы:
+
 * selenium: скачать любой набор данных с любого сайта как мы сделали на семинаре – от 10 до 20 баллов в зависимости от приложенных усилий, файл можете также грузить на диск (ссылка та же, что и для SQL) – ноутбук с кодом, файл с результатом. код должен быть воспроизводим и красив (pep8)
 * решать sql задачи (выбрать уровень на свой вкус) <https://www.sql-ex.ru/> (не оценивается, но настоятельно рекомендуется)
 
@@ -195,6 +196,7 @@
 8) <https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/>
 
 # Лекция 5 алгоритмы
+
 <https://www.dissercat.com/content/o-skorosti-skhodimosti-statistik-kriteriev-soglasiya-so-stepennymi-merami-raskhozhdeniya-k-k>
 
 <https://informatics.mccme.ru/mod/statements/view.php?id=766&chapterid=1790#1> - частичное
@@ -208,6 +210,7 @@
 * sklearn can set custom <https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html>
 
 # Лекция 6 алгоритмы
+
 <https://leetcode.com/problems/reverse-linked-list/>
 
 # Лекция 10 алгоритмы
@@ -238,7 +241,7 @@
 
 # NP
 
-### Задания для самостоятельного решения
+## Задания для самостоятельного решения
 
 # ML
 
@@ -379,6 +382,7 @@ HSE_DL_2021/02_week/HW02_gradient.ipynb
 Batchnorm_and_dropout.ipynb - попробовать 3 слойную сеть
 
 ## ДЗ 6 ML
+
 <https://www.coursera.org/lecture/deep-neural-network/dropout-regularization-eM33A>
 
 * сделать our firs cnn pytorch - прочитать статью - по ссылке "хорошая статья"
@@ -393,7 +397,11 @@ Batchnorm_and_dropout.ipynb - попробовать 3 слойную сеть
 * сверточный автокодировщик улучшить
 * улучшить manifold learning в этом ноутбуке - обучение сети оптимизировать
 
-
 ## ДЗ 1 практические вещи - NLP
 
 * Большой проект - попробовать его <https://www.kaggle.com/c/toxic-comments-classification-apdl-2021>
+
+## ДЗ 3 практические вещи - NLP
+
+* посмотреть лекции - модель трансформер и берт
+* посмотреть 4_bert - и использовать hugging face - для русского языка.
