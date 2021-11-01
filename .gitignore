@@ -180,3 +180,5 @@ lecture 11 materials/database.sqlite
 07 NLP/kaggle hw/toxic-comments-classification-apdl-2021.zip
 07 NLP/kaggle hw/data/*
 05 DL/09_week/lfw_home/*
+05 DL/09_week/deepautoencoder/*.pt
+05 DL/09_week/pca_autoencoder/*.pt
