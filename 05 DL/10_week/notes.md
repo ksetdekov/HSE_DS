@@ -36,3 +36,7 @@ d dimensional noise vector $\rightarrow$  генератор $\rightarrow$ фе�
 разметка по пикселям - это mapilary  сегментация
 
 <https://affinelayer.com/pixsrv/>
+
+## variational autoencoders
+
+<https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73>
