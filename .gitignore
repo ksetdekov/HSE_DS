@@ -182,3 +182,5 @@ lecture 11 materials/database.sqlite
 05 DL/09_week/lfw_home/*
 05 DL/09_week/deepautoencoder/*.pt
 05 DL/09_week/pca_autoencoder/*.pt
+08 Metric learning/01/medium/*
+08 Metric learning/01/medium_dev/*

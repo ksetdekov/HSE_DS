@@ -78,3 +78,11 @@ hard negative mining можно использовать подход.
 
 можно смотерть разные подходы тут
 <https://github.com/KevinMusgrave/pytorch-metric-learning>
+
+## семинар
+
+### выводы
+
+* от добавление closs - точность улучшилась
+
+## pytroch ddp / pytorch lightning
