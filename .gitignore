@@ -184,3 +184,6 @@ lecture 11 materials/database.sqlite
 05 DL/09_week/pca_autoencoder/*.pt
 08 Metric learning/01/medium/*
 08 Metric learning/01/medium_dev/*
+05 DL/11_week_nlp_start/our_w2v.model
+05 DL/11_week_nlp_start/word2vec.wordvectors
+05 DL/11_week_nlp_start/data/ruwiki.xml.bz2

@@ -417,3 +417,7 @@ Batchnorm_and_dropout.ipynb - попробовать 3 слойную сеть
 ### задание
 
 почитать из конца лекций
+
+## ДЗ 11 DL
+
+<https://lena-voita.github.io/nlp_course.html>
