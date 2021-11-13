@@ -1,0 +1,3440 @@
+[
+  {
+    "id": 67,
+    "annotations": [
+      {
+        "id": 71,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 226,
+            "image_rotation": 0,
+            "value": {
+              "x": 42.5,
+              "y": 42.47787610619469,
+              "width": 10.75,
+              "height": 11.946902654867257,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "vkMvJ_UkFA",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:33:13.076462Z",
+        "updated_at": "2021-04-12T18:33:13.076498Z",
+        "lead_time": 3.141,
+        "prediction": {},
+        "result_count": 0,
+        "task": 67
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss197.png",
+    "data": {
+      "image": "/data/upload/maksssksksss197.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134581Z",
+    "updated_at": "2021-04-12T18:17:13.134594Z",
+    "project": 3
+  },
+  {
+    "id": 66,
+    "annotations": [
+      {
+        "id": 70,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 29.900332225913623,
+              "y": 69.5,
+              "width": 22.591362126245848,
+              "height": 17,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "uErQhfv87d",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:33:09.679921Z",
+        "updated_at": "2021-04-12T18:33:09.679981Z",
+        "lead_time": 3.809,
+        "prediction": {},
+        "result_count": 0,
+        "task": 66
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss196.png",
+    "data": {
+      "image": "/data/upload/maksssksksss196.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134529Z",
+    "updated_at": "2021-04-12T18:17:13.134542Z",
+    "project": 3
+  },
+  {
+    "id": 65,
+    "annotations": [
+      {
+        "id": 69,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 31.5,
+              "y": 54.5,
+              "width": 42.25,
+              "height": 30.75,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "MtYKhr2d4F",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:33:05.608810Z",
+        "updated_at": "2021-04-12T18:33:05.608946Z",
+        "lead_time": 3.154,
+        "prediction": {},
+        "result_count": 0,
+        "task": 65
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss195.png",
+    "data": {
+      "image": "/data/upload/maksssksksss195.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134477Z",
+    "updated_at": "2021-04-12T18:17:13.134490Z",
+    "project": 3
+  },
+  {
+    "id": 64,
+    "annotations": [
+      {
+        "id": 68,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 267,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 42.32209737827716,
+              "y": 12.5,
+              "width": 17.97752808988764,
+              "height": 9,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "N-3rsomWNC",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:33:02.076269Z",
+        "updated_at": "2021-04-12T18:33:02.076324Z",
+        "lead_time": 2.858,
+        "prediction": {},
+        "result_count": 0,
+        "task": 64
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss192.png",
+    "data": {
+      "image": "/data/upload/maksssksksss192.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134425Z",
+    "updated_at": "2021-04-12T18:17:13.134438Z",
+    "project": 3
+  },
+  {
+    "id": 63,
+    "annotations": [
+      {
+        "id": 67,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 301,
+            "image_rotation": 0,
+            "value": {
+              "x": 50.75,
+              "y": 32.22591362126246,
+              "width": 23.25,
+              "height": 22.92358803986711,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "GQMfbchzqV",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:58.882492Z",
+        "updated_at": "2021-04-12T18:32:58.882564Z",
+        "lead_time": 3.436,
+        "prediction": {},
+        "result_count": 0,
+        "task": 63
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss191.png",
+    "data": {
+      "image": "/data/upload/maksssksksss191.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134373Z",
+    "updated_at": "2021-04-12T18:17:13.134386Z",
+    "project": 3
+  },
+  {
+    "id": 62,
+    "annotations": [
+      {
+        "id": 66,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 282,
+            "image_rotation": 0,
+            "value": {
+              "x": 36.25,
+              "y": 34.04255319148936,
+              "width": 17.5,
+              "height": 20.921985815602838,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "MwioQhsKIr",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:55.152099Z",
+        "updated_at": "2021-04-12T18:32:55.152161Z",
+        "lead_time": 3.321,
+        "prediction": {},
+        "result_count": 0,
+        "task": 62
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss190.png",
+    "data": {
+      "image": "/data/upload/maksssksksss190.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134322Z",
+    "updated_at": "2021-04-12T18:17:13.134335Z",
+    "project": 3
+  },
+  {
+    "id": 61,
+    "annotations": [
+      {
+        "id": 65,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 32.55813953488372,
+              "y": 58.5,
+              "width": 33.55481727574751,
+              "height": 20,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "dRCg3VUoWD",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:51.518147Z",
+        "updated_at": "2021-04-12T18:32:51.518184Z",
+        "lead_time": 3.03,
+        "prediction": {},
+        "result_count": 0,
+        "task": 61
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss188.png",
+    "data": {
+      "image": "/data/upload/maksssksksss188.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134270Z",
+    "updated_at": "2021-04-12T18:17:13.134283Z",
+    "project": 3
+  },
+  {
+    "id": 60,
+    "annotations": [
+      {
+        "id": 64,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 300,
+            "image_rotation": 0,
+            "value": {
+              "x": 58.5,
+              "y": 40.333333333333336,
+              "width": 21.5,
+              "height": 18.666666666666668,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "JvQYQDeDfD",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:48.212090Z",
+        "updated_at": "2021-04-12T18:32:48.212153Z",
+        "lead_time": 3.546,
+        "prediction": {},
+        "result_count": 0,
+        "task": 60
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss187.png",
+    "data": {
+      "image": "/data/upload/maksssksksss187.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134218Z",
+    "updated_at": "2021-04-12T18:17:13.134231Z",
+    "project": 3
+  },
+  {
+    "id": 59,
+    "annotations": [
+      {
+        "id": 63,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 267,
+            "image_rotation": 0,
+            "value": {
+              "x": 51.5,
+              "y": 26.217228464419474,
+              "width": 16.5,
+              "height": 15.355805243445692,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "GH6ldWVyZh",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:44.384881Z",
+        "updated_at": "2021-04-12T18:32:44.384916Z",
+        "lead_time": 3.468,
+        "prediction": {},
+        "result_count": 0,
+        "task": 59
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss182.png",
+    "data": {
+      "image": "/data/upload/maksssksksss182.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134161Z",
+    "updated_at": "2021-04-12T18:17:13.134174Z",
+    "project": 3
+  },
+  {
+    "id": 58,
+    "annotations": [
+      {
+        "id": 62,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 19.601328903654483,
+              "y": 54.25,
+              "width": 35.21594684385382,
+              "height": 23.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "WvXB-OEpf7",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:40.648752Z",
+        "updated_at": "2021-04-12T18:32:40.648810Z",
+        "lead_time": 3.357,
+        "prediction": {},
+        "result_count": 0,
+        "task": 58
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss180.png",
+    "data": {
+      "image": "/data/upload/maksssksksss180.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134109Z",
+    "updated_at": "2021-04-12T18:17:13.134121Z",
+    "project": 3
+  },
+  {
+    "id": 57,
+    "annotations": [
+      {
+        "id": 61,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 225,
+            "image_rotation": 0,
+            "value": {
+              "x": 27,
+              "y": 45.77777777777778,
+              "width": 29.75,
+              "height": 45.77777777777778,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "kMqjAxFpQp",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:36.960195Z",
+        "updated_at": "2021-04-12T18:32:36.960346Z",
+        "lead_time": 3.094,
+        "prediction": {},
+        "result_count": 0,
+        "task": 57
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss170.png",
+    "data": {
+      "image": "/data/upload/maksssksksss170.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134057Z",
+    "updated_at": "2021-04-12T18:17:13.134070Z",
+    "project": 3
+  },
+  {
+    "id": 56,
+    "annotations": [
+      {
+        "id": 60,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 50.498338870431894,
+              "y": 71.75,
+              "width": 22.92358803986711,
+              "height": 18.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "I2MKGILM_k",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:33.582476Z",
+        "updated_at": "2021-04-12T18:32:33.582513Z",
+        "lead_time": 3.342,
+        "prediction": {},
+        "result_count": 0,
+        "task": 56
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss169.png",
+    "data": {
+      "image": "/data/upload/maksssksksss169.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.134005Z",
+    "updated_at": "2021-04-12T18:17:13.134018Z",
+    "project": 3
+  },
+  {
+    "id": 55,
+    "annotations": [
+      {
+        "id": 59,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 225,
+            "image_rotation": 0,
+            "value": {
+              "x": 42.25,
+              "y": 46.666666666666664,
+              "width": 29.75,
+              "height": 32.888888888888886,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "9ZUz50xt5h",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:29.961612Z",
+        "updated_at": "2021-04-12T18:32:29.961656Z",
+        "lead_time": 4.103,
+        "prediction": {},
+        "result_count": 0,
+        "task": 55
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss168.png",
+    "data": {
+      "image": "/data/upload/maksssksksss168.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133953Z",
+    "updated_at": "2021-04-12T18:17:13.133966Z",
+    "project": 3
+  },
+  {
+    "id": 54,
+    "annotations": [
+      {
+        "id": 58,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 28.239202657807308,
+              "y": 55.25,
+              "width": 35.880398671096344,
+              "height": 22.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "Vdw4Ji3roI",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:25.578084Z",
+        "updated_at": "2021-04-12T18:32:25.578144Z",
+        "lead_time": 3.639,
+        "prediction": {},
+        "result_count": 0,
+        "task": 54
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss162.png",
+    "data": {
+      "image": "/data/upload/maksssksksss162.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133901Z",
+    "updated_at": "2021-04-12T18:17:13.133914Z",
+    "project": 3
+  },
+  {
+    "id": 53,
+    "annotations": [
+      {
+        "id": 57,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 17.940199335548172,
+              "y": 43.5,
+              "width": 35.21594684385382,
+              "height": 22,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "hAxgCKwtmg",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:21.658877Z",
+        "updated_at": "2021-04-12T18:32:21.658941Z",
+        "lead_time": 3.069,
+        "prediction": {},
+        "result_count": 0,
+        "task": 53
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss150.png",
+    "data": {
+      "image": "/data/upload/maksssksksss150.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133849Z",
+    "updated_at": "2021-04-12T18:17:13.133862Z",
+    "project": 3
+  },
+  {
+    "id": 52,
+    "annotations": [
+      {
+        "id": 56,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 28.903654485049834,
+              "y": 57.75,
+              "width": 36.87707641196013,
+              "height": 24.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "ktxhuOB0AT",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:18.314813Z",
+        "updated_at": "2021-04-12T18:32:18.314854Z",
+        "lead_time": 3.262,
+        "prediction": {},
+        "result_count": 0,
+        "task": 52
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss143.png",
+    "data": {
+      "image": "/data/upload/maksssksksss143.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133797Z",
+    "updated_at": "2021-04-12T18:17:13.133810Z",
+    "project": 3
+  },
+  {
+    "id": 51,
+    "annotations": [
+      {
+        "id": 55,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 479,
+            "original_height": 359,
+            "image_rotation": 0,
+            "value": {
+              "x": 34.65553235908142,
+              "y": 38.99721448467967,
+              "width": 17.32776617954071,
+              "height": 28.41225626740947,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "bCXkHoNnJ4",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:14.738464Z",
+        "updated_at": "2021-04-12T18:32:14.738508Z",
+        "lead_time": 3.586,
+        "prediction": {},
+        "result_count": 0,
+        "task": 51
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss142.png",
+    "data": {
+      "image": "/data/upload/maksssksksss142.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133745Z",
+    "updated_at": "2021-04-12T18:17:13.133758Z",
+    "project": 3
+  },
+  {
+    "id": 50,
+    "annotations": [
+      {
+        "id": 54,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 267,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 38.20224719101124,
+              "y": 30.5,
+              "width": 20.224719101123597,
+              "height": 8.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "hcPdddm1Ih",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:10.843927Z",
+        "updated_at": "2021-04-12T18:32:10.843990Z",
+        "lead_time": 3.81,
+        "prediction": {},
+        "result_count": 0,
+        "task": 50
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss136.png",
+    "data": {
+      "image": "/data/upload/maksssksksss136.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133692Z",
+    "updated_at": "2021-04-12T18:17:13.133705Z",
+    "project": 3
+  },
+  {
+    "id": 49,
+    "annotations": [
+      {
+        "id": 53,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 34.5514950166113,
+              "y": 53,
+              "width": 38.538205980066444,
+              "height": 24,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "52N9nHxtzr",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:06.712428Z",
+        "updated_at": "2021-04-12T18:32:06.712530Z",
+        "lead_time": 4.264,
+        "prediction": {},
+        "result_count": 0,
+        "task": 49
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss133.png",
+    "data": {
+      "image": "/data/upload/maksssksksss133.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133639Z",
+    "updated_at": "2021-04-12T18:17:13.133653Z",
+    "project": 3
+  },
+  {
+    "id": 48,
+    "annotations": [
+      {
+        "id": 52,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 306,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 35.62091503267974,
+              "y": 30.25,
+              "width": 25.49019607843137,
+              "height": 15.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "bla4WMRcWm",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:32:01.676387Z",
+        "updated_at": "2021-04-12T18:32:01.676426Z",
+        "lead_time": 679.03,
+        "prediction": {},
+        "result_count": 0,
+        "task": 48
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss132.png",
+    "data": {
+      "image": "/data/upload/maksssksksss132.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133587Z",
+    "updated_at": "2021-04-12T18:17:13.133600Z",
+    "project": 3
+  },
+  {
+    "id": 47,
+    "annotations": [
+      {
+        "id": 51,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 267,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 36.70411985018727,
+              "y": 14.25,
+              "width": 11.610486891385769,
+              "height": 5.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "EuzIayyYTV",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:42.236860Z",
+        "updated_at": "2021-04-12T18:20:42.236896Z",
+        "lead_time": 3.201,
+        "prediction": {},
+        "result_count": 0,
+        "task": 47
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss127.png",
+    "data": {
+      "image": "/data/upload/maksssksksss127.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133534Z",
+    "updated_at": "2021-04-12T18:17:13.133548Z",
+    "project": 3
+  },
+  {
+    "id": 46,
+    "annotations": [
+      {
+        "id": 50,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 267,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 38.20224719101124,
+              "y": 14.75,
+              "width": 19.850187265917604,
+              "height": 11.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "Qn0bUycE1_",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:38.721222Z",
+        "updated_at": "2021-04-12T18:20:38.721257Z",
+        "lead_time": 3.439,
+        "prediction": {},
+        "result_count": 0,
+        "task": 46
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss126.png",
+    "data": {
+      "image": "/data/upload/maksssksksss126.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133483Z",
+    "updated_at": "2021-04-12T18:17:13.133496Z",
+    "project": 3
+  },
+  {
+    "id": 45,
+    "annotations": [
+      {
+        "id": 49,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 20.59800664451827,
+              "y": 54.75,
+              "width": 40.199335548172755,
+              "height": 27,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "8J6be6-egH",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:34.919136Z",
+        "updated_at": "2021-04-12T18:20:34.919171Z",
+        "lead_time": 3.017,
+        "prediction": {},
+        "result_count": 0,
+        "task": 45
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss120.png",
+    "data": {
+      "image": "/data/upload/maksssksksss120.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133430Z",
+    "updated_at": "2021-04-12T18:17:13.133444Z",
+    "project": 3
+  },
+  {
+    "id": 44,
+    "annotations": [
+      {
+        "id": 48,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 267,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 33.333333333333336,
+              "y": 26,
+              "width": 18.352059925093634,
+              "height": 6.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "SLssinYBE3",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:31.568294Z",
+        "updated_at": "2021-04-12T18:20:31.568335Z",
+        "lead_time": 3.243,
+        "prediction": {},
+        "result_count": 0,
+        "task": 44
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss112.png",
+    "data": {
+      "image": "/data/upload/maksssksksss112.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133378Z",
+    "updated_at": "2021-04-12T18:17:13.133391Z",
+    "project": 3
+  },
+  {
+    "id": 43,
+    "annotations": [
+      {
+        "id": 47,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 54.25,
+              "y": 33.75,
+              "width": 35.25,
+              "height": 26.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "BIcLCgF-Jl",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:27.520494Z",
+        "updated_at": "2021-04-12T18:20:27.520561Z",
+        "lead_time": 3.576,
+        "prediction": {},
+        "result_count": 0,
+        "task": 43
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss109.png",
+    "data": {
+      "image": "/data/upload/maksssksksss109.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133326Z",
+    "updated_at": "2021-04-12T18:17:13.133339Z",
+    "project": 3
+  },
+  {
+    "id": 42,
+    "annotations": [
+      {
+        "id": 46,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 39.8671096345515,
+              "y": 58.5,
+              "width": 30.564784053156146,
+              "height": 18.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "YB6bsunhpi",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:23.447380Z",
+        "updated_at": "2021-04-12T18:20:23.447435Z",
+        "lead_time": 3.174,
+        "prediction": {},
+        "result_count": 0,
+        "task": 42
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss107.png",
+    "data": {
+      "image": "/data/upload/maksssksksss107.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133273Z",
+    "updated_at": "2021-04-12T18:17:13.133286Z",
+    "project": 3
+  },
+  {
+    "id": 41,
+    "annotations": [
+      {
+        "id": 45,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 600,
+            "original_height": 399,
+            "image_rotation": 0,
+            "value": {
+              "x": 27.833333333333332,
+              "y": 33.08270676691729,
+              "width": 26,
+              "height": 60.65162907268171,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "fzcrx9sp7N",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:19.878891Z",
+        "updated_at": "2021-04-12T18:20:19.878954Z",
+        "lead_time": 3.677,
+        "prediction": {},
+        "result_count": 0,
+        "task": 41
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss106.png",
+    "data": {
+      "image": "/data/upload/maksssksksss106.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133220Z",
+    "updated_at": "2021-04-12T18:17:13.133233Z",
+    "project": 3
+  },
+  {
+    "id": 40,
+    "annotations": [
+      {
+        "id": 44,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 16.943521594684384,
+              "y": 80.25,
+              "width": 32.89036544850498,
+              "height": 19.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "6l76mMI1oU",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:15.849831Z",
+        "updated_at": "2021-04-12T18:20:15.849865Z",
+        "lead_time": 3.007,
+        "prediction": {},
+        "result_count": 0,
+        "task": 40
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss101.png",
+    "data": {
+      "image": "/data/upload/maksssksksss101.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133168Z",
+    "updated_at": "2021-04-12T18:17:13.133181Z",
+    "project": 3
+  },
+  {
+    "id": 39,
+    "annotations": [
+      {
+        "id": 43,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 267,
+            "image_rotation": 0,
+            "value": {
+              "x": 49.25,
+              "y": 22.471910112359552,
+              "width": 10.25,
+              "height": 11.610486891385769,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "SzVbtdKUv_",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:12.498139Z",
+        "updated_at": "2021-04-12T18:20:12.498175Z",
+        "lead_time": 3.121,
+        "prediction": {},
+        "result_count": 0,
+        "task": 39
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss98.png",
+    "data": {
+      "image": "/data/upload/maksssksksss98.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133115Z",
+    "updated_at": "2021-04-12T18:17:13.133128Z",
+    "project": 3
+  },
+  {
+    "id": 38,
+    "annotations": [
+      {
+        "id": 42,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 61.12956810631229,
+              "y": 21.5,
+              "width": 7.973421926910299,
+              "height": 6,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "xxD2cSLkyL",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:09.003976Z",
+        "updated_at": "2021-04-12T18:20:09.004013Z",
+        "lead_time": 3.689,
+        "prediction": {},
+        "result_count": 0,
+        "task": 38
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss97.png",
+    "data": {
+      "image": "/data/upload/maksssksksss97.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133063Z",
+    "updated_at": "2021-04-12T18:17:13.133076Z",
+    "project": 3
+  },
+  {
+    "id": 37,
+    "annotations": [
+      {
+        "id": 41,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 15.282392026578073,
+              "y": 51,
+              "width": 33.88704318936877,
+              "height": 24.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "GcYsZ7derP",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:04.829662Z",
+        "updated_at": "2021-04-12T18:20:04.829733Z",
+        "lead_time": 3.064,
+        "prediction": {},
+        "result_count": 0,
+        "task": 37
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss88.png",
+    "data": {
+      "image": "/data/upload/maksssksksss88.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.133010Z",
+    "updated_at": "2021-04-12T18:17:13.133024Z",
+    "project": 3
+  },
+  {
+    "id": 36,
+    "annotations": [
+      {
+        "id": 40,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 41.52823920265781,
+              "y": 74.75,
+              "width": 29.235880398671096,
+              "height": 22,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "lDQXc-f_4h",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:20:01.394927Z",
+        "updated_at": "2021-04-12T18:20:01.394962Z",
+        "lead_time": 3.197,
+        "prediction": {},
+        "result_count": 0,
+        "task": 36
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss87.png",
+    "data": {
+      "image": "/data/upload/maksssksksss87.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132958Z",
+    "updated_at": "2021-04-12T18:17:13.132971Z",
+    "project": 3
+  },
+  {
+    "id": 35,
+    "annotations": [
+      {
+        "id": 39,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 267,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 31.46067415730337,
+              "y": 20.25,
+              "width": 37.453183520599254,
+              "height": 21.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "MVdE8mHoYh",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:57.910824Z",
+        "updated_at": "2021-04-12T18:19:57.910886Z",
+        "lead_time": 3.31,
+        "prediction": {},
+        "result_count": 0,
+        "task": 35
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss85.png",
+    "data": {
+      "image": "/data/upload/maksssksksss85.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132906Z",
+    "updated_at": "2021-04-12T18:17:13.132919Z",
+    "project": 3
+  },
+  {
+    "id": 34,
+    "annotations": [
+      {
+        "id": 38,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 226,
+            "image_rotation": 0,
+            "value": {
+              "x": 55,
+              "y": 34.95575221238938,
+              "width": 16.5,
+              "height": 22.56637168141593,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "yoFeEyru3-",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:54.300995Z",
+        "updated_at": "2021-04-12T18:19:54.301029Z",
+        "lead_time": 3.315,
+        "prediction": {},
+        "result_count": 0,
+        "task": 34
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss80.png",
+    "data": {
+      "image": "/data/upload/maksssksksss80.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132853Z",
+    "updated_at": "2021-04-12T18:17:13.132867Z",
+    "project": 3
+  },
+  {
+    "id": 33,
+    "annotations": [
+      {
+        "id": 37,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 34.883720930232556,
+              "y": 62.5,
+              "width": 26.578073089700997,
+              "height": 21,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "X49WdgL4aa",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:50.707141Z",
+        "updated_at": "2021-04-12T18:19:50.707207Z",
+        "lead_time": 3.642,
+        "prediction": {},
+        "result_count": 0,
+        "task": 33
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss78.png",
+    "data": {
+      "image": "/data/upload/maksssksksss78.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132801Z",
+    "updated_at": "2021-04-12T18:17:13.132814Z",
+    "project": 3
+  },
+  {
+    "id": 32,
+    "annotations": [
+      {
+        "id": 36,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 351,
+            "image_rotation": 0,
+            "value": {
+              "x": 36.5,
+              "y": 39.6011396011396,
+              "width": 29,
+              "height": 28.205128205128204,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "L0s9cXLU1D",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:46.792287Z",
+        "updated_at": "2021-04-12T18:19:46.792374Z",
+        "lead_time": 2.925,
+        "prediction": {},
+        "result_count": 0,
+        "task": 32
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss69.png",
+    "data": {
+      "image": "/data/upload/maksssksksss69.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132749Z",
+    "updated_at": "2021-04-12T18:17:13.132762Z",
+    "project": 3
+  },
+  {
+    "id": 31,
+    "annotations": [
+      {
+        "id": 35,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 380,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 47.63157894736842,
+              "y": 27.25,
+              "width": 22.63157894736842,
+              "height": 15.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "ZFD9RrQjHx",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:43.595067Z",
+        "updated_at": "2021-04-12T18:19:43.595132Z",
+        "lead_time": 3.183,
+        "prediction": {},
+        "result_count": 0,
+        "task": 31
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss66.png",
+    "data": {
+      "image": "/data/upload/maksssksksss66.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132697Z",
+    "updated_at": "2021-04-12T18:17:13.132710Z",
+    "project": 3
+  },
+  {
+    "id": 30,
+    "annotations": [
+      {
+        "id": 34,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 226,
+            "image_rotation": 0,
+            "value": {
+              "x": 32.75,
+              "y": 52.65486725663717,
+              "width": 31.5,
+              "height": 38.93805309734513,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "Vu9wRq0uYP",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:40.134507Z",
+        "updated_at": "2021-04-12T18:19:40.134540Z",
+        "lead_time": 3.483,
+        "prediction": {},
+        "result_count": 0,
+        "task": 30
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss63.png",
+    "data": {
+      "image": "/data/upload/maksssksksss63.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132645Z",
+    "updated_at": "2021-04-12T18:17:13.132658Z",
+    "project": 3
+  },
+  {
+    "id": 29,
+    "annotations": [
+      {
+        "id": 33,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 28.903654485049834,
+              "y": 57.5,
+              "width": 34.883720930232556,
+              "height": 29.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "KA2VKH8o6v",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:36.314345Z",
+        "updated_at": "2021-04-12T18:19:36.314379Z",
+        "lead_time": 3.071,
+        "prediction": {},
+        "result_count": 0,
+        "task": 29
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss62.png",
+    "data": {
+      "image": "/data/upload/maksssksksss62.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132592Z",
+    "updated_at": "2021-04-12T18:17:13.132606Z",
+    "project": 3
+  },
+  {
+    "id": 28,
+    "annotations": [
+      {
+        "id": 32,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 26.245847176079735,
+              "y": 54,
+              "width": 31.229235880398672,
+              "height": 21,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "zcwZgRE8NL",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:32.947982Z",
+        "updated_at": "2021-04-12T18:19:32.948015Z",
+        "lead_time": 3.415,
+        "prediction": {},
+        "result_count": 0,
+        "task": 28
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss60.png",
+    "data": {
+      "image": "/data/upload/maksssksksss60.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132540Z",
+    "updated_at": "2021-04-12T18:17:13.132553Z",
+    "project": 3
+  },
+  {
+    "id": 27,
+    "annotations": [
+      {
+        "id": 31,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 34.21926910299003,
+              "y": 68.5,
+              "width": 20.26578073089701,
+              "height": 19.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "SzolKVNWqT",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:29.261314Z",
+        "updated_at": "2021-04-12T18:19:29.261348Z",
+        "lead_time": 3.639,
+        "prediction": {},
+        "result_count": 0,
+        "task": 27
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss57.png",
+    "data": {
+      "image": "/data/upload/maksssksksss57.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132488Z",
+    "updated_at": "2021-04-12T18:17:13.132501Z",
+    "project": 3
+  },
+  {
+    "id": 26,
+    "annotations": [
+      {
+        "id": 30,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 267,
+            "image_rotation": 0,
+            "value": {
+              "x": 48.5,
+              "y": 49.06367041198502,
+              "width": 15.25,
+              "height": 18.726591760299627,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "K9fWP-LBuW",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:25.348951Z",
+        "updated_at": "2021-04-12T18:19:25.348986Z",
+        "lead_time": 4.11,
+        "prediction": {},
+        "result_count": 0,
+        "task": 26
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss56.png",
+    "data": {
+      "image": "/data/upload/maksssksksss56.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132435Z",
+    "updated_at": "2021-04-12T18:17:13.132448Z",
+    "project": 3
+  },
+  {
+    "id": 25,
+    "annotations": [
+      {
+        "id": 29,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 38.87043189368771,
+              "y": 42.5,
+              "width": 37.87375415282392,
+              "height": 30.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "kD5f1T_fkr",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:20.959235Z",
+        "updated_at": "2021-04-12T18:19:20.959271Z",
+        "lead_time": 4.25,
+        "prediction": {},
+        "result_count": 0,
+        "task": 25
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss55.png",
+    "data": {
+      "image": "/data/upload/maksssksksss55.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132383Z",
+    "updated_at": "2021-04-12T18:17:13.132396Z",
+    "project": 3
+  },
+  {
+    "id": 24,
+    "annotations": [
+      {
+        "id": 28,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:16.427109Z",
+        "updated_at": "2021-04-12T18:19:16.427146Z",
+        "lead_time": 1.001,
+        "prediction": {},
+        "result_count": 0,
+        "task": 24
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss51.png",
+    "data": {
+      "image": "/data/upload/maksssksksss51.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132331Z",
+    "updated_at": "2021-04-12T18:17:13.132344Z",
+    "project": 3
+  },
+  {
+    "id": 23,
+    "annotations": [
+      {
+        "id": 27,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:15.160739Z",
+        "updated_at": "2021-04-12T18:19:15.160773Z",
+        "lead_time": 2.684,
+        "prediction": {},
+        "result_count": 0,
+        "task": 23
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss48.png",
+    "data": {
+      "image": "/data/upload/maksssksksss48.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132278Z",
+    "updated_at": "2021-04-12T18:17:13.132292Z",
+    "project": 3
+  },
+  {
+    "id": 22,
+    "annotations": [
+      {
+        "id": 26,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 268,
+            "image_rotation": 0,
+            "value": {
+              "x": 48,
+              "y": 38.80597014925373,
+              "width": 22.5,
+              "height": 37.3134328358209,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "HZ3G7lSW0M",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:12.203453Z",
+        "updated_at": "2021-04-12T18:19:12.203543Z",
+        "lead_time": 3.603,
+        "prediction": {},
+        "result_count": 0,
+        "task": 22
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss47.png",
+    "data": {
+      "image": "/data/upload/maksssksksss47.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132227Z",
+    "updated_at": "2021-04-12T18:17:13.132240Z",
+    "project": 3
+  },
+  {
+    "id": 21,
+    "annotations": [
+      {
+        "id": 25,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 226,
+            "image_rotation": 0,
+            "value": {
+              "x": 55.25,
+              "y": 21.68141592920354,
+              "width": 12.75,
+              "height": 15.044247787610619,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "MBzO3N1xgh",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:08.330306Z",
+        "updated_at": "2021-04-12T18:19:08.330341Z",
+        "lead_time": 3.28,
+        "prediction": {},
+        "result_count": 0,
+        "task": 21
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss45.png",
+    "data": {
+      "image": "/data/upload/maksssksksss45.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132174Z",
+    "updated_at": "2021-04-12T18:17:13.132188Z",
+    "project": 3
+  },
+  {
+    "id": 20,
+    "annotations": [
+      {
+        "id": 24,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 266,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 45.48872180451128,
+              "y": 14.5,
+              "width": 18.796992481203006,
+              "height": 12.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "2qMoktAGsF",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:04.782486Z",
+        "updated_at": "2021-04-12T18:19:04.782548Z",
+        "lead_time": 3.791,
+        "prediction": {},
+        "result_count": 0,
+        "task": 20
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss43.png",
+    "data": {
+      "image": "/data/upload/maksssksksss43.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132122Z",
+    "updated_at": "2021-04-12T18:17:13.132135Z",
+    "project": 3
+  },
+  {
+    "id": 19,
+    "annotations": [
+      {
+        "id": 23,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 285,
+            "image_rotation": 0,
+            "value": {
+              "x": 47.75,
+              "y": 38.24561403508772,
+              "width": 8.5,
+              "height": 9.824561403508772,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "qY099MflP3",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:19:00.703163Z",
+        "updated_at": "2021-04-12T18:19:00.703203Z",
+        "lead_time": 3.126,
+        "prediction": {},
+        "result_count": 0,
+        "task": 19
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss38.png",
+    "data": {
+      "image": "/data/upload/maksssksksss38.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132069Z",
+    "updated_at": "2021-04-12T18:17:13.132083Z",
+    "project": 3
+  },
+  {
+    "id": 18,
+    "annotations": [
+      {
+        "id": 22,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 29.568106312292358,
+              "y": 39.75,
+              "width": 33.55481727574751,
+              "height": 26.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "wEW66yyGNm",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:57.294743Z",
+        "updated_at": "2021-04-12T18:18:57.294780Z",
+        "lead_time": 3.463,
+        "prediction": {},
+        "result_count": 0,
+        "task": 18
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss37.png",
+    "data": {
+      "image": "/data/upload/maksssksksss37.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.132017Z",
+    "updated_at": "2021-04-12T18:17:13.132030Z",
+    "project": 3
+  },
+  {
+    "id": 17,
+    "annotations": [
+      {
+        "id": 21,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 250,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 44.8,
+              "y": 12.25,
+              "width": 14,
+              "height": 7.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "esDELvPJ6W",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:53.542884Z",
+        "updated_at": "2021-04-12T18:18:53.542924Z",
+        "lead_time": 3.126,
+        "prediction": {},
+        "result_count": 0,
+        "task": 17
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss33.png",
+    "data": {
+      "image": "/data/upload/maksssksksss33.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131964Z",
+    "updated_at": "2021-04-12T18:17:13.131977Z",
+    "project": 3
+  },
+  {
+    "id": 16,
+    "annotations": [
+      {
+        "id": 20,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 300,
+            "image_rotation": 0,
+            "value": {
+              "x": 25.25,
+              "y": 15,
+              "width": 17.5,
+              "height": 16,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "2rz5_vv4hg",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:50.140914Z",
+        "updated_at": "2021-04-12T18:18:50.140948Z",
+        "lead_time": 3.492,
+        "prediction": {},
+        "result_count": 0,
+        "task": 16
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss28.png",
+    "data": {
+      "image": "/data/upload/maksssksksss28.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131912Z",
+    "updated_at": "2021-04-12T18:17:13.131925Z",
+    "project": 3
+  },
+  {
+    "id": 15,
+    "annotations": [
+      {
+        "id": 19,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 312,
+            "image_rotation": 0,
+            "value": {
+              "x": 41.25,
+              "y": 35.256410256410255,
+              "width": 21.75,
+              "height": 22.115384615384617,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "1nrIVw-PNs",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:46.298160Z",
+        "updated_at": "2021-04-12T18:18:46.298225Z",
+        "lead_time": 3.18,
+        "prediction": {},
+        "result_count": 0,
+        "task": 15
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss27.png",
+    "data": {
+      "image": "/data/upload/maksssksksss27.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131860Z",
+    "updated_at": "2021-04-12T18:17:13.131873Z",
+    "project": 3
+  },
+  {
+    "id": 14,
+    "annotations": [
+      {
+        "id": 18,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 300,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 41,
+              "y": 22.25,
+              "width": 24.333333333333332,
+              "height": 15,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "YA9TYtsK2R",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:42.771627Z",
+        "updated_at": "2021-04-12T18:18:42.771664Z",
+        "lead_time": 3.349,
+        "prediction": {},
+        "result_count": 0,
+        "task": 14
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss25.png",
+    "data": {
+      "image": "/data/upload/maksssksksss25.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131807Z",
+    "updated_at": "2021-04-12T18:17:13.131820Z",
+    "project": 3
+  },
+  {
+    "id": 13,
+    "annotations": [
+      {
+        "id": 17,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 267,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 37.07865168539326,
+              "y": 21.25,
+              "width": 22.471910112359552,
+              "height": 6.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "k9fM4GCnbm",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:39.131172Z",
+        "updated_at": "2021-04-12T18:18:39.131231Z",
+        "lead_time": 3.3,
+        "prediction": {},
+        "result_count": 0,
+        "task": 13
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss24.png",
+    "data": {
+      "image": "/data/upload/maksssksksss24.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131753Z",
+    "updated_at": "2021-04-12T18:17:13.131767Z",
+    "project": 3
+  },
+  {
+    "id": 12,
+    "annotations": [
+      {
+        "id": 16,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 299,
+            "image_rotation": 0,
+            "value": {
+              "x": 46.5,
+              "y": 28.42809364548495,
+              "width": 14.75,
+              "height": 16.05351170568562,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "8dSjEPhgeN",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:35.538128Z",
+        "updated_at": "2021-04-12T18:18:35.538163Z",
+        "lead_time": 3.416,
+        "prediction": {},
+        "result_count": 0,
+        "task": 12
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss23.png",
+    "data": {
+      "image": "/data/upload/maksssksksss23.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131697Z",
+    "updated_at": "2021-04-12T18:17:13.131712Z",
+    "project": 3
+  },
+  {
+    "id": 11,
+    "annotations": [
+      {
+        "id": 15,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 400,
+            "original_height": 268,
+            "image_rotation": 0,
+            "value": {
+              "x": 45.25,
+              "y": 45.52238805970149,
+              "width": 19.25,
+              "height": 23.880597014925375,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "GoFLgwNuo3",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:31.845847Z",
+        "updated_at": "2021-04-12T18:18:31.845891Z",
+        "lead_time": 3.455,
+        "prediction": {},
+        "result_count": 0,
+        "task": 11
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss22.png",
+    "data": {
+      "image": "/data/upload/maksssksksss22.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131615Z",
+    "updated_at": "2021-04-12T18:17:13.131640Z",
+    "project": 3
+  },
+  {
+    "id": 10,
+    "annotations": [
+      {
+        "id": 14,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 22.92358803986711,
+              "y": 52.5,
+              "width": 35.548172757475086,
+              "height": 19.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "g4lUcYBpBf",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:27.994387Z",
+        "updated_at": "2021-04-12T18:18:27.994427Z",
+        "lead_time": 4.111,
+        "prediction": {},
+        "result_count": 0,
+        "task": 10
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss17.png",
+    "data": {
+      "image": "/data/upload/maksssksksss17.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131527Z",
+    "updated_at": "2021-04-12T18:17:13.131540Z",
+    "project": 3
+  },
+  {
+    "id": 9,
+    "annotations": [
+      {
+        "id": 13,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 10.96345514950166,
+              "y": 63,
+              "width": 40.53156146179402,
+              "height": 18.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "jJI43I8hUz",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:23.577327Z",
+        "updated_at": "2021-04-12T18:18:23.577362Z",
+        "lead_time": 4.902,
+        "prediction": {},
+        "result_count": 0,
+        "task": 9
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss16.png",
+    "data": {
+      "image": "/data/upload/maksssksksss16.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131472Z",
+    "updated_at": "2021-04-12T18:17:13.131486Z",
+    "project": 3
+  },
+  {
+    "id": 7,
+    "annotations": [
+      {
+        "id": 11,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:08.626995Z",
+        "updated_at": "2021-04-12T18:18:08.627062Z",
+        "lead_time": 2.057,
+        "prediction": {},
+        "result_count": 0,
+        "task": 7
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss14.png",
+    "data": {
+      "image": "/data/upload/maksssksksss14.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131366Z",
+    "updated_at": "2021-04-12T18:17:13.131379Z",
+    "project": 3
+  },
+  {
+    "id": 6,
+    "annotations": [
+      {
+        "id": 10,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 30.897009966777407,
+              "y": 73.25,
+              "width": 33.222591362126245,
+              "height": 22.5,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "hkp1RvrNuc",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:18:06.254397Z",
+        "updated_at": "2021-04-12T18:18:06.254433Z",
+        "lead_time": 10.399,
+        "prediction": {},
+        "result_count": 0,
+        "task": 6
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss10.png",
+    "data": {
+      "image": "/data/upload/maksssksksss10.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131313Z",
+    "updated_at": "2021-04-12T18:17:13.131326Z",
+    "project": 3
+  },
+  {
+    "id": 5,
+    "annotations": [
+      {
+        "id": 9,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 267,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 54.30711610486891,
+              "y": 23,
+              "width": 18.726591760299627,
+              "height": 11.25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "kAkNkF0-Q-",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:17:55.570843Z",
+        "updated_at": "2021-04-12T18:17:55.570878Z",
+        "lead_time": 3.891,
+        "prediction": {},
+        "result_count": 0,
+        "task": 5
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss9.png",
+    "data": {
+      "image": "/data/upload/maksssksksss9.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131259Z",
+    "updated_at": "2021-04-12T18:17:13.131272Z",
+    "project": 3
+  },
+  {
+    "id": 4,
+    "annotations": [
+      {
+        "id": 8,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 23.920265780730897,
+              "y": 71.5,
+              "width": 25.249169435215947,
+              "height": 23,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "HRFQdgrGq9",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:17:51.406837Z",
+        "updated_at": "2021-04-12T18:17:51.406872Z",
+        "lead_time": 3.607,
+        "prediction": {},
+        "result_count": 0,
+        "task": 4
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss8.png",
+    "data": {
+      "image": "/data/upload/maksssksksss8.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131205Z",
+    "updated_at": "2021-04-12T18:17:13.131219Z",
+    "project": 3
+  },
+  {
+    "id": 3,
+    "annotations": [
+      {
+        "id": 7,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 600,
+            "original_height": 405,
+            "image_rotation": 0,
+            "value": {
+              "x": 41,
+              "y": 33.08641975308642,
+              "width": 24.666666666666668,
+              "height": 31.358024691358025,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "2FdILVRdMe",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:17:42.808329Z",
+        "updated_at": "2021-04-12T18:17:42.808396Z",
+        "lead_time": 6.805,
+        "prediction": {},
+        "result_count": 0,
+        "task": 3
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss6.png",
+    "data": {
+      "image": "/data/upload/maksssksksss6.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131150Z",
+    "updated_at": "2021-04-12T18:17:13.131164Z",
+    "project": 3
+  },
+  {
+    "id": 2,
+    "annotations": [
+      {
+        "id": 6,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 301,
+            "original_height": 400,
+            "image_rotation": 0,
+            "value": {
+              "x": 22.259136212624586,
+              "y": 55.25,
+              "width": 37.2093023255814,
+              "height": 25,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "bYOkwHOl4O",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:17:35.659985Z",
+        "updated_at": "2021-04-12T18:17:35.660064Z",
+        "lead_time": 4.783,
+        "prediction": {},
+        "result_count": 0,
+        "task": 2
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss4.png",
+    "data": {
+      "image": "/data/upload/maksssksksss4.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.131092Z",
+    "updated_at": "2021-04-12T18:17:13.131108Z",
+    "project": 3
+  },
+  {
+    "id": 1,
+    "annotations": [
+      {
+        "id": 5,
+        "completed_by": {
+          "id": 2,
+          "email": "slinko.igor.y@yandex.ru",
+          "first_name": "",
+          "last_name": ""
+        },
+        "state": {},
+        "result": [
+          {
+            "original_width": 512,
+            "original_height": 366,
+            "image_rotation": 0,
+            "value": {
+              "x": 35.3515625,
+              "y": 29.23497267759563,
+              "width": 9.765625,
+              "height": 10.109289617486338,
+              "rotation": 0,
+              "rectanglelabels": [
+                "mask"
+              ]
+            },
+            "id": "N9v76_D7Wp",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "rectanglelabels"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2021-04-12T18:17:30.529943Z",
+        "updated_at": "2021-04-12T18:17:30.530009Z",
+        "lead_time": 9.608,
+        "prediction": {},
+        "result_count": 0,
+        "task": 1
+      }
+    ],
+    "predictions": [],
+    "file_upload": "maksssksksss0.png",
+    "data": {
+      "image": "/data/upload/maksssksksss0.png"
+    },
+    "meta": {},
+    "created_at": "2021-04-12T18:17:13.130998Z",
+    "updated_at": "2021-04-12T18:17:13.131037Z",
+    "project": 3
+  }
+]

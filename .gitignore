@@ -187,3 +187,4 @@ lecture 11 materials/database.sqlite
 05 DL/11_week_nlp_start/our_w2v.model
 05 DL/11_week_nlp_start/word2vec.wordvectors
 05 DL/11_week_nlp_start/data/ruwiki.xml.bz2
+09 Detection/01_week/masks_dataset/*
