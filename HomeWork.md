@@ -421,3 +421,7 @@ Batchnorm_and_dropout.ipynb - попробовать 3 слойную сеть
 ## ДЗ 11 DL
 
 <https://lena-voita.github.io/nlp_course.html>
+
+## ДЗ 12 DL
+
+* реализовать RNN по прогнозу погоды
