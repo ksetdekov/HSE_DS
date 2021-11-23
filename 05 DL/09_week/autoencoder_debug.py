@@ -11,7 +11,6 @@ import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings('ignore')
 
-%matplotlib inline
 
 # %%
 from sklearn.datasets import get_data_home
