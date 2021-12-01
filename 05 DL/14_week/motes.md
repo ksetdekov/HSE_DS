@@ -1,6 +1,6 @@
-#  attention - based approaches и машинные переводы
+# attention - based approaches и машинные переводы
 
-##seq2seq
+## seq2seq
 
 модели текста
 
@@ -9,3 +9,7 @@
 будем пытаться формировать внимание
 
 ## seq2seq with attention
+
+## Elmo
+
+Embeddign Language  MOdel
