@@ -20,3 +20,13 @@ attention recap
 * softmax * value = sum
 
 $$Z = softmax \left(\frac{Q\cdot K^T}{\sqrt{d_K}}\right)\cdot V$$
+
+* $W^Q, W^K, W^V$ одинаковые для всех слов для энкодера
+
+Ячейки декаодера обращают внимание на декодеров - им передаются Kencoder, Kdecoder
+
+* на последнем слое Энкодера и на входе всех декодеров - Kencoder, Kdecoder - они получают
+
+### final step
+
+Декодера выход $\rightarrow$ линейный слой $\rightarrow$ softmax $\rightarrow$ argmax $\rightarrow$ их словаря взяли то что получили
