@@ -30,3 +30,14 @@ $$Z = softmax \left(\frac{Q\cdot K^T}{\sqrt{d_K}}\right)\cdot V$$
 ### final step
 
 Декодера выход $\rightarrow$ линейный слой $\rightarrow$ softmax $\rightarrow$ argmax $\rightarrow$ их словаря взяли то что получили
+
+### masked attentions
+
+смотрит на все токены. длина - не учитывается при учете.
+
+positional encoding
+<https://kazemnejad.com/blog/transformer_architecture_positional_encoding/>
+
+## bert is transformers
+
+<https://jalammar.github.io/illustrated-bert/>
