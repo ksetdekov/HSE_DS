@@ -41,3 +41,5 @@ positional encoding
 ## bert is transformers
 
 <https://jalammar.github.io/illustrated-bert/>
+
+Разметка не нужна для предобучения
