@@ -15,7 +15,7 @@ attention recap
 * вектора эмбеддинга - понятно - это от слова X
 * queries - мое текущее слово $W^Q$
 * keys - слово с которым я себя сравниваю
-* values -   $q_1 \cdot k_1 ...q_1 \cdot k_2...q_1 \cdot k_n = V$
+* values - $q_1 \cdot k_1 ...q_1 \cdot k_2...q_1 \cdot k_n = V$
 * scores $\rightarrow$ devide by $\sqrt{dim(embedding)} = 8$
 * softmax * value = sum
 
