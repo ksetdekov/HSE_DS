@@ -69,3 +69,7 @@
 * предобученные модели для русского языка
 
 * можно пробовать эти модели
+
+## seinar
+
+<https://github.com/ksetdekov/apdl/tree/master/week02>
