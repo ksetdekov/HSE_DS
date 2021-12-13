@@ -425,3 +425,20 @@ Batchnorm_and_dropout.ipynb - попробовать 3 слойную сеть
 ## ДЗ 12 DL
 
 * реализовать RNN по прогнозу погоды
+
+## DSP to learn
+
+* interspeech - speech
+* ICML - conference
+* NIPS
+* ICLR
+* neptuneblog
+
+* Keyword spotting - это задача
+
+* librespeech
+* LJSpeech - датасет популярный
+  * по ним были бенчмарки
+  * weights and biasses
+
+* курс попробовать <https://github.com/markovka17/dla>
