@@ -442,3 +442,7 @@ Batchnorm_and_dropout.ipynb - попробовать 3 слойную сеть
   * weights and biasses
 
 * курс попробовать <https://github.com/markovka17/dla>
+
+## DL
+
+<https://github.com/girafe-ai/ml-mipt>
