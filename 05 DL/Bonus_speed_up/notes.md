@@ -51,3 +51,8 @@
 * OpenVINO
 
 * pytorch xla tpu <https://github.com/pytorch/xla>
+
+## pytorch profiling
+
+    * timit куски кода
+    * pytorch profiling https://pytorch.org/tutorials/recipes/recipes/profiler_recipe.html
